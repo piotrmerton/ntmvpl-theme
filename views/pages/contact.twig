@@ -1,0 +1,18 @@
+{% extends "layout/base.twig" %}
+
+{% block body %}
+
+	<div class="content__body content--contact">
+
+		<main class="content__main" role="main" itemscope itemtype="https://schema.org/LocalBusiness">
+
+			{% include 'partials/contact/contact-section-contact-form.twig' %}
+			{% include 'partials/contact/contact-section-employees.twig' %}
+			{% include 'partials/contact/contact-section-map.twig' %}
+
+		</main>
+
+
+	</div>
+
+{% endblock %}

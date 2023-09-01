@@ -1,0 +1,34 @@
+{# Mailerlite static HTML form; Mailerlite generated JS snippet rely heavily on jQuery, so instead we are handling it ourselves via ui/newsletter.js; Form action and track URL taken from "Embed form into yuour website" -> HTML Code @ Mailerlite Dashboard #}
+
+<div class="newsletter-signin-form">
+	<form id="newsletter-signin" action="https://assets.mailerlite.com/jsonp/194128/forms/94747208887305573/subscribe" data-track-view-url="https://assets.mailerlite.com/jsonp/194128/forms/94747208887305573/track-view" method="post">
+
+		<fieldset>
+
+			<div class="form__field">
+				<input aria-label="email" aria-required="true" type="email" name="fields[email]" placeholder="{{ __('Twój adres e-mail', 'theme' )}}" autocomplete="email" required>
+			</div>
+
+			<button type="submit" class="button">{{ __('Zapisz się', 'theme' )}}</button>
+
+			<input type="hidden" name="ml-submit" value="1">
+			<input type="hidden" name="anticsrf" value="true">
+
+		</fieldset>
+
+		<div class="ui-message message--success">
+			<p>{{ __('Dziękujemy za zapisanie się do newslettera! Kliknij <a href="#" data-modal-target="newsletter-signin">tutaj</a>, aby wrócić do strony.', 'theme')}}</p>
+		</div>
+		<div class="ui-message message--error">
+			<p>{{ __('Podczas wysyłania formularza wystąpił błąd. Odśwież stronę i spróbuj ponownie.', 'theme')}}</p>
+		</div>
+
+		<span class="form__policy">
+			{{__('Zapisując się do newslettera wyrażasz zgodę na <a href="%s">przetwarzanie danych osobowych</a>', 'theme')|format(globals.links.privacy_policy)
+			}}
+		</span>
+
+	</form>
+
+
+</div>

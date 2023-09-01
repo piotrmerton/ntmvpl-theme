@@ -1,0 +1,28 @@
+//modifies components/banner/banner-generic.scss and content/acf-flexible-content/banner-hero.scss
+
+.banner--404 {
+    .banner__header {
+        max-width: 100%;
+    }
+    .banner__body {
+        h2 {
+            font-size: 7.5em;
+            font-weight: 800;
+            margin-bottom: 0;
+
+            @media (max-width: $breakpoint_hd) {
+                font-size: 5em;
+            }
+        }
+
+        h1 {
+            font-weight: 600;
+            font-size: 1.625em;
+            @media (min-width: $breakpoint_hd + 1px) {
+                font-size: 3.125em;
+
+                max-width: 100%;
+            }
+        }
+    }
+}

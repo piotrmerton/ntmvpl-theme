@@ -1,0 +1,39 @@
+{% extends "layout/base.twig" %}
+
+{% block body %}
+
+	<div class="content__body content--post">
+
+		{% include 'partials/post/_post-banner.twig' %}
+
+		<div class="post__body">
+			<div class="viewport">
+				<div class="post__layout">
+					<main class="content__main layout__main" role="main">
+						{% include 'layout/content.twig' with { 'content' : content_flexible } %}
+
+						{# Duplicate markup for Mobile; we could avoid this by using CSS Grid and positioning elements explicitly, but then we would be unable to use position sticky for Table of Contents on Desktop #}
+						{% include 'partials/post/_post-share-block.twig' %}
+
+						{% include 'partials/post/_post-nav.twig' %}
+
+					</main>
+
+					<aside class="layout__side">
+						<div class="sticky-wrapper">
+							{% include 'partials/post/_post-index.twig' %}
+							{% include 'partials/post/_post-share-block.twig' %}
+						</div>
+					</aside>
+
+
+				</div>
+				<!-- /post__layout -->
+			</div>
+		</div>
+		<!-- /post__body -->
+
+
+	</div>
+
+{% endblock %}

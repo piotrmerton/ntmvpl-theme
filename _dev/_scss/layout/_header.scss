@@ -1,0 +1,108 @@
+.header-top {
+    background: #fff;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+    //overflow: hidden;
+
+    height: 6rem;
+    display: flex;
+    align-items: center;
+
+    @media (max-width: $breakpoint_mobile) {
+        height: 4.5rem;
+
+        /**
+         * Overlay as pseudoelement visible when Menu is open.
+         * Normally, we would append overlay to <body>, but we want:
+         * 1) <header> to be below overlay
+         * 2) <nav> to be inside <header>
+         *
+         * Appending overlay via js/nav.js was also an option, however for CSS transition
+         * to work, we would need to net to add modifier class with slight delay (i.e. with setTimeout)
+         * thus reducing performance on older devices
+        */
+
+        &::after {
+            content: "";
+            @include overlay(transparent);
+            position: static;
+        }
+
+        &.menu--open {
+            .header__logo {
+                opacity: 0;
+            }
+            &::after {
+                position: fixed;
+                display: block;
+                background-color: black;
+            }
+        }
+    }
+}
+
+.header__logo {
+    display: block;
+    transition: opacity 0.2s;
+    img {
+        height: 3.125rem;
+        width: auto;
+
+        @media (max-width: $breakpoint_mobile) {
+            height: 2.5rem;
+        }
+    }
+}
+
+.header__layout {
+    @media (min-width: $breakpoint_mobile + 1px) {
+        display: grid;
+        grid-template-columns: min-content auto;
+
+        .header__branding,
+        .header__nav {
+            grid-row-start: 1;
+        }
+        .header__branding {
+            grid-column-start: 1;
+            z-index: 2;
+        }
+        .header__nav {
+            grid-column: 1 / -1;
+        }
+    }
+}
+
+.header__nav {
+    @media (max-width: $breakpoint_mobile) {
+        display: grid;
+
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 99;
+
+        transition: transform 0.2s;
+
+        transform: translateX(5rem);
+
+        &:not(.menu--open) {
+            transform: translateX(100%);
+        }
+
+        .nav__ui {
+            display: flex;
+            justify-content: center;
+            padding-top: 1rem;
+            width: 5rem;
+            position: absolute;
+            transform: translateX(-100%);
+        }
+    }
+}

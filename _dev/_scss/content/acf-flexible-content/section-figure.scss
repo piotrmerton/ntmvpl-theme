@@ -1,0 +1,170 @@
+@import "../../utilities/variables";
+@import "../../utilities/mixins";
+
+.section-figure {
+    .section__header {
+        // header sizes inconsistent across project @ invision, the same components with the same layout use header size 35px, 36px or 40px
+        h2 {
+            @include header-medium;
+        }
+    }
+
+    .section__content {
+        @media (min-width: $breakpoint_mobile + 1px) {
+            max-width: 35rem;
+        }
+    }
+
+    .section__cta {
+        margin-top: 1.875rem;
+    }
+
+    .section__grid {
+        display: grid;
+        grid-gap: 3rem;
+
+        &.grid__item {
+            position: relative;
+        }
+
+        .item--content {
+            display: grid;
+            align-items: center;
+        }
+
+        .item--figure {
+            display: grid;
+            align-items: center;
+
+            &.images-with-border {
+                img {
+                    border-radius: 2rem;
+                    border: 1rem solid rgba(255, 255, 255, 0.4);
+
+                    @media (max-width: $breakpoint_mobile) {
+                        border-radius: 1.5em;
+                    }
+                }
+            }
+        }
+
+        @media (min-width: $breakpoint_mobile + 1px) {
+            &.grid--horizontal {
+                grid-template-columns: 1fr 1fr;
+                grid-gap: 1.25rem;
+
+                .grid__item {
+                    grid-row-start: 1;
+                }
+
+                //default proprtions: text and image 50/50
+
+                .item--content {
+                    padding-right: 2rem;
+                    &.item--right {
+                        order: 2;
+                        padding-left: 2rem;
+                    }
+                }
+                .item--image {
+                    &.item--left {
+                        order: 1;
+                    }
+                }
+
+                //alternative proportions: image bigger
+                &.grid--image {
+                    grid-template-columns: repeat(12, 1fr);
+
+                    .item--content {
+                        grid-column: 1 / 5;
+                        padding-right: 1rem;
+
+                        &.item--right {
+                            grid-column: 9 / -1;
+                            padding-left: 4rem;
+                        }
+
+                        @media (max-width: $breakpoint_laptop_big) {
+                            grid-column-end: 6;
+
+                            &.item--right {
+                                grid-column-start: 8;
+                            }
+                        }
+                    }
+                    .item--figure {
+                        grid-column: 6 / -1;
+                        //padding-left: 1rem;
+
+                        &.item--left {
+                            grid-column: 1 / 8;
+                            padding-right: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+
+        @media (max-width: $breakpoint_mobile) {
+            grid-gap: 2rem;
+        }
+    }
+
+    @media (max-width: $breakpoint_mobile) {
+    }
+
+    &.section--white {
+        .item--figure {
+            &.images-with-border {
+                img {
+                    border-color: $lightgray;
+                }
+            }
+        }
+    }
+    &.section--lightgray {
+        .item--figure {
+            &.images-with-border {
+                img {
+                    border-color: #fff;
+                }
+            }
+        }
+    }
+
+    &.section--vertical {
+        .item--content {
+            @media (min-width: $breakpoint_mobile + 1px) {
+                max-width: 35rem;
+                text-align: center;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+    }
+    &.section--horizontal {
+        .section__header {
+            h2 {
+                @include header-big;
+                font-weight: bold;
+            }
+            @media (min-width: $breakpoint_mobile + 1px) {
+                //margin-bottom: 5rem;
+            }
+        }
+    }
+
+    .text--center-mobile {
+        .section__header {
+            @media (max-width: $breakpoint_mobile) {
+                text-align: center;
+            }
+        }
+        .section__content {
+            p {
+                font-size: 1rem; //comply with mobile-Case Study - Single @ Invision
+            }
+        }
+    }
+}

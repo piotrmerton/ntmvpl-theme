@@ -1,0 +1,108 @@
+<footer>
+
+	{# Footer implements ACF Flexbile Content's Section Banner markup #}
+	{% embed 'content/acf-flexible-content/section-banner.twig' with {
+
+        'section' : {
+            'section_settings_bgColor' : {
+                'slug' : 'navy',
+            },
+            'section_settings_layoutPriority' : 'text',
+            'section_settings_imgOrder' : 'left',
+            'section_cover_desktop' : true,
+            'symbol' : {
+                'value' : 'logo-mark'
+            },
+            'section_symbol_color' : {
+                'slug' : 'white'
+            },
+            'section_symbol_bgColor' : {
+                'slug' : 'skyblue'
+            },
+
+        }
+
+    } %}
+
+
+		{% block section_content %}
+
+			<div class="section__body text--white">
+
+				<div class="footer__grid">
+
+					<div class="grid__item item--socialmedia">
+
+						{% include 'blocks/block-social.twig' with { 
+							'cssClass' : 'block--footer',
+							'socialmedia' : globals.socialmedia 
+						} %}
+
+						<a id="newsletter-cta" class="button button--newsletter button--white button--transparent" href="#" data-modal-target="newsletter-signin">{{ __('Zapisz się na newsletter', 'theme') }}</a>
+
+					</div>
+
+					<div class="grid__item item--nav">
+
+						<div class="item__subgrid">
+
+							{% include 'components/nav.twig' with { 
+								'nav' : {
+									'items' : services,
+								},
+								'nav_title' : __('Oferta', 'theme'),
+								'slug' : 'footer', 
+								'class' : 'footer__nav nav--services',
+								'hide_submenu' : true,
+							} %}
+
+							{% include 'components/nav.twig' with { 
+								'nav' : footer_nav,
+								'nav_title' : __('Przydatne linki', 'theme'),
+								'slug' : 'footer', 
+								'class' : 'footer__nav nav--footer',
+								'hide_submenu' : true,
+							} %}
+
+						</div>
+
+					</div>
+
+					<div class="grid__item item--credits">
+						<p class="footer__credits">2022 &copy; Copyright by Netmove. Design by:
+							<a href="https://webmetric.com">Webmetric</a>
+						</p>
+					</div>
+
+
+				</div>
+				<!-- /footer__grid -->
+
+
+			</div>
+
+
+		{% endblock %}
+
+		{% block section_cover_picture %}
+
+			{% include 'partials/_picture.twig' with {
+
+				'theme_image' : true,
+				'image_desktop' : {
+					'url' : theme.path ~ '/assets/img/banner/banner-footer-desktop.jpg',
+					'width' : 1091,
+					'height' : 1280,
+					'alt' : __('Agencja Netmove - eksperci od SEO i SEM dla e-commerce', 'theme'),
+				},
+				'image_mobile' : {
+					'url' : theme.path ~ '/assets/img/banner/banner-footer-mobile.jpg'
+				}
+
+			} %}
+		{% endblock %}
+
+	{% endembed %}
+
+
+</footer>

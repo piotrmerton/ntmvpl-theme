@@ -1,0 +1,33 @@
+@import "../utilities/variables";
+
+@import "../partials/employee/employee-list";
+@import "../partials/contact/contact-section-contact-form";
+@import "../partials/contact/contact-section-map";
+
+.content--contact {
+    .content__title {
+        margin: 0;
+
+        @media (min-width: $breakpoint_tablet-portrait + 1px) {
+            h1 {
+                margin-left: 0;
+                margin-right: 0;
+            }
+        }
+    }
+
+    @media (max-width: $breakpoint_tablet-portrait) {
+        .content__title {
+            margin-bottom: 3rem;
+        }
+        .content__title,
+        .section__header {
+            text-align: center;
+        }
+        .section__header {
+            max-width: 18rem;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}

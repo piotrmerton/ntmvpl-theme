@@ -1,0 +1,132 @@
+{
+    "key": "group_64afcbf0d79a7",
+    "title": "Spis Treści",
+    "fields": [
+        {
+            "key": "field_64afd383289d3",
+            "label": "Dodaj spis treści ręcznie",
+            "name": "post_has_index",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "Spis treści zostanie wygenerowany automatycznie na podstawie wszystkich nagłówków &lt;H2&gt; obecnych w dodanej treści. Możesz jednak wprowadzić Spis Treści ręcznie, gdy potrzebujesz większą kontrolę.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 0,
+            "acfe_field_group_condition": 0,
+            "ui_on_text": "",
+            "ui_off_text": "",
+            "style": ""
+        },
+        {
+            "key": "field_64afcbf1a3086",
+            "label": "Spis treści",
+            "name": "post_index",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_64afd383289d3",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "acfe_repeater_stylised_button": 0,
+            "layout": "table",
+            "pagination": 0,
+            "min": 1,
+            "max": 0,
+            "collapsed": "",
+            "button_label": "Dodaj odnośnik",
+            "acfe_field_group_condition": 0,
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_64afcc82a3087",
+                    "label": "Etykieta",
+                    "name": "label",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "acfe_field_group_condition": 0,
+                    "parent_repeater": "field_64afcbf1a3086"
+                },
+                {
+                    "key": "field_64afcc93a3088",
+                    "label": "Odsyłacz (anchor)",
+                    "name": "anchor",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "Pamiętaj, aby dodać odpowiedni identyfikator do nagłówka w treści, do którego ma prowadzić odsyłacz.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "#",
+                    "append": "",
+                    "acfe_field_group_condition": 0,
+                    "parent_repeater": "field_64afcbf1a3086"
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "acfe_display_title": "",
+    "acfe_autosync": [
+        "json"
+    ],
+    "acfe_form": 0,
+    "acfe_meta": "",
+    "acfe_note": "",
+    "modified": 1689245929
+}

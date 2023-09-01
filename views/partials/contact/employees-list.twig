@@ -1,0 +1,5 @@
+<ul class="employee__list{% if cssClass %} {{cssClass}}{% endif %}">
+	{% for employee in employees %}
+		{% include 'partials/listing/item-employee.twig' %}
+	{% endfor %}
+</ul>

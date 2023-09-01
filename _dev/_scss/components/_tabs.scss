@@ -1,0 +1,47 @@
+.ui-tabs {
+    .tabs__list {
+        display: grid;
+        gap: 1rem;
+
+        @media (max-width: $breakpoint_mobile) {
+            gap: 0.5rem;
+        }
+    }
+
+    .item--tab {
+        &.tab--open {
+            .tab__title {
+                text-decoration: underline;
+                &::after {
+                    transform: rotate(180deg);
+                }
+            }
+        }
+    }
+
+    .tab__title {
+        position: relative;
+        &::after {
+            @include submenu-indicator(0.325rem, $skyblue);
+            position: absolute;
+            top: 50%;
+            margin-top: -0.125rem;
+            right: 2rem;
+
+            @media (max-width: $breakpoint_mobile) {
+                right: 1rem;
+            }
+        }
+    }
+
+    .tab__content {
+        transition: max-height 0.2s ease-in-out;
+        overflow: hidden;
+        max-height: 0;
+        margin: 0 0.5rem;
+
+        > article {
+            padding: 1rem 2rem;
+        }
+    }
+}

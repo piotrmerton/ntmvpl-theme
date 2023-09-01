@@ -1,0 +1,38 @@
+<li class="list__item item--employee">
+
+	<figure class="item__image employee__image">
+		{% include 'partials/_picture.twig' with {
+            'image' : employee.meta('employee_image'),
+        } %}
+	</figure>
+
+	<ul class="item__meta">
+		<li class="employee__name">{{employee.title}}</li>
+
+		{% if employee.employee_role %}
+			<li class="employee__role">{{employee.employee_role}}</li>
+		{% endif %}
+
+		{% if employee.employee_phonenumber %}
+			<li class="employee__phonenumber">
+				<a href="tel:{{employee.employee_phonenumber}}">
+					<figure class="ui-ico">
+						{{ source('assets/svg/phone.svg', ignore_missing = true) }}
+					</figure>
+					<span class="label">{{employee.employee_phonenumber}}</span>
+				</a>
+			</li>
+		{% endif %}
+		{% if employee.employee_email %}
+			<li class="employee__email">
+				<a href="mailto:{{employee.employee_email}}">
+					<figure class="ui-ico">
+						{{ source('assets/svg/email.svg', ignore_missing = true) }}
+					</figure>
+					<span class="label">{{employee.employee_email}}</span>
+				</a>
+			</li>
+		{% endif %}
+	</ul>
+
+</li>

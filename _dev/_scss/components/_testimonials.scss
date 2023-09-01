@@ -1,0 +1,103 @@
+.testimonials {
+    max-width: 50rem;
+    margin: 0 auto;
+
+    &.testimonials--single {
+        //max-width: 60rem;
+    }
+}
+
+.testimonials__list {
+    //overrides component/cards.scss
+    .item--card {
+        .card__symbol {
+            svg {
+                height: 1.25rem;
+            }
+        }
+
+        @media (min-width: $breakpoint_mobile + 1px) {
+            .card__symbol {
+                width: 8rem;
+                height: 8rem;
+                left: auto;
+                margin: 0 auto;
+            }
+            .item__body {
+                padding: 7rem 4rem 4rem;
+
+                display: grid;
+                align-items: center;
+            }
+        }
+    }
+}
+
+.testimonials-slider {
+    &.swiper {
+        overflow: visible;
+    }
+    .swiper-slide {
+        transition: opacity 1s;
+
+        &:not(.swiper-slide-visible) {
+            @media (min-width: $breakpoint_mobile + 1px) {
+                opacity: 0.3;
+
+                .card__symbol {
+                    background: #fff;
+                    svg {
+                        fill: silver;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.item--testimonial {
+    blockquote {
+        p {
+            font-size: 1.125rem;
+        }
+    }
+
+    .testimonial__author {
+        font-size: 1.125rem;
+        font-weight: 600;
+        color: $black;
+        margin-bottom: 0.5rem;
+
+        @media (max-width: $breakpoint_mobile) {
+            font-size: 1em;
+        }
+    }
+    .testimonial__meta {
+        font-size: 0.875em;
+        font-weight: 500;
+        > li {
+            display: inline;
+
+            &:not(:last-child) {
+                &::after {
+                    content: ", ";
+                }
+            }
+        }
+
+        a {
+            text-decoration: underline;
+        }
+    }
+
+    @media (min-width: $breakpoint_mobile + 1px) {
+        blockquote {
+            p {
+                @include paragraph-header;
+            }
+        }
+    }
+    @media (max-width: $breakpoint_mobile) {
+        text-align: left;
+    }
+}

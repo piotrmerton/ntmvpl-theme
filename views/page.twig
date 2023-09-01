@@ -1,0 +1,14 @@
+{% extends "layout/base.twig" %}
+
+{% block body %}
+
+	<div class="content__body content--page {% if is_frontpage %}content--index{% endif %}">
+
+		<main class="content__main" role="main">
+			{% include 'layout/content.twig' with { 'content' : post.meta('content_flexible') } %}
+		</main>
+
+
+	</div>
+
+{% endblock %}

@@ -1,0 +1,16 @@
+<section class="content__section contact__section contact-section-employees">
+	<div class="viewport">
+		<div class="section__header text--center">
+			<h5>{{ __('Dla partnerów', 'theme') }}</h5>
+			<h2>{{ __('Jesteś już naszym partnerem?', 'theme') }}</h2>
+			<p>{{ __('Skontaktuj się bezpośrednio z działem e-commerce!', 'theme') }}</p>
+		</div>
+
+		{% include 'partials/contact/employees-list.twig' with {
+            'employees' : employee_groups.for_partners,
+            'cssClass': 'list--for-partners' 
+        } %}
+
+	</div>
+	<!-- /viewport -->
+</section>

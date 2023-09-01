@@ -1,0 +1,245 @@
+@import "../utilities/variables";
+
+.content--post {
+    h1,
+    h2 {
+        scroll-margin-top: 8rem;
+
+        @media (max-width: $breakpoint_mobile) {
+            scroll-margin-top: 5rem;
+        }
+    }
+
+    //overrides content/acf-flexible-content/section-banner.scss
+    .section-banner {
+        .section__header {
+            //post title tend to be longer so let's make master header a little bit smaller just like on Invision
+            h1 {
+                @media (min-width: $breakpoint_hd + 1px) {
+                    font-size: 2.5rem;
+                }
+            }
+        }
+    }
+
+    .post__layout {
+        @media (min-width: $breakpoint_mobile + 1px) {
+            display: flex;
+            justify-content: space-between;
+            gap: 0 4rem;
+        }
+
+        @media (max-width: $breakpoint_mobile) {
+            display: grid;
+
+            .layout__main {
+                order: 2;
+            }
+            .layout__side {
+                order: 1;
+            }
+        }
+
+        .layout__main {
+            max-width: 60rem;
+            width: 100%;
+
+            .post__share {
+                @media (min-width: $breakpoint_mobile + 1px) {
+                    display: none;
+                }
+            }
+        }
+        .layout__side {
+            width: 100%;
+            max-width: 21rem;
+            flex-shrink: 0;
+            padding: $white_space_vertical_desktop 0;
+
+            @media (min-width: $breakpoint_mobile + 1px) {
+                .sticky-wrapper {
+                    position: sticky;
+                    top: 7rem;
+                }
+            }
+
+            @media (max-width: $breakpoint_mobile) {
+                padding: 1rem 0 0;
+                max-width: 100%;
+
+                .post__share {
+                    display: none;
+                }
+            }
+        }
+
+        .side__block {
+            .block__title {
+                h4 {
+                    font-size: 1.125rem;
+                    font-weight: bold;
+                    margin-bottom: 1rem;
+                }
+            }
+
+            border: 1px solid #e2e3e4;
+            padding: 2rem;
+            border-radius: 1rem;
+            margin-bottom: 1rem;
+
+            &.block--index {
+                padding: 1.5rem 0;
+                @media (max-width: $breakpoint_mobile) {
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
+
+.post__nav {
+    display: grid;
+    grid-gap: 4rem;
+    margin: 4rem 0;
+
+    @media (min-width: $breakpoint_mobile + 1px) {
+        grid-template-columns: 1fr 1fr;
+    }
+    @media (max-width: $breakpoint_mobile) {
+    }
+
+    a {
+        display: block;
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .nav__item {
+        .item__date {
+            display: block;
+            margin: 1.5rem 0;
+            font-size: 0.875em;
+        }
+        .item__name {
+            max-width: 25rem;
+            font-weight: 500;
+        }
+
+        h5 {
+            display: flex;
+            align-items: center;
+
+            .ui-ico {
+                height: 0.6rem;
+                .svg__ico {
+                    fill: $skyblue;
+                }
+            }
+        }
+
+        h5,
+        h3 {
+            @media (hover: hover) {
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        &.item--next {
+            h5 {
+                .ui-ico {
+                    margin: 0 0 0 0.5rem;
+                    transform: rotate(180deg);
+                }
+            }
+
+            @media (min-width: $breakpoint_mobile + 1px) {
+                text-align: right;
+                grid-column-start: 2;
+                .item__name {
+                    margin-left: auto;
+                }
+                h5 {
+                    justify-content: end;
+                }
+            }
+        }
+
+        @media (max-width: $breakpoint_mobile) {
+            text-align: center;
+            h5 {
+                justify-content: center;
+            }
+            .item__name {
+                margin: 0 auto;
+            }
+
+            &.item--prev {
+                order: 2;
+            }
+            &.item--next {
+                order: 1;
+            }
+        }
+    }
+}
+
+.post__index {
+    .block__title {
+        padding: 0 2rem;
+    }
+    .index__list {
+        a {
+            display: block;
+            padding: 0 2rem 0 1.75rem;
+            color: inherit;
+            font-size: 0.875em;
+        }
+        .list__item {
+            border-left: 0.25rem solid transparent;
+            &.item--active {
+                border-color: $blue;
+                a {
+                    color: $black;
+                    font-weight: 500;
+                }
+            }
+            &:not(:last-child) {
+                margin-bottom: 1rem;
+            }
+        }
+    }
+}
+.post__share {
+    .block__title {
+        span {
+            font-size: 0.938em;
+            font-weight: 500;
+            color: $black;
+        }
+    }
+
+    .share__list {
+        display: flex;
+        gap: 1rem;
+
+        .ui-ico {
+            .svg__ico {
+                fill: $black;
+            }
+        }
+
+        a {
+            @media (hover: hover) {
+                &:hover {
+                    .ui-ico {
+                        .svg__ico {
+                            fill: $blue;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

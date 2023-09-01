@@ -1,0 +1,10 @@
+<figure>
+	{% if symbol.mime_type == "image/svg+xml" %}
+
+		{{ source('@root/'~ symbol.url_local,  ignore_missing = false) }}
+
+	{% else %}
+		<img loading="lazy" src="{{symbol.url}}" alt="{{symbol.alt}}" width="{{symbol.width}}" height="{{symbol.height}}"/>
+	{% endif %}
+
+</figure>

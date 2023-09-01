@@ -1,0 +1,79 @@
+<section class="content__section section-figure section--{{section.section_settings_layout}}{% if section.section_settings_bgColor.slug %} section--{{section.section_settings_bgColor.slug}}{% else %} section--white{% endif %}">
+	<div class="viewport{% if section.section_settings_layout == 'vertical' %} viewport--desktop{% endif %}">
+
+		<div class="section__grid grid--{{section.section_settings_layout}}{% if section.section_settings_layoutPriority == 'image' %} grid--image{% endif %}">
+
+			<div class="grid__item item--content{% if section.section_settings_order == 'alternative' %} item--right{% endif %}{% if section.section_settings_textAlignMobile == 'center' %} text--center-mobile{% endif %}">
+
+				<div class="item__content">
+
+					{% if section.section_title %}
+						<h5 class="section__title">{{section.section_title}}</h5>
+					{% endif %}
+
+					<div class="section__body{% if section.section_settings_bgColor.whiteText %} text--white{% endif %}">
+
+						{% if section.section_header %}
+							<div class="section__header">
+								<h2 class="header--no-margin">{{ section.section_header }}</h2>
+							</div>
+						{% endif %}
+
+						<div class="section__content text--rich">
+							{{ section.section_content }}
+						</div>
+
+					</div>
+					<!-- /section__body -->
+
+					{% if section.section_cta %}
+						{% include "partials/section/_section-cta.twig" %}
+					{% endif %}
+
+				</div>
+				<!-- /item__content -->
+
+			</div>
+			<!-- /item--content -->
+
+			<div class="grid__item item--figure{% if section.section_settings_order == 'alternative' %} item--left{% endif %}{% if section.section_settings_imagesBorder %} images-with-border{% endif %}">
+
+				{% if section.section_gallery|length > 1 %}
+					<ul class="gallery-grid grid--{{section.section_gallery|length}}-items">
+						{% for figure in section.section_gallery %}
+
+							<li class="gallery__item">
+								<figure>
+									{% include 'partials/_picture.twig' with { image : figure.section_image } %}
+
+									{% if figure.section_image.caption %}
+										<figcaption>{{ figure.section_image.caption }}</figcaption>
+									{% endif %}
+
+								</figure>
+							</li>
+						{% endfor %}
+					</ul>
+				{% else %}
+					{% for figure in section.section_gallery %}
+						<figure>
+							{% include 'partials/_picture.twig' with { image : figure.section_image } %}
+
+							{% if figure.section_image.caption %}
+								<figcaption>{{ figure.section_image.caption }}</figcaption>
+							{% endif %}
+
+						</figure>
+					{% endfor %}
+
+				{% endif %}
+
+			</div>
+
+		</div>
+		<!-- /section__layout -->
+
+
+	</div>
+	<!-- /viewport -->
+</section>

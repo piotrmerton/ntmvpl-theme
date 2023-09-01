@@ -1,0 +1,53 @@
+{% extends "layout/base.twig" %}
+
+{% block body %}
+
+	<div class="content__body content--career">
+		<div class="viewport viewport--hd">
+
+			<div class="content__title text--center">
+				<h5>{{ __('Kariera', 'theme') }}</h5>
+				<h1>{{ __('Oferty pracy', 'theme') }}</h1>
+				<p>{{ __('Nasza agencja ciągle się rozwija. Interesuje Cię praca w dynamicznym, młodym zespole specjalistów? Bądź na bieżąco z ofertami!', 'theme') }}</p>
+			</div>
+
+
+			<main class="content__main">
+
+				{% if posts is not empty %}
+					<p>{{ __('Aktualne oferty pracy:', 'theme') }}</p>
+				{% endif %}
+
+				<div class="ui-tabs">
+					<ul class="tabs__list list--job-offers">
+
+						{% for post in posts %}
+
+							<li class="list__item item--tab item--job-offer">
+
+								<a class="tab__title do-toggle-tab" href="#">{{post.title}}</a>
+
+								<div class="tab__content">
+									<article class="text--rich">{{post.content}}</article>
+								</div>
+
+							</li>
+
+						{% else %}
+
+							<div class="ui-message message--info">
+								<p>{{ __('Aktualnie nie mamy ofert pracy.', 'theme') }}</p>
+							</div>
+
+						{% endfor %}
+					</ul>
+				</div>
+
+			</main>
+
+
+		</div>
+	</div>
+
+
+{% endblock %}

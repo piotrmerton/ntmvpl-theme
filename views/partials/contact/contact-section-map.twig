@@ -1,0 +1,63 @@
+<section class="content__section contact__section contact-section-map section--lightgray">
+
+	<div class="viewport">
+
+		<div class="section__header text--center">
+			<h5>{{ __('Jesteś zainteresowany?', 'theme') }}</h5>
+			<h2>{{ __('Napisz do nas!', 'theme') }}</h2>
+		</div>
+
+		<div class="section__grid">
+
+			<div class="grid__item item--contact">
+
+				<div class="item__subgrid">
+
+					<figure class="subgrid__item item--image">
+
+						{% include 'partials/_picture.twig' with {
+
+							'theme_image' : true,
+							'image_desktop' : {
+								'url' : theme.path ~ '/assets/img/contact/section-map-cover-desktop.jpg',
+								'width' : 640,
+								'height' : 960,
+							},
+							'image_mobile' : {
+								'url' : theme.path ~ '/assets/img/contact/section-map-cover-mobile.jpg'
+							}
+
+						} %}
+
+					</figure>
+
+					<div class="subgrid__item item--content">
+						<div class="item__content">
+							{% include 'blocks/block-contact.twig' %}
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+
+			<figure class="grid__item item--map">
+				{% include 'partials/_picture.twig' with {
+
+					'theme_image' : true,
+					'image' : {
+						'url' : theme.path ~ '/assets/img/contact/contact-map.png',
+						'width' : 1160,
+						'height' : 1101
+					},
+ 
+				} %}
+
+			</figure>
+
+		</div>
+
+	</div>
+	<!-- /viewport -->
+
+</section>

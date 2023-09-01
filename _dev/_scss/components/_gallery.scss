@@ -1,0 +1,31 @@
+.gallery-grid {
+    display: grid;
+    grid-gap: 1rem;
+
+    @media (min-width: $breakpoint_mobile + 1px) {
+        grid-gap: 1rem;
+
+        &.grid--3-items,
+        &.grid--4-items {
+            grid-template-columns: 1fr 1fr;
+
+            figure {
+                height: 100%;
+            }
+
+            img {
+                height: 100%;
+                object-fit: contain;
+                background: #fff;
+            }
+        }
+
+        &.grid--3-items {
+            > li {
+                &:nth-child(1) {
+                    grid-column: 1 / -1;
+                }
+            }
+        }
+    }
+}

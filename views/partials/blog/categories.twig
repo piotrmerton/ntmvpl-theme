@@ -1,0 +1,21 @@
+<ul class="categories__list">
+
+	<li class="list__item item--category item--all{% if term is not defined %} item--current{% endif %}">
+		<a href="{{globals.links.blog}}">
+			<span class="label label--desktop">{{ __('Wszystkie kategorie', 'theme')}}</span>
+			<span class="label label--mobile">{{ __('Wszystkie', 'theme')}}</span>
+		</a>
+	</li>
+
+	{% for category in categories %}
+
+		{# skip default category #}
+		{% if category.id != 1 %}
+
+			<li class="list__item item--category{% if category.slug == term.slug %} item--current{% endif %}">
+				<a href="{{category.link}}">{{category.name}}</a>
+			</li>
+		{% endif %}
+
+	{% endfor %}
+</ul>

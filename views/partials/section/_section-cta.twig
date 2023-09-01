@@ -1,0 +1,7 @@
+<div class="section__cta{% if section.section_cta|length > 1 %} cta--multiple{% endif %}">
+
+	{% for cta in section.section_cta %}
+		<a class="button{% if loop.index == 1 %} button--primary{% else %} button--secondary button--transparent{% endif %}{% if section.section_settings_bgColor.whiteText and loop.index > 1 %} button--white{% endif %}" href="{{ cta.section_cta_link.url }}" {% if cta.section_cta_link.toggle_contact_form %} data-modal-target="contact-form" {% endif %}>{{ cta.section_cta_link.title}}</a>
+	{% endfor %}
+
+</div>

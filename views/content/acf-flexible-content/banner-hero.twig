@@ -1,0 +1,60 @@
+<section id="{{section.acf_fc_layout}}_{{section.index}}" class="content__section banner banner-hero{% if section.banner_settings_order == 'alternative' %} banner--order-alt{% endif %}{% if section.section_settings_bgColor %} banner--{{section.section_settings_bgColor.slug}}{% endif %}{% if section.banner_settings_order == 'hide' %} banner--with-branding{% endif %}{% if section.banner_cover_desktop is empty and section.banner_cover_mobile is empty %} banner--no-cover{% endif %}">
+
+	<div class="banner__body{% if section.banner_settings_textAlign == 'center' %} text--center{% endif %}">
+
+		<div class="viewport">
+
+			{% if section.banner_header %}
+				{% include "partials/banner/_banner-header.twig" %}
+			{% endif %}
+
+
+			{% if section.banner_content %}
+				<div class="banner__content text--rich">{{ section.banner_content }}</div>
+			{% endif %}
+
+			{% if section.banner_cta.url %}
+				<div class="banner__cta">
+					<a class="button" href="{{ section.banner_cta.url }}" {% if section.banner_cta.toggle_contact_form %} data-modal-target="contact-form" {% endif %}>{{ section.banner_cta.title}}</a>
+				</div>
+			{% endif %}
+
+			{% if section.banner_features %}
+				{% include "partials/banner/_banner-features.twig" %}
+			{% endif %}
+
+
+		</div>
+		<!-- /viewport -->
+
+	</div>
+	<!-- /banner__body -->
+
+
+	{% if section.banner_cover_desktop %}
+
+		<figure
+			class="banner__cover{% if section.banner_settings_order == 'hide' %} cover--hide-on-mobile{% endif %}">
+
+			{# For alternative order (cover image above content on mobile) let's display banner header before image, just like in "mobile-About" @ Invision #}
+			{% if section.banner_header and section.banner_settings_order == 'alternative' %}
+				{% include "partials/banner/_banner-header.twig" %}
+			{% endif %}
+
+
+			{% if section.banner_cover_desktop %}
+
+				{% include "partials/banner/_banner-picture.twig" with {
+                    'image_desktop' : section.banner_cover_desktop,
+                    'image_mobile' : section.banner_cover_mobile
+                } %}
+
+			{% endif %}
+
+		</figure>
+		<!-- /banner__cover -->
+
+	{% endif %}
+
+
+</section>

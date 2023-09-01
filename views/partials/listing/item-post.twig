@@ -1,0 +1,14 @@
+<li class="list__item item--post{% if add_swiper_markup %} swiper-slide{% endif %}">
+
+	<a class="item__layout" href="{{post.link}}">
+		<div class="item__cover">
+			{% include 'partials/post/_post-cover.twig' %}
+		</div>
+
+		<div class="item__meta">
+			<span class="item__date">{{ post.date }}</span>
+			<h4 class="item__title">{{ post.name }}</h4>
+		</div>
+	</a>
+
+</li>

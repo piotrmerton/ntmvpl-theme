@@ -1,0 +1,18 @@
+<aside class="modal modal--{{ modal_name }}" data-modal="{{ modal_name }}">
+	<div class="modal__overlay overlay overlay--modal">
+		<div class="modal__body">
+			<div class="modal__content">
+				<a class="ui-close do-toggle-modal" data-modal-target="{{ modal_name }}" href="#" role="button" aria-label="{{ __('Zamknij', 'theme')}}">
+					<figure class="ui-ico">
+						<img loading="lazy" src="{{ theme.path }}/assets/svg/close.svg"/>
+					</figure>
+
+				</a>
+
+				{% block modal_content %}
+					modal placeholder
+				{% endblock %}
+			</div>
+		</div>
+	</div>
+</aside>

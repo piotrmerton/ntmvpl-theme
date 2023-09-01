@@ -1,0 +1,33 @@
+@import "../../utilities/variables";
+
+.section-posts {
+    width: 100%;
+    .posts-slider {
+        overflow: visible;
+    }
+
+    .posts__list {
+        gap: unset; //don't interfere with swiperjs styles
+    }
+
+    @media (max-width: $breakpoint_mobile) {
+        // .section__header {
+        //     text-align: left;
+        //     h2 {
+        //         max-width: 100%;
+        //     }
+        // }
+
+        .item--casestudy {
+            .tags__list {
+                justify-content: flex-start;
+            }
+            text-align: left;
+
+            .item__title {
+                margin-left: 0;
+                margin-right: 0;
+            }
+        }
+    }
+}

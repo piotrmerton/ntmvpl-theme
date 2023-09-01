@@ -1,0 +1,3780 @@
+{
+    "key": "group_648309cc2e733",
+    "title": "Flexible Content",
+    "fields": [
+        {
+            "key": "field_648309ccf6b49",
+            "label": "Struktura treści",
+            "name": "content_flexible",
+            "aria-label": "",
+            "type": "flexible_content",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "acfe_flexible_advanced": 1,
+            "acfe_flexible_stylised_button": 0,
+            "acfe_flexible_hide_empty_message": 0,
+            "acfe_flexible_empty_message": "",
+            "acfe_flexible_layouts_templates": 0,
+            "acfe_flexible_layouts_placeholder": 0,
+            "acfe_flexible_layouts_thumbnails": 0,
+            "acfe_flexible_layouts_settings": 0,
+            "acfe_flexible_layouts_locations": 1,
+            "acfe_flexible_async": [],
+            "acfe_flexible_add_actions": [
+                "title",
+                "close"
+            ],
+            "acfe_flexible_remove_button": [],
+            "acfe_flexible_layouts_state": "collapse",
+            "acfe_flexible_modal_edit": {
+                "acfe_flexible_modal_edit_enabled": "0",
+                "acfe_flexible_modal_edit_size": "large"
+            },
+            "acfe_flexible_modal": {
+                "acfe_flexible_modal_enabled": "0",
+                "acfe_flexible_modal_title": false,
+                "acfe_flexible_modal_size": "full",
+                "acfe_flexible_modal_col": "4",
+                "acfe_flexible_modal_categories": false
+            },
+            "acfe_flexible_grid": {
+                "acfe_flexible_grid_enabled": "0",
+                "acfe_flexible_grid_align": "center",
+                "acfe_flexible_grid_valign": "stretch",
+                "acfe_flexible_grid_wrap": false
+            },
+            "layouts": {
+                "layout_64ad5be896c94": {
+                    "key": "layout_64ad5be896c94",
+                    "name": "section_text",
+                    "label": "Sekcja Tekstowa",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_64ad67f0611b1",
+                            "label": "Treść sekcji",
+                            "name": "section_content",
+                            "aria-label": "",
+                            "type": "group",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "layout": "table",
+                            "acfe_seamless_style": 0,
+                            "acfe_group_modal": 0,
+                            "acfe_field_group_condition": 0,
+                            "sub_fields": [
+                                {
+                                    "key": "field_64ad5c2396ca0",
+                                    "label": "Ilość kolumn",
+                                    "name": "columns",
+                                    "aria-label": "",
+                                    "type": "select",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "5",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "choices": {
+                                        "1": "1",
+                                        "2": "2"
+                                    },
+                                    "default_value": 1,
+                                    "return_format": "value",
+                                    "multiple": 0,
+                                    "max": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "allow_null": 0,
+                                    "ui": 0,
+                                    "acfe_field_group_condition": 0,
+                                    "ajax": 0,
+                                    "placeholder": "",
+                                    "allow_custom": 0,
+                                    "search_placeholder": "",
+                                    "min": ""
+                                },
+                                {
+                                    "key": "field_64ad5c7896ca1",
+                                    "label": "Treść",
+                                    "name": "text_block",
+                                    "aria-label": "",
+                                    "type": "wysiwyg",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "acfe_field_group_condition": 0,
+                                    "default_value": "",
+                                    "acfe_wysiwyg_height": 480,
+                                    "acfe_wysiwyg_max_height": "",
+                                    "acfe_wysiwyg_valid_elements": "",
+                                    "acfe_wysiwyg_custom_style": "",
+                                    "acfe_wysiwyg_disable_wp_style": 0,
+                                    "acfe_wysiwyg_autoresize": 0,
+                                    "acfe_wysiwyg_disable_resize": 0,
+                                    "acfe_wysiwyg_remove_path": 0,
+                                    "acfe_wysiwyg_menubar": 0,
+                                    "acfe_wysiwyg_transparent": 0,
+                                    "acfe_wysiwyg_merge_toolbar": 0,
+                                    "acfe_wysiwyg_custom_toolbar": 1,
+                                    "acfe_wysiwyg_toolbar_buttons": {
+                                        "acfe_wysiwyg_toolbar_1": {
+                                            "0": {
+                                                "acfe_wysiwyg_toolbar_row": "formatselect"
+                                            },
+                                            "1": {
+                                                "acfe_wysiwyg_toolbar_row": "bold"
+                                            },
+                                            "2": {
+                                                "acfe_wysiwyg_toolbar_row": "italic"
+                                            },
+                                            "3": {
+                                                "acfe_wysiwyg_toolbar_row": "bullist"
+                                            },
+                                            "4": {
+                                                "acfe_wysiwyg_toolbar_row": "numlist"
+                                            },
+                                            "5": {
+                                                "acfe_wysiwyg_toolbar_row": "blockquote"
+                                            },
+                                            "6": {
+                                                "acfe_wysiwyg_toolbar_row": "alignleft"
+                                            },
+                                            "7": {
+                                                "acfe_wysiwyg_toolbar_row": "aligncenter"
+                                            },
+                                            "8": {
+                                                "acfe_wysiwyg_toolbar_row": "alignright"
+                                            },
+                                            "9": {
+                                                "acfe_wysiwyg_toolbar_row": "link"
+                                            },
+                                            "11": {
+                                                "acfe_wysiwyg_toolbar_row": "spellchecker"
+                                            },
+                                            "12": {
+                                                "acfe_wysiwyg_toolbar_row": "fullscreen"
+                                            },
+                                            "13": {
+                                                "acfe_wysiwyg_toolbar_row": "wp_adv"
+                                            }
+                                        },
+                                        "acfe_wysiwyg_toolbar_2": [
+                                            {
+                                                "acfe_wysiwyg_toolbar_row": "styleselect"
+                                            },
+                                            {
+                                                "acfe_wysiwyg_toolbar_row": "strikethrough"
+                                            },
+                                            {
+                                                "acfe_wysiwyg_toolbar_row": "hr"
+                                            },
+                                            {
+                                                "acfe_wysiwyg_toolbar_row": "forecolor"
+                                            },
+                                            {
+                                                "acfe_wysiwyg_toolbar_row": "pastetext"
+                                            },
+                                            {
+                                                "acfe_wysiwyg_toolbar_row": "removeformat"
+                                            },
+                                            {
+                                                "acfe_wysiwyg_toolbar_row": "charmap"
+                                            },
+                                            {
+                                                "acfe_wysiwyg_toolbar_row": "outdent"
+                                            },
+                                            {
+                                                "acfe_wysiwyg_toolbar_row": "indent"
+                                            },
+                                            {
+                                                "acfe_wysiwyg_toolbar_row": "undo"
+                                            },
+                                            {
+                                                "acfe_wysiwyg_toolbar_row": "redo"
+                                            },
+                                            {
+                                                "acfe_wysiwyg_toolbar_row": "wp_help"
+                                            }
+                                        ],
+                                        "acfe_wysiwyg_toolbar_3": "",
+                                        "acfe_wysiwyg_toolbar_4": ""
+                                    },
+                                    "tabs": "all",
+                                    "toolbar": "full",
+                                    "media_upload": 1,
+                                    "delay": 0,
+                                    "acfe_wysiwyg_auto_init": 0,
+                                    "acfe_wysiwyg_min_height": 300
+                                },
+                                {
+                                    "key": "field_64ad5d0596ca2",
+                                    "label": "Treść (kolumna 2)",
+                                    "name": "text_block_2",
+                                    "aria-label": "",
+                                    "type": "wysiwyg",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": [
+                                        [
+                                            {
+                                                "field": "field_64ad5c2396ca0",
+                                                "operator": "==",
+                                                "value": "2"
+                                            }
+                                        ]
+                                    ],
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "acfe_field_group_condition": 0,
+                                    "default_value": "",
+                                    "acfe_wysiwyg_height": 480,
+                                    "acfe_wysiwyg_max_height": "",
+                                    "acfe_wysiwyg_valid_elements": "",
+                                    "acfe_wysiwyg_custom_style": "",
+                                    "acfe_wysiwyg_disable_wp_style": 0,
+                                    "acfe_wysiwyg_autoresize": 0,
+                                    "acfe_wysiwyg_disable_resize": 0,
+                                    "acfe_wysiwyg_remove_path": 0,
+                                    "acfe_wysiwyg_menubar": 0,
+                                    "acfe_wysiwyg_transparent": 0,
+                                    "acfe_wysiwyg_merge_toolbar": 0,
+                                    "acfe_wysiwyg_custom_toolbar": 1,
+                                    "acfe_wysiwyg_toolbar_buttons": {
+                                        "acfe_wysiwyg_toolbar_1": {
+                                            "0": {
+                                                "acfe_wysiwyg_toolbar_row": "formatselect"
+                                            },
+                                            "1": {
+                                                "acfe_wysiwyg_toolbar_row": "bold"
+                                            },
+                                            "2": {
+                                                "acfe_wysiwyg_toolbar_row": "italic"
+                                            },
+                                            "3": {
+                                                "acfe_wysiwyg_toolbar_row": "bullist"
+                                            },
+                                            "4": {
+                                                "acfe_wysiwyg_toolbar_row": "numlist"
+                                            },
+                                            "5": {
+                                                "acfe_wysiwyg_toolbar_row": "blockquote"
+                                            },
+                                            "6": {
+                                                "acfe_wysiwyg_toolbar_row": "alignleft"
+                                            },
+                                            "7": {
+                                                "acfe_wysiwyg_toolbar_row": "aligncenter"
+                                            },
+                                            "8": {
+                                                "acfe_wysiwyg_toolbar_row": "alignright"
+                                            },
+                                            "9": {
+                                                "acfe_wysiwyg_toolbar_row": "link"
+                                            },
+                                            "11": {
+                                                "acfe_wysiwyg_toolbar_row": "spellchecker"
+                                            },
+                                            "12": {
+                                                "acfe_wysiwyg_toolbar_row": "fullscreen"
+                                            },
+                                            "13": {
+                                                "acfe_wysiwyg_toolbar_row": "wp_adv"
+                                            }
+                                        },
+                                        "acfe_wysiwyg_toolbar_2": [
+                                            {
+                                                "acfe_wysiwyg_toolbar_row": "styleselect"
+                                            },
+                                            {
+                                                "acfe_wysiwyg_toolbar_row": "strikethrough"
+                                            },
+                                            {
+                                                "acfe_wysiwyg_toolbar_row": "hr"
+                                            },
+                                            {
+                                                "acfe_wysiwyg_toolbar_row": "forecolor"
+                                            },
+                                            {
+                                                "acfe_wysiwyg_toolbar_row": "pastetext"
+                                            },
+                                            {
+                                                "acfe_wysiwyg_toolbar_row": "removeformat"
+                                            },
+                                            {
+                                                "acfe_wysiwyg_toolbar_row": "charmap"
+                                            },
+                                            {
+                                                "acfe_wysiwyg_toolbar_row": "outdent"
+                                            },
+                                            {
+                                                "acfe_wysiwyg_toolbar_row": "indent"
+                                            },
+                                            {
+                                                "acfe_wysiwyg_toolbar_row": "undo"
+                                            },
+                                            {
+                                                "acfe_wysiwyg_toolbar_row": "redo"
+                                            },
+                                            {
+                                                "acfe_wysiwyg_toolbar_row": "wp_help"
+                                            }
+                                        ],
+                                        "acfe_wysiwyg_toolbar_3": "",
+                                        "acfe_wysiwyg_toolbar_4": ""
+                                    },
+                                    "tabs": "all",
+                                    "toolbar": "full",
+                                    "media_upload": 1,
+                                    "delay": 0,
+                                    "acfe_wysiwyg_auto_init": 0,
+                                    "acfe_wysiwyg_min_height": 300
+                                }
+                            ],
+                            "acfe_group_modal_close": 0,
+                            "acfe_group_modal_button": "",
+                            "acfe_group_modal_size": "large"
+                        },
+                        {
+                            "key": "field_64b795626e35f",
+                            "label": "Ustawienia dodatkowe",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "accordion",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "open": 0,
+                            "multi_expand": 0,
+                            "endpoint": 0,
+                            "acfe_field_group_condition": 0
+                        },
+                        {
+                            "key": "field_64b7956e6e360",
+                            "label": "Margines pionowy",
+                            "name": "section_settings_verticalMargin",
+                            "aria-label": "",
+                            "type": "select",
+                            "instructions": "Wybierz tak, jeśli potrzebujesz więcej przestrzeni między sąsiadującymi sekcjami.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": [
+                                "Nie",
+                                "Tak"
+                            ],
+                            "default_value": 0,
+                            "return_format": "value",
+                            "multiple": 0,
+                            "max": "",
+                            "prepend": "",
+                            "append": "",
+                            "allow_null": 0,
+                            "ui": 0,
+                            "acfe_field_group_condition": 0,
+                            "ajax": 0,
+                            "placeholder": "",
+                            "allow_custom": 0,
+                            "search_placeholder": "",
+                            "min": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": "",
+                    "acfe_layout_locations": [
+                        [
+                            {
+                                "param": "post_type",
+                                "operator": "==",
+                                "value": "post"
+                            }
+                        ],
+                        [
+                            {
+                                "param": "post_type",
+                                "operator": "==",
+                                "value": "page"
+                            },
+                            {
+                                "param": "page",
+                                "operator": "!=",
+                                "value": "10"
+                            },
+                            {
+                                "param": "page_template",
+                                "operator": "!=",
+                                "value": "page-templates\/page-contact.php"
+                            }
+                        ],
+                        [
+                            {
+                                "param": "post_type",
+                                "operator": "==",
+                                "value": "casestudy"
+                            }
+                        ],
+                        [
+                            {
+                                "param": "post_type",
+                                "operator": "==",
+                                "value": "service"
+                            }
+                        ],
+                        [
+                            {
+                                "param": "options_page",
+                                "operator": "==",
+                                "value": "service-archive-content"
+                            }
+                        ]
+                    ],
+                    "acfe_flexible_render_template": false,
+                    "acfe_flexible_render_style": false,
+                    "acfe_flexible_render_script": false,
+                    "acfe_flexible_thumbnail": false,
+                    "acfe_flexible_settings": false,
+                    "acfe_flexible_settings_size": "medium",
+                    "acfe_flexible_modal_edit_size": false,
+                    "acfe_flexible_category": false,
+                    "acfe_layout_col": "auto",
+                    "acfe_layout_allowed_col": false
+                },
+                "layout_648309ee06800": {
+                    "key": "layout_648309ee06800",
+                    "name": "banner-hero",
+                    "label": "Hero banner",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_648311c50d064",
+                            "label": "Treść",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "accordion",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "open": 0,
+                            "multi_expand": 0,
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_64830a90f6b4a",
+                            "label": "Tytuł bannera (opcjonalnie)",
+                            "name": "banner_title",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "Krótki tytuł, np. \"Poznajmy się\". Zostanie wyświetlony kapitalikami nad nagłówkiem i treścią.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "acfe_field_group_condition": 0
+                        },
+                        {
+                            "key": "field_64830acbf6b4b",
+                            "label": "Nagłówek bannera (opcjonalnie)",
+                            "name": "banner_header",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "acfe_field_group_condition": 0
+                        },
+                        {
+                            "key": "field_64830ad5f6b4c",
+                            "label": "Treść bannera",
+                            "name": "banner_content",
+                            "aria-label": "",
+                            "type": "wysiwyg",
+                            "instructions": "Główna treść bannera w formacie HTML.",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "acfe_wysiwyg_min_height": 64,
+                            "acfe_wysiwyg_max_height": "",
+                            "acfe_wysiwyg_valid_elements": "",
+                            "acfe_wysiwyg_custom_style": "",
+                            "acfe_wysiwyg_disable_wp_style": 0,
+                            "acfe_wysiwyg_autoresize": 1,
+                            "acfe_wysiwyg_disable_resize": 0,
+                            "acfe_wysiwyg_remove_path": 0,
+                            "acfe_wysiwyg_menubar": 0,
+                            "acfe_wysiwyg_transparent": 0,
+                            "acfe_wysiwyg_merge_toolbar": 0,
+                            "acfe_wysiwyg_custom_toolbar": 0,
+                            "required_message": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 0,
+                            "delay": 0,
+                            "acfe_field_group_condition": 0,
+                            "acfe_wysiwyg_auto_init": 0,
+                            "acfe_wysiwyg_height": 300,
+                            "acfe_wysiwyg_toolbar_buttons": []
+                        },
+                        {
+                            "key": "field_648311b30d063",
+                            "label": "Zdjęcie",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "accordion",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "open": 0,
+                            "multi_expand": 0,
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_648310ea8734e",
+                            "label": "Zdjęcie na desktopie",
+                            "name": "banner_cover_desktop",
+                            "aria-label": "",
+                            "type": "image",
+                            "instructions": "Preferowane wymiary 1920x720px. Zdjęcie na desktopie zostanie wyświetlone w tle (pod warstwą tekstową).",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "acfe_field_group_condition": 0,
+                            "uploader": "",
+                            "acfe_thumbnail": 0,
+                            "return_format": "array",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": 1,
+                            "mime_types": "",
+                            "preview_size": "medium",
+                            "library": "all"
+                        },
+                        {
+                            "key": "field_648311248734f",
+                            "label": "Zdjęcie na mobile (opcjonalnie)",
+                            "name": "banner_cover_mobile",
+                            "aria-label": "",
+                            "type": "image",
+                            "instructions": "Opcjonalne zdjęcie w alternatywnych proporcjach dla widoku mobile. Preferowane wymiary 720x720px.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "uploader": "",
+                            "acfe_thumbnail": 0,
+                            "return_format": "array",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": 1,
+                            "mime_types": "",
+                            "preview_size": "thumbnail",
+                            "acfe_field_group_condition": 0,
+                            "library": "all"
+                        },
+                        {
+                            "key": "field_6486ea9a2dfbe",
+                            "label": "Call to Action (opcjonalnie)",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "accordion",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "open": 0,
+                            "multi_expand": 0,
+                            "endpoint": 0,
+                            "acfe_field_group_condition": 0
+                        },
+                        {
+                            "key": "field_6486eaac2dfbf",
+                            "label": "Dodaj link",
+                            "name": "banner_cta",
+                            "aria-label": "",
+                            "type": "acfe_advanced_link",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "post_type": [
+                                "page",
+                                "service",
+                                "casestudy",
+                                "post"
+                            ],
+                            "taxonomy": "",
+                            "acfe_field_group_condition": 0
+                        },
+                        {
+                            "key": "field_6486fb40cf5c1",
+                            "label": "Cechy (opcjonalnie)",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "accordion",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "open": 0,
+                            "multi_expand": 0,
+                            "endpoint": 0,
+                            "acfe_field_group_condition": 0
+                        },
+                        {
+                            "key": "field_6486def041c44",
+                            "label": "Lista cech \/ zalet \/ przewag",
+                            "name": "banner_features",
+                            "aria-label": "",
+                            "type": "repeater",
+                            "instructions": "Opcjonalnie. Lista najważniejszych zalet \/ cech \/ przewag konkurencyjnych. Wszystkie pola są opcjonalne, tzn. że można dodać samo zdjęcie, sam opis, lub sam link. W przypadku dodania zdjęcia (lub ikony) oraz opisu, zostaną one wyświetlone obok siebie. W przypadku dodania opisu i linku, etykieta linku zastąpi opis.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "acfe_repeater_stylised_button": 0,
+                            "layout": "table",
+                            "min": 0,
+                            "max": 0,
+                            "collapsed": "",
+                            "button_label": "Dodaj cechę",
+                            "acfe_field_group_condition": 0,
+                            "rows_per_page": 20,
+                            "sub_fields": [
+                                {
+                                    "key": "field_6486dfa741c46",
+                                    "label": "Symbol (zdjęcie lub ikona)",
+                                    "name": "banner_feature_symbol",
+                                    "aria-label": "",
+                                    "type": "image",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "acfe_field_group_condition": 0,
+                                    "uploader": "",
+                                    "acfe_thumbnail": 0,
+                                    "return_format": "array",
+                                    "min_width": "",
+                                    "min_height": "",
+                                    "min_size": "",
+                                    "max_width": "",
+                                    "max_height": "",
+                                    "max_size": "",
+                                    "mime_types": "",
+                                    "preview_size": "logo",
+                                    "library": "all",
+                                    "parent_repeater": "field_6486def041c44"
+                                },
+                                {
+                                    "key": "field_6486df7141c45",
+                                    "label": "Opis",
+                                    "name": "banner_feature_desc",
+                                    "aria-label": "",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "maxlength": 160,
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "parent_repeater": "field_6486def041c44"
+                                },
+                                {
+                                    "key": "field_64abd57b17195",
+                                    "label": "Link",
+                                    "name": "banner_feature_cta",
+                                    "aria-label": "",
+                                    "type": "acfe_advanced_link",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "acfe_field_group_condition": 0,
+                                    "post_type": [
+                                        "page",
+                                        "service"
+                                    ],
+                                    "taxonomy": "",
+                                    "parent_repeater": "field_6486def041c44"
+                                }
+                            ]
+                        },
+                        {
+                            "key": "field_64830e2af4f53",
+                            "label": "Ustawienia dodatkowe",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "accordion",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "open": 0,
+                            "multi_expand": 0,
+                            "endpoint": 0,
+                            "acfe_field_group_condition": 0
+                        },
+                        {
+                            "key": "field_648315c5ce5ce",
+                            "label": "Priorytet nagłówka",
+                            "name": "banner_settings_headerPriority",
+                            "aria-label": "",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_64830acbf6b4b",
+                                        "operator": "!=empty"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "h1": "H1",
+                                "h2": "H2"
+                            },
+                            "default_value": "h2",
+                            "return_format": "value",
+                            "multiple": 0,
+                            "max": "",
+                            "prepend": "",
+                            "append": "",
+                            "allow_null": 0,
+                            "ui": 0,
+                            "acfe_field_group_condition": 0,
+                            "ajax": 0,
+                            "placeholder": "",
+                            "allow_custom": 0,
+                            "search_placeholder": "",
+                            "min": ""
+                        },
+                        {
+                            "key": "field_64830e40f4f54",
+                            "label": "Wyrównanie tekstu i elementów",
+                            "name": "banner_settings_textAlign",
+                            "aria-label": "",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "center": "Do środka",
+                                "left": "Do lewej"
+                            },
+                            "default_value": "center",
+                            "return_format": "value",
+                            "multiple": 0,
+                            "max": "",
+                            "prepend": "",
+                            "append": "",
+                            "allow_null": 0,
+                            "ui": 0,
+                            "acfe_field_group_condition": 0,
+                            "ajax": 0,
+                            "placeholder": "",
+                            "allow_custom": 0,
+                            "search_placeholder": "",
+                            "min": ""
+                        },
+                        {
+                            "key": "field_64870812f232c",
+                            "label": "Rozmiar symboli (ikon) cech",
+                            "name": "banner_settings_symbolsSize",
+                            "aria-label": "",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_6486def041c44",
+                                        "operator": "!=empty"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "default": "Domyślny - rozmiar grafik będzie dostosowany do etykiet tekstowych. Wybierz tę opcję dla ikon.",
+                                "big": "Większe grafiki. Wybierz tę opcję np. dla logotypów, lub w przypadku braku etykiet tekstowych."
+                            },
+                            "default_value": "default",
+                            "return_format": "value",
+                            "multiple": 0,
+                            "max": "",
+                            "prepend": "",
+                            "append": "",
+                            "allow_null": 0,
+                            "ui": 0,
+                            "acfe_field_group_condition": 0,
+                            "ajax": 0,
+                            "placeholder": "",
+                            "allow_custom": 0,
+                            "search_placeholder": "",
+                            "min": ""
+                        },
+                        {
+                            "key": "field_6483133817be4",
+                            "label": "Kolejność na mobile",
+                            "name": "banner_settings_order",
+                            "aria-label": "",
+                            "type": "select",
+                            "instructions": "Kolejność elementów na urządzeniach o niskiej szerokości ekranu.",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_648310ea8734e",
+                                        "operator": "!=empty"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "field": "field_648311248734f",
+                                        "operator": "!=empty"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "default": "Domyślna - najpierw tekst, a zdjęcie niżej",
+                                "alternative": "Alternatywna - najpierw zdjęcie, a tekst pod spodem",
+                                "hide": "Ukryj zdjęcie na mobile"
+                            },
+                            "default_value": "default",
+                            "return_format": "value",
+                            "multiple": 0,
+                            "max": "",
+                            "prepend": "",
+                            "append": "",
+                            "allow_null": 0,
+                            "ui": 0,
+                            "acfe_field_group_condition": 0,
+                            "ajax": 0,
+                            "placeholder": "",
+                            "allow_custom": 0,
+                            "search_placeholder": "",
+                            "min": ""
+                        },
+                        {
+                            "key": "field_649b2115b7349",
+                            "label": "Kontrast tła sekcji",
+                            "name": "section_settings_bgcolor",
+                            "aria-label": "",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "field_6490696f692d0"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0,
+                            "acfe_field_group_condition": 0,
+                            "acfe_seamless_style": 0,
+                            "acfe_clone_modal": 0,
+                            "acfe_clone_modal_close": 0,
+                            "acfe_clone_modal_button": "",
+                            "acfe_clone_modal_size": "large"
+                        }
+                    ],
+                    "min": "",
+                    "max": "",
+                    "acfe_layout_locations": [
+                        [
+                            {
+                                "param": "post_type",
+                                "operator": "!=",
+                                "value": "post"
+                            }
+                        ],
+                        [
+                            {
+                                "param": "post_type",
+                                "operator": "==",
+                                "value": "page"
+                            },
+                            {
+                                "param": "page",
+                                "operator": "!=",
+                                "value": "326"
+                            },
+                            {
+                                "param": "page_template",
+                                "operator": "!=",
+                                "value": "page-templates\/page-contact.php"
+                            }
+                        ],
+                        [
+                            {
+                                "param": "post_type",
+                                "operator": "==",
+                                "value": "casestudy"
+                            }
+                        ],
+                        [
+                            {
+                                "param": "post_type",
+                                "operator": "==",
+                                "value": "service"
+                            }
+                        ],
+                        [
+                            {
+                                "param": "options_page",
+                                "operator": "==",
+                                "value": "service-archive-content"
+                            }
+                        ]
+                    ],
+                    "acfe_flexible_render_template": false,
+                    "acfe_flexible_render_style": false,
+                    "acfe_flexible_render_script": false,
+                    "acfe_flexible_thumbnail": false,
+                    "acfe_flexible_settings": false,
+                    "acfe_flexible_settings_size": "medium",
+                    "acfe_flexible_modal_edit_size": false,
+                    "acfe_flexible_category": false,
+                    "acfe_layout_col": "auto",
+                    "acfe_layout_allowed_col": false
+                },
+                "layout_648725ab592e2": {
+                    "key": "layout_648725ab592e2",
+                    "name": "section_banner",
+                    "label": "Sekcja Ofertowa \/ Bannerowa",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_648725dc592e6",
+                            "label": "Treść",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "accordion",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "open": 0,
+                            "multi_expand": 0,
+                            "endpoint": 0,
+                            "acfe_field_group_condition": 0
+                        },
+                        {
+                            "key": "field_648725f5592e7",
+                            "label": "Tytuł sekcji (opcjonalnie)",
+                            "name": "section_title",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "Krótki tytuł, np. \"Poznajmy się\". Zostanie wyświetlony kapitalikami nad nagłówkiem i treścią.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "acfe_field_group_condition": 0
+                        },
+                        {
+                            "key": "field_64872616592e8",
+                            "label": "Nagłówek sekcji (opcjonalnie)",
+                            "name": "section_header",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "acfe_field_group_condition": 0
+                        },
+                        {
+                            "key": "field_64872697592ea",
+                            "label": "Treść sekcji",
+                            "name": "section_content",
+                            "aria-label": "",
+                            "type": "group",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "layout": "table",
+                            "acfe_seamless_style": 0,
+                            "acfe_group_modal": 0,
+                            "required_message": "",
+                            "acfe_field_group_condition": 0,
+                            "sub_fields": [
+                                {
+                                    "key": "field_648726ea592eb",
+                                    "label": "Ilość kolumn",
+                                    "name": "section_content_columns",
+                                    "aria-label": "",
+                                    "type": "select",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "5",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "acfe_field_group_condition": 0,
+                                    "choices": {
+                                        "1": "1",
+                                        "2": "2"
+                                    },
+                                    "default_value": 1,
+                                    "return_format": "value",
+                                    "multiple": 0,
+                                    "prepend": "",
+                                    "append": "",
+                                    "max": "",
+                                    "allow_null": 0,
+                                    "ui": 0,
+                                    "ajax": 0,
+                                    "placeholder": "",
+                                    "allow_custom": 0,
+                                    "search_placeholder": "",
+                                    "min": ""
+                                },
+                                {
+                                    "key": "field_64872719592ec",
+                                    "label": "Treść",
+                                    "name": "section_content_text_block",
+                                    "aria-label": "",
+                                    "type": "wysiwyg",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "acfe_field_group_condition": 0,
+                                    "default_value": "",
+                                    "acfe_wysiwyg_min_height": 100,
+                                    "acfe_wysiwyg_max_height": "",
+                                    "acfe_wysiwyg_valid_elements": "",
+                                    "acfe_wysiwyg_custom_style": "",
+                                    "acfe_wysiwyg_disable_wp_style": 0,
+                                    "acfe_wysiwyg_autoresize": 1,
+                                    "acfe_wysiwyg_disable_resize": 0,
+                                    "acfe_wysiwyg_remove_path": 0,
+                                    "acfe_wysiwyg_menubar": 0,
+                                    "acfe_wysiwyg_transparent": 0,
+                                    "acfe_wysiwyg_merge_toolbar": 0,
+                                    "acfe_wysiwyg_custom_toolbar": 0,
+                                    "tabs": "all",
+                                    "toolbar": "full",
+                                    "media_upload": 0,
+                                    "delay": 0,
+                                    "acfe_wysiwyg_auto_init": 0,
+                                    "acfe_wysiwyg_height": 300,
+                                    "acfe_wysiwyg_toolbar_buttons": []
+                                },
+                                {
+                                    "key": "field_64872749592ed",
+                                    "label": "Treść, kolumna 2",
+                                    "name": "section_content_text_block_2",
+                                    "aria-label": "",
+                                    "type": "wysiwyg",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": [
+                                        [
+                                            {
+                                                "field": "field_648726ea592eb",
+                                                "operator": "==contains",
+                                                "value": "2"
+                                            }
+                                        ]
+                                    ],
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "acfe_field_group_condition": 0,
+                                    "default_value": "",
+                                    "acfe_wysiwyg_min_height": 100,
+                                    "acfe_wysiwyg_max_height": "",
+                                    "acfe_wysiwyg_valid_elements": "",
+                                    "acfe_wysiwyg_custom_style": "",
+                                    "acfe_wysiwyg_disable_wp_style": 0,
+                                    "acfe_wysiwyg_autoresize": 1,
+                                    "acfe_wysiwyg_disable_resize": 0,
+                                    "acfe_wysiwyg_remove_path": 0,
+                                    "acfe_wysiwyg_menubar": 0,
+                                    "acfe_wysiwyg_transparent": 0,
+                                    "acfe_wysiwyg_merge_toolbar": 0,
+                                    "acfe_wysiwyg_custom_toolbar": 0,
+                                    "tabs": "all",
+                                    "toolbar": "full",
+                                    "media_upload": 0,
+                                    "delay": 0,
+                                    "acfe_wysiwyg_auto_init": 0,
+                                    "acfe_wysiwyg_height": 300,
+                                    "acfe_wysiwyg_toolbar_buttons": []
+                                }
+                            ],
+                            "acfe_group_modal_close": 0,
+                            "acfe_group_modal_button": "",
+                            "acfe_group_modal_size": "large"
+                        },
+                        {
+                            "key": "field_6487281dc8aef",
+                            "label": "Call to Action (opcjonalnie)",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "accordion",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "open": 0,
+                            "multi_expand": 0,
+                            "endpoint": 0,
+                            "acfe_field_group_condition": 0
+                        },
+                        {
+                            "key": "field_6488656d59199",
+                            "label": "Dodaj link",
+                            "name": "section_cta",
+                            "aria-label": "",
+                            "type": "repeater",
+                            "instructions": "Możesz dodać maksymalnie dwa różne buttony.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "acfe_repeater_stylised_button": 0,
+                            "layout": "table",
+                            "min": 0,
+                            "max": 2,
+                            "collapsed": "",
+                            "button_label": "Dodaj button",
+                            "acfe_field_group_condition": 0,
+                            "rows_per_page": 20,
+                            "sub_fields": [
+                                {
+                                    "key": "field_64872836c8af0",
+                                    "label": "Link",
+                                    "name": "section_cta_link",
+                                    "aria-label": "",
+                                    "type": "acfe_advanced_link",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "acfe_field_group_condition": 0,
+                                    "post_type": [
+                                        "page",
+                                        "service",
+                                        "casestudy",
+                                        "post"
+                                    ],
+                                    "taxonomy": "",
+                                    "parent_repeater": "field_6488656d59199"
+                                }
+                            ]
+                        },
+                        {
+                            "key": "field_64872850c8af1",
+                            "label": "Zdjęcie (opcjonalnie)",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "accordion",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "open": 0,
+                            "multi_expand": 0,
+                            "endpoint": 0,
+                            "acfe_field_group_condition": 0
+                        },
+                        {
+                            "key": "field_64872859c8af2",
+                            "label": "Zdjęcie na desktopie",
+                            "name": "section_cover_desktop",
+                            "aria-label": "",
+                            "type": "image",
+                            "instructions": "Preferowane wymiary: 960x960 dla sekcji 50\/50 lub 640x960 dla sekcji 20\/80 (układ możesz zmienić w zakładce \"Ustawienia dodatkowe\" poniżej).",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "uploader": "",
+                            "acfe_thumbnail": 0,
+                            "return_format": "array",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": 1,
+                            "mime_types": "",
+                            "preview_size": "medium",
+                            "acfe_field_group_condition": 0,
+                            "library": "all"
+                        },
+                        {
+                            "key": "field_6487298bc8af3",
+                            "label": "Zdjęcie na mobile (opcjonalnie)",
+                            "name": "section_cover_mobile",
+                            "aria-label": "",
+                            "type": "image",
+                            "instructions": "Opcjonalne alternatywne zdjęcie dla widoku mobile. Preferowane wymiary: 720x720px.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "uploader": "",
+                            "acfe_thumbnail": 0,
+                            "return_format": "array",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": 1,
+                            "mime_types": "",
+                            "preview_size": "thumbnail",
+                            "acfe_field_group_condition": 0,
+                            "library": "all"
+                        },
+                        {
+                            "key": "field_648824beefb0e",
+                            "label": "Symbol (opcjonalnie)",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "accordion",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "open": 0,
+                            "multi_expand": 0,
+                            "endpoint": 0,
+                            "acfe_field_group_condition": 0
+                        },
+                        {
+                            "key": "field_648824ccefb0f",
+                            "label": "Wybierz symbol",
+                            "name": "symbol",
+                            "aria-label": "",
+                            "type": "acfe_image_selector",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "seo": "\/wp-content\/themes\/netmove\/assets\/svg\/seo.svg",
+                                "marketing": "\/wp-content\/themes\/netmove\/assets\/svg\/marketing.svg",
+                                "ads": "\/wp-content\/themes\/netmove\/assets\/svg\/ads.svg",
+                                "social": "\/wp-content\/themes\/netmove\/assets\/svg\/social.svg",
+                                "rocket": "\/wp-content\/themes\/netmove\/assets\/svg\/rocket.svg",
+                                "medal": "\/wp-content\/themes\/netmove\/assets\/svg\/medal.svg",
+                                "trophy": "\/wp-content\/themes\/netmove\/assets\/svg\/trophy.svg",
+                                "networking": "\/wp-content\/themes\/netmove\/assets\/svg\/networking.svg",
+                                "design": "\/wp-content\/themes\/netmove\/assets\/svg\/design.svg",
+                                "google-ads": "\/wp-content\/themes\/netmove\/assets\/svg\/google-ads.svg",
+                                "seo-alt": "\/wp-content\/themes\/netmove\/assets\/svg\/seo-alt.svg",
+                                "shopping-bag": "\/wp-content\/themes\/netmove\/assets\/svg\/shopping-bag.svg",
+                                "audience": "\/wp-content\/themes\/netmove\/assets\/svg\/audience.svg",
+                                "megaphone": "\/wp-content\/themes\/netmove\/assets\/svg\/megaphone.svg",
+                                "chart": "\/wp-content\/themes\/netmove\/assets\/svg\/chart.svg",
+                                "search": "\/wp-content\/themes\/netmove\/assets\/svg\/search.svg",
+                                "link": "\/wp-content\/themes\/netmove\/assets\/svg\/link.svg",
+                                "audit": "\/wp-content\/themes\/netmove\/assets\/svg\/audit.svg",
+                                "report": "\/wp-content\/themes\/netmove\/assets\/svg\/report.svg",
+                                "strategy": "\/wp-content\/themes\/netmove\/assets\/svg\/strategy.svg",
+                                "sponsorship": "\/wp-content\/themes\/netmove\/assets\/svg\/sponsorship.svg",
+                                "txt": "\/wp-content\/themes\/netmove\/assets\/svg\/txt.svg",
+                                "title": "\/wp-content\/themes\/netmove\/assets\/svg\/title.svg",
+                                "dollar": "\/wp-content\/themes\/netmove\/assets\/svg\/dollar.svg",
+                                "expert": "\/wp-content\/themes\/netmove\/assets\/svg\/expert.svg",
+                                "optimization": "\/wp-content\/themes\/netmove\/assets\/svg\/optimization.svg"
+                            },
+                            "default_value": false,
+                            "image_size": "symbol",
+                            "width": "",
+                            "height": "",
+                            "border": 4,
+                            "return_format": "array",
+                            "allow_null": 1,
+                            "multiple": 0,
+                            "max": "",
+                            "layout": "horizontal",
+                            "acfe_field_group_condition": 0,
+                            "min": ""
+                        },
+                        {
+                            "key": "field_64882aae6d852",
+                            "label": "Kolor symbolu",
+                            "name": "section_symbol_color",
+                            "aria-label": "",
+                            "type": "color_picker",
+                            "instructions": "W przypadku braku wyboru, symbol będzie w kolorze tła sekcji. Tło sekcji możesz zmienić w zakładce \"Ustawienia dodatkowe\".",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "enable_opacity": 0,
+                            "return_format": "color_label",
+                            "display": "palette",
+                            "color_picker": 0,
+                            "allow_null": 0,
+                            "theme_colors": 1,
+                            "colors": [],
+                            "acfe_field_group_condition": 0,
+                            "button_label": "Select Color",
+                            "absolute": false,
+                            "input": true
+                        },
+                        {
+                            "key": "field_64882b076d854",
+                            "label": "Kolor tła symbolu",
+                            "name": "section_symbol_bgColor",
+                            "aria-label": "",
+                            "type": "color_picker",
+                            "instructions": "W przypadku braku wyboru, tło symbolu będzie w kolorze białym.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "enable_opacity": 0,
+                            "return_format": "color_label",
+                            "display": "palette",
+                            "color_picker": 0,
+                            "allow_null": 0,
+                            "theme_colors": 1,
+                            "colors": [],
+                            "acfe_field_group_condition": 0,
+                            "button_label": "Select Color",
+                            "absolute": false,
+                            "input": true
+                        },
+                        {
+                            "key": "field_6488535269c85",
+                            "label": "Blok z cytatem \/ Social proof (opcjonalnie)",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "accordion",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "open": 0,
+                            "multi_expand": 0,
+                            "endpoint": 0,
+                            "acfe_field_group_condition": 0
+                        },
+                        {
+                            "key": "field_6488538769c86",
+                            "label": "Dodaj cytat",
+                            "name": "section_testimonial",
+                            "aria-label": "",
+                            "type": "group",
+                            "instructions": "Opcjonalny blok z cytatem widoczny tylko na desktopie.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "layout": "block",
+                            "acfe_seamless_style": 0,
+                            "acfe_group_modal": 0,
+                            "acfe_field_group_condition": 0,
+                            "sub_fields": [
+                                {
+                                    "key": "field_648853b869c87",
+                                    "label": "Cytat",
+                                    "name": "section_quote",
+                                    "aria-label": "",
+                                    "type": "textarea",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "acfe_field_group_condition": 0,
+                                    "default_value": "",
+                                    "acfe_textarea_code": 0,
+                                    "maxlength": "",
+                                    "rows": 2,
+                                    "placeholder": "",
+                                    "new_lines": ""
+                                },
+                                {
+                                    "key": "field_6488540869c88",
+                                    "label": "Autor",
+                                    "name": "section_quote_author",
+                                    "aria-label": "",
+                                    "type": "text",
+                                    "instructions": "Imię, nazwisko, nazwa firmy lub nieinteraktywny adres strony\/sklepu.",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "acfe_field_group_condition": 0,
+                                    "default_value": "",
+                                    "maxlength": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": ""
+                                }
+                            ],
+                            "acfe_group_modal_close": 0,
+                            "acfe_group_modal_button": "",
+                            "acfe_group_modal_size": "large"
+                        },
+                        {
+                            "key": "field_648729e5db41d",
+                            "label": "Ustawienia dodatkowe",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "accordion",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "open": 0,
+                            "multi_expand": 0,
+                            "endpoint": 0,
+                            "acfe_field_group_condition": 0
+                        },
+                        {
+                            "key": "field_649be28ad366e",
+                            "label": "Priorytet nagłówka",
+                            "name": "section_settings_headerPriority",
+                            "aria-label": "",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_64872616592e8",
+                                        "operator": "!=empty"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "h1": "H1",
+                                "h2": "H2",
+                                "h3": "H3"
+                            },
+                            "default_value": "h2",
+                            "return_format": "value",
+                            "multiple": 0,
+                            "max": "",
+                            "prepend": "",
+                            "append": "",
+                            "allow_null": 0,
+                            "ui": 0,
+                            "acfe_field_group_condition": 0,
+                            "ajax": 0,
+                            "placeholder": "",
+                            "allow_custom": 0,
+                            "search_placeholder": "",
+                            "min": ""
+                        },
+                        {
+                            "key": "field_6487478fe17f0",
+                            "label": "Kolor tła sekcji",
+                            "name": "section_settings_bgColor",
+                            "aria-label": "",
+                            "type": "color_picker",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "enable_opacity": 0,
+                            "return_format": "color_label",
+                            "display": "palette",
+                            "color_picker": 0,
+                            "allow_null": 0,
+                            "theme_colors": 1,
+                            "colors": [],
+                            "acfe_field_group_condition": 0,
+                            "button_label": "Select Color",
+                            "absolute": false,
+                            "input": true
+                        },
+                        {
+                            "key": "field_648729eedb41e",
+                            "label": "Układ: proporcje zdjęcia i teksu",
+                            "name": "section_settings_layoutPriority",
+                            "aria-label": "",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_64872859c8af2",
+                                        "operator": "!=empty"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "default": "Domyślne - zdjęcie i tekst 50 na 50",
+                                "text": "Priorytet na tekst - zdjęcie i tekst 20 do 80"
+                            },
+                            "default_value": "default",
+                            "return_format": "value",
+                            "multiple": 0,
+                            "max": "",
+                            "prepend": "",
+                            "append": "",
+                            "allow_null": 0,
+                            "ui": 0,
+                            "acfe_field_group_condition": 0,
+                            "ajax": 0,
+                            "placeholder": "",
+                            "allow_custom": 0,
+                            "search_placeholder": "",
+                            "min": ""
+                        },
+                        {
+                            "key": "field_64872ae7db41f",
+                            "label": "Układ: kolejność zdjęcia i tekstu",
+                            "name": "section_settings_imgOrder",
+                            "aria-label": "",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_64872859c8af2",
+                                        "operator": "!=empty"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "right": "Zdjęcie po prawej stronie",
+                                "left": "Zdjęcie po lewej stronie"
+                            },
+                            "default_value": "right",
+                            "return_format": "value",
+                            "multiple": 0,
+                            "max": "",
+                            "prepend": "",
+                            "append": "",
+                            "allow_null": 0,
+                            "ui": 0,
+                            "acfe_field_group_condition": 0,
+                            "ajax": 0,
+                            "placeholder": "",
+                            "allow_custom": 0,
+                            "search_placeholder": "",
+                            "min": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": "",
+                    "acfe_layout_locations": [
+                        [
+                            {
+                                "param": "post_type",
+                                "operator": "!=",
+                                "value": "post"
+                            }
+                        ],
+                        [
+                            {
+                                "param": "post_type",
+                                "operator": "==",
+                                "value": "page"
+                            },
+                            {
+                                "param": "page",
+                                "operator": "!=",
+                                "value": "10"
+                            },
+                            {
+                                "param": "page_template",
+                                "operator": "!=",
+                                "value": "page-templates\/page-contact.php"
+                            }
+                        ],
+                        [
+                            {
+                                "param": "post_type",
+                                "operator": "==",
+                                "value": "casestudy"
+                            }
+                        ],
+                        [
+                            {
+                                "param": "post_type",
+                                "operator": "==",
+                                "value": "service"
+                            }
+                        ],
+                        [
+                            {
+                                "param": "options_page",
+                                "operator": "==",
+                                "value": "service-archive-content"
+                            }
+                        ]
+                    ],
+                    "acfe_flexible_render_template": false,
+                    "acfe_flexible_render_style": false,
+                    "acfe_flexible_render_script": false,
+                    "acfe_flexible_thumbnail": false,
+                    "acfe_flexible_settings": false,
+                    "acfe_flexible_settings_size": "medium",
+                    "acfe_flexible_modal_edit_size": false,
+                    "acfe_flexible_category": false,
+                    "acfe_layout_col": "auto",
+                    "acfe_layout_allowed_col": false
+                },
+                "layout_648997f970ee8": {
+                    "key": "layout_648997f970ee8",
+                    "name": "section_cards",
+                    "label": "Sekcja z Kartami",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_6489b096606f1",
+                            "label": "Tytuł i nagłówek sekcji",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "accordion",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "open": 0,
+                            "multi_expand": 0,
+                            "endpoint": 0,
+                            "acfe_field_group_condition": 0
+                        },
+                        {
+                            "key": "field_6489b0cb606f2",
+                            "label": "Tytuł sekcji",
+                            "name": "section_title",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "Krótki tytuł sekcji widoczny nad nagłówkiem, np. \"Nasza oferta\".",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "required_message": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "acfe_field_group_condition": 0
+                        },
+                        {
+                            "key": "field_6489b0fd606f3",
+                            "label": "Nagłówek sekcji",
+                            "name": "section_header",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "Główny nagłówek sekcji widoczny pod tytułem.",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "required_message": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "acfe_field_group_condition": 0
+                        },
+                        {
+                            "key": "field_6489b131606f4",
+                            "label": "Opis sekcji (opcjonalnie)",
+                            "name": "section_desc",
+                            "aria-label": "",
+                            "type": "wysiwyg",
+                            "instructions": "Krótki, jednoparagrafowy opis sekcji widoczny pod nagłówkiem.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "acfe_wysiwyg_height": 64,
+                            "acfe_wysiwyg_max_height": "",
+                            "acfe_wysiwyg_valid_elements": "",
+                            "acfe_wysiwyg_custom_style": "",
+                            "acfe_wysiwyg_disable_wp_style": 0,
+                            "acfe_wysiwyg_autoresize": 0,
+                            "acfe_wysiwyg_disable_resize": 0,
+                            "acfe_wysiwyg_remove_path": 0,
+                            "acfe_wysiwyg_menubar": 0,
+                            "acfe_wysiwyg_transparent": 0,
+                            "acfe_wysiwyg_merge_toolbar": 0,
+                            "acfe_wysiwyg_custom_toolbar": 0,
+                            "tabs": "all",
+                            "toolbar": "basic",
+                            "media_upload": 1,
+                            "delay": 0,
+                            "acfe_field_group_condition": 0,
+                            "acfe_wysiwyg_auto_init": 0,
+                            "acfe_wysiwyg_min_height": 300,
+                            "acfe_wysiwyg_toolbar_buttons": []
+                        },
+                        {
+                            "key": "field_6489b00f606ee",
+                            "label": "Karty",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "accordion",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "open": 0,
+                            "multi_expand": 0,
+                            "endpoint": 0,
+                            "acfe_field_group_condition": 0
+                        },
+                        {
+                            "key": "field_6489981670eec",
+                            "label": "Lista elementów",
+                            "name": "cards",
+                            "aria-label": "",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "acfe_repeater_stylised_button": 0,
+                            "layout": "block",
+                            "min": 1,
+                            "max": 0,
+                            "collapsed": "",
+                            "button_label": "Dodaj kartę",
+                            "acfe_field_group_condition": 0,
+                            "rows_per_page": 20,
+                            "sub_fields": [
+                                {
+                                    "key": "field_6489ed510c3a5",
+                                    "label": "Symbol karty",
+                                    "name": "",
+                                    "aria-label": "",
+                                    "type": "accordion",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "acfe_field_group_condition": 0,
+                                    "open": 0,
+                                    "multi_expand": 0,
+                                    "endpoint": 0,
+                                    "parent_repeater": "field_6489981670eec"
+                                },
+                                {
+                                    "key": "field_64899b6cce395",
+                                    "label": "Wybierz symbol karty",
+                                    "name": "card_symbol",
+                                    "aria-label": "",
+                                    "type": "clone",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "acfe_field_group_condition": 0,
+                                    "clone": [
+                                        "field_648824ccefb0f"
+                                    ],
+                                    "display": "seamless",
+                                    "layout": "block",
+                                    "prefix_label": 0,
+                                    "prefix_name": 0,
+                                    "acfe_seamless_style": 0,
+                                    "acfe_clone_modal": 0,
+                                    "acfe_clone_modal_close": 0,
+                                    "acfe_clone_modal_button": "",
+                                    "acfe_clone_modal_size": "large",
+                                    "parent_repeater": "field_6489981670eec"
+                                },
+                                {
+                                    "key": "field_6489ed7b0c3a7",
+                                    "label": "Nagłówek karty (opcjonalnie)",
+                                    "name": "",
+                                    "aria-label": "",
+                                    "type": "accordion",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "acfe_field_group_condition": 0,
+                                    "open": 0,
+                                    "multi_expand": 0,
+                                    "endpoint": 0,
+                                    "parent_repeater": "field_6489981670eec"
+                                },
+                                {
+                                    "key": "field_6489988f70eed",
+                                    "label": "Nagłówek karty (opcjonalnie)",
+                                    "name": "card_header",
+                                    "aria-label": "",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "acfe_field_group_condition": 0,
+                                    "default_value": "",
+                                    "maxlength": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "parent_repeater": "field_6489981670eec"
+                                },
+                                {
+                                    "key": "field_6489ed6b0c3a6",
+                                    "label": "Treść karty",
+                                    "name": "",
+                                    "aria-label": "",
+                                    "type": "accordion",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "acfe_field_group_condition": 0,
+                                    "open": 0,
+                                    "multi_expand": 0,
+                                    "endpoint": 0,
+                                    "parent_repeater": "field_6489981670eec"
+                                },
+                                {
+                                    "key": "field_648998a770eee",
+                                    "label": "Treść karty",
+                                    "name": "card_content",
+                                    "aria-label": "",
+                                    "type": "wysiwyg",
+                                    "instructions": "",
+                                    "required": 1,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "acfe_field_group_condition": 0,
+                                    "required_message": "",
+                                    "default_value": "",
+                                    "acfe_wysiwyg_min_height": 64,
+                                    "acfe_wysiwyg_max_height": "",
+                                    "acfe_wysiwyg_valid_elements": "",
+                                    "acfe_wysiwyg_custom_style": "",
+                                    "acfe_wysiwyg_disable_wp_style": 0,
+                                    "acfe_wysiwyg_autoresize": 1,
+                                    "acfe_wysiwyg_disable_resize": 0,
+                                    "acfe_wysiwyg_remove_path": 0,
+                                    "acfe_wysiwyg_menubar": 0,
+                                    "acfe_wysiwyg_transparent": 0,
+                                    "acfe_wysiwyg_merge_toolbar": 0,
+                                    "acfe_wysiwyg_custom_toolbar": 0,
+                                    "tabs": "all",
+                                    "toolbar": "full",
+                                    "media_upload": 0,
+                                    "delay": 0,
+                                    "acfe_wysiwyg_auto_init": 0,
+                                    "acfe_wysiwyg_height": 300,
+                                    "acfe_wysiwyg_toolbar_buttons": [],
+                                    "parent_repeater": "field_6489981670eec"
+                                }
+                            ]
+                        },
+                        {
+                            "key": "field_6493fd57518de",
+                            "label": "Call to Action (opcjonalnie)",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "accordion",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "open": 0,
+                            "multi_expand": 0,
+                            "endpoint": 0,
+                            "acfe_field_group_condition": 0
+                        },
+                        {
+                            "key": "field_6493fd0c518dd",
+                            "label": "Dodaj link",
+                            "name": "section_cta",
+                            "aria-label": "",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "field_6488656d59199"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0,
+                            "acfe_field_group_condition": 0,
+                            "acfe_seamless_style": 0,
+                            "acfe_clone_modal": 0,
+                            "acfe_clone_modal_close": 0,
+                            "acfe_clone_modal_button": "",
+                            "acfe_clone_modal_size": "large"
+                        },
+                        {
+                            "key": "field_6489b022606ef",
+                            "label": "Ustawienia",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "accordion",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "open": 0,
+                            "multi_expand": 0,
+                            "endpoint": 0,
+                            "acfe_field_group_condition": 0
+                        },
+                        {
+                            "key": "field_6489b030606f0",
+                            "label": "Układ kart",
+                            "name": "section_settings_layout",
+                            "aria-label": "",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "horizontal": "Poziomy. W przypadku dużej ilość kart wyświetlą się one w formie \"karuzeli\".",
+                                "vertical": "Pionowy. Wszystkie karty widoczne jedna pod drugą."
+                            },
+                            "default_value": "horizontal",
+                            "return_format": "value",
+                            "multiple": 0,
+                            "max": "",
+                            "prepend": "",
+                            "append": "",
+                            "allow_null": 0,
+                            "ui": 0,
+                            "acfe_field_group_condition": 0,
+                            "ajax": 0,
+                            "placeholder": "",
+                            "allow_custom": 0,
+                            "search_placeholder": "",
+                            "min": ""
+                        },
+                        {
+                            "key": "field_648f18ae827ee",
+                            "label": "Ilość kolumn",
+                            "name": "section_settings_columns",
+                            "aria-label": "",
+                            "type": "select",
+                            "instructions": "Ilość kolumn w układzie poziomym: widoczne trzy lub cztery karty obok siebie. Jeśli zostanie dodanych więcej kart, to aby zobaczyć kolejne karty, będzie trzeba użyć karuzeli.",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_6489b030606f0",
+                                        "operator": "==",
+                                        "value": "horizontal"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "3": "Trzy kolumny",
+                                "4": "Cztery kolumny"
+                            },
+                            "default_value": 4,
+                            "return_format": "value",
+                            "multiple": 0,
+                            "max": "",
+                            "prepend": "",
+                            "append": "",
+                            "allow_null": 0,
+                            "ui": 0,
+                            "acfe_field_group_condition": 0,
+                            "ajax": 0,
+                            "placeholder": "",
+                            "allow_custom": 0,
+                            "search_placeholder": "",
+                            "min": ""
+                        },
+                        {
+                            "key": "field_64906c56ea9fe",
+                            "label": "Kontrast tła sekcji",
+                            "name": "section_settings_bgColor",
+                            "aria-label": "",
+                            "type": "color_picker",
+                            "instructions": "Białe tło: jasnoszare karty; Jasnoszare tło: białe karty. Delikatnie kontrastowe, jasnoszare tło wprowadzi lepsze rozgraniczenie sekcji, gdy obok siebie występują dwie białe sekcje jedna pod drugą.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "enable_opacity": 0,
+                            "return_format": "color_label",
+                            "display": "palette",
+                            "color_picker": 0,
+                            "allow_null": 1,
+                            "theme_colors": 0,
+                            "colors": {
+                                "#FFFFF": "Biały",
+                                "#F7F7F7": "Jasnoszary"
+                            },
+                            "acfe_field_group_condition": 0,
+                            "button_label": "Select Color",
+                            "absolute": false,
+                            "input": true
+                        }
+                    ],
+                    "min": "",
+                    "max": "",
+                    "acfe_layout_locations": [
+                        [
+                            {
+                                "param": "post_type",
+                                "operator": "!=",
+                                "value": "post"
+                            }
+                        ],
+                        [
+                            {
+                                "param": "post_type",
+                                "operator": "==",
+                                "value": "page"
+                            },
+                            {
+                                "param": "page",
+                                "operator": "!=",
+                                "value": "10"
+                            },
+                            {
+                                "param": "page_template",
+                                "operator": "!=",
+                                "value": "page-templates\/page-contact.php"
+                            }
+                        ],
+                        [
+                            {
+                                "param": "post_type",
+                                "operator": "==",
+                                "value": "casestudy"
+                            }
+                        ],
+                        [
+                            {
+                                "param": "post_type",
+                                "operator": "==",
+                                "value": "service"
+                            }
+                        ],
+                        [
+                            {
+                                "param": "options_page",
+                                "operator": "==",
+                                "value": "service-archive-content"
+                            }
+                        ]
+                    ],
+                    "acfe_flexible_render_template": false,
+                    "acfe_flexible_render_style": false,
+                    "acfe_flexible_render_script": false,
+                    "acfe_flexible_thumbnail": false,
+                    "acfe_flexible_settings": false,
+                    "acfe_flexible_settings_size": "medium",
+                    "acfe_flexible_modal_edit_size": false,
+                    "acfe_flexible_category": false,
+                    "acfe_layout_col": "auto",
+                    "acfe_layout_allowed_col": false
+                },
+                "layout_648ae7e8c979a": {
+                    "key": "layout_648ae7e8c979a",
+                    "name": "section_figure",
+                    "label": "Sekcja z Ilustracją (grafiką, wykresem)",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_648ae965c97a0",
+                            "label": "Treść",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "accordion",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "open": 0,
+                            "multi_expand": 0,
+                            "endpoint": 0,
+                            "acfe_field_group_condition": 0
+                        },
+                        {
+                            "key": "field_648ae801c979d",
+                            "label": "Tytuł sekcji (opcjonalnie)",
+                            "name": "section_title",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "Krótki tytuł, np. \"Poznajmy się\". Zostanie wyświetlony kapitalikami nad nagłówkiem i treścią.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "acfe_field_group_condition": 0
+                        },
+                        {
+                            "key": "field_648ae87fc979e",
+                            "label": "Nagłówek sekcji (opcjonalnie)",
+                            "name": "section_header",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "acfe_field_group_condition": 0
+                        },
+                        {
+                            "key": "field_648ae914c979f",
+                            "label": "Treść sekcji",
+                            "name": "section_content",
+                            "aria-label": "",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "acfe_wysiwyg_min_height": 64,
+                            "acfe_wysiwyg_max_height": "",
+                            "acfe_wysiwyg_valid_elements": "",
+                            "acfe_wysiwyg_custom_style": "",
+                            "acfe_wysiwyg_disable_wp_style": 0,
+                            "acfe_wysiwyg_autoresize": 1,
+                            "acfe_wysiwyg_disable_resize": 0,
+                            "acfe_wysiwyg_remove_path": 0,
+                            "acfe_wysiwyg_menubar": 0,
+                            "acfe_wysiwyg_transparent": 0,
+                            "acfe_wysiwyg_merge_toolbar": 0,
+                            "acfe_wysiwyg_custom_toolbar": 0,
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 0,
+                            "delay": 0,
+                            "acfe_field_group_condition": 0,
+                            "acfe_wysiwyg_auto_init": 0,
+                            "acfe_wysiwyg_height": 300,
+                            "acfe_wysiwyg_toolbar_buttons": []
+                        },
+                        {
+                            "key": "field_648ae987c97a1",
+                            "label": "Grafika \/ zdjęcie",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "accordion",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "open": 0,
+                            "multi_expand": 0,
+                            "endpoint": 0,
+                            "acfe_field_group_condition": 0
+                        },
+                        {
+                            "key": "field_648aeb5caeb52",
+                            "label": "Dodaj zdjęcie lub grafikę.",
+                            "name": "section_gallery",
+                            "aria-label": "",
+                            "type": "repeater",
+                            "instructions": "Wybierz zdjęcie lub grafikę. Możesz dodać maksymalnie cztery zdjęcia.",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "acfe_repeater_stylised_button": 0,
+                            "layout": "table",
+                            "required_message": "",
+                            "min": 1,
+                            "max": 4,
+                            "collapsed": "",
+                            "button_label": "Dodaj kolejne zdjęcie",
+                            "acfe_field_group_condition": 0,
+                            "rows_per_page": 20,
+                            "sub_fields": [
+                                {
+                                    "key": "field_648ae998c97a2",
+                                    "label": "Zdjęcie \/ grafika",
+                                    "name": "section_image",
+                                    "aria-label": "",
+                                    "type": "image",
+                                    "instructions": "",
+                                    "required": 1,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "acfe_field_group_condition": 0,
+                                    "required_message": "",
+                                    "uploader": "",
+                                    "acfe_thumbnail": 0,
+                                    "return_format": "array",
+                                    "min_width": "",
+                                    "min_height": "",
+                                    "min_size": "",
+                                    "max_width": "",
+                                    "max_height": "",
+                                    "max_size": 1,
+                                    "mime_types": "",
+                                    "preview_size": "medium",
+                                    "library": "all",
+                                    "parent_repeater": "field_648aeb5caeb52"
+                                }
+                            ]
+                        },
+                        {
+                            "key": "field_648b25a4ab12c",
+                            "label": "Call to Action (opcjonalnie)",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "accordion",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "open": 0,
+                            "multi_expand": 0,
+                            "endpoint": 0,
+                            "acfe_field_group_condition": 0
+                        },
+                        {
+                            "key": "field_648b25fcab12d",
+                            "label": "Dodaj link",
+                            "name": "section_cta",
+                            "aria-label": "",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "field_6488656d59199"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0,
+                            "acfe_field_group_condition": 0,
+                            "acfe_seamless_style": 0,
+                            "acfe_clone_modal": 0,
+                            "acfe_clone_modal_close": 0,
+                            "acfe_clone_modal_button": "",
+                            "acfe_clone_modal_size": "large"
+                        },
+                        {
+                            "key": "field_648b076f9058d",
+                            "label": "Ustawienia dodatkowe",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "accordion",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "open": 0,
+                            "multi_expand": 0,
+                            "endpoint": 0,
+                            "acfe_field_group_condition": 0
+                        },
+                        {
+                            "key": "field_648b166ecad17",
+                            "label": "Kolor tła sekcji",
+                            "name": "section_settings_bgColor",
+                            "aria-label": "",
+                            "type": "color_picker",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "#FFF",
+                            "enable_opacity": 0,
+                            "return_format": "color_label",
+                            "display": "palette",
+                            "color_picker": 0,
+                            "allow_null": 1,
+                            "theme_colors": 1,
+                            "colors": [],
+                            "acfe_field_group_condition": 0,
+                            "button_label": "Select Color",
+                            "absolute": false,
+                            "input": true
+                        },
+                        {
+                            "key": "field_648b077a9058e",
+                            "label": "Układ sekcji",
+                            "name": "section_settings_layout",
+                            "aria-label": "",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "horizontal": "Poziomy (tekst i zdjęcie w dwóch kolumnach)",
+                                "vertical": "Pionowy"
+                            },
+                            "default_value": "horizontal",
+                            "return_format": "value",
+                            "multiple": 0,
+                            "max": "",
+                            "prepend": "",
+                            "append": "",
+                            "allow_null": 0,
+                            "ui": 0,
+                            "acfe_field_group_condition": 0,
+                            "ajax": 0,
+                            "placeholder": "",
+                            "allow_custom": 0,
+                            "search_placeholder": "",
+                            "min": ""
+                        },
+                        {
+                            "key": "field_648b41b3b2bef",
+                            "label": "Wyrównanie tekstu na mobile",
+                            "name": "section_settings_textAlignMobile",
+                            "aria-label": "",
+                            "type": "select",
+                            "instructions": "Wskazówka: dłuższy tekst, traci czytelność w przypadku wyśrodkowania.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "left": "Do lewej",
+                                "center": "Do środka"
+                            },
+                            "default_value": "left",
+                            "return_format": "value",
+                            "multiple": 0,
+                            "max": "",
+                            "prepend": "",
+                            "append": "",
+                            "allow_null": 0,
+                            "ui": 0,
+                            "acfe_field_group_condition": 0,
+                            "ajax": 0,
+                            "placeholder": "",
+                            "allow_custom": 0,
+                            "search_placeholder": "",
+                            "min": ""
+                        },
+                        {
+                            "key": "field_648b4bfa47977",
+                            "label": "Proporcje zdjęcia i tekstu",
+                            "name": "section_settings_layoutPriority",
+                            "aria-label": "",
+                            "type": "select",
+                            "instructions": "Proporcje mają zastosowanie tylko w przypadku, gdy Układ sekcji jest Poziomy.",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_648b077a9058e",
+                                        "operator": "==",
+                                        "value": "horizontal"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "default": "Domyślne - zdjęcie i tekst pół na pół",
+                                "image": "Priorytet na zdjęcie, kolumna z tekstem mniejsza"
+                            },
+                            "default_value": "default",
+                            "return_format": "value",
+                            "multiple": 0,
+                            "max": "",
+                            "prepend": "",
+                            "append": "",
+                            "allow_null": 0,
+                            "ui": 0,
+                            "acfe_field_group_condition": 0,
+                            "ajax": 0,
+                            "placeholder": "",
+                            "allow_custom": 0,
+                            "search_placeholder": "",
+                            "min": ""
+                        },
+                        {
+                            "key": "field_648b07f79058f",
+                            "label": "Kolejność zdjęcia",
+                            "name": "section_settings_order",
+                            "aria-label": "",
+                            "type": "select",
+                            "instructions": "Kolejność zdjęcia ma zastosowanie tylko w przypadku, gdy Układ sekcji jest Poziomy.",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_648b077a9058e",
+                                        "operator": "==",
+                                        "value": "horizontal"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "default": "Domyślna - tekst z lewej, zdjęcie z prawej",
+                                "alternative": "Alternatywna - zdjęcie z lewej, tekst z prawej"
+                            },
+                            "default_value": "default",
+                            "return_format": "value",
+                            "multiple": 0,
+                            "max": "",
+                            "prepend": "",
+                            "append": "",
+                            "allow_null": 0,
+                            "ui": 0,
+                            "acfe_field_group_condition": 0,
+                            "ajax": 0,
+                            "placeholder": "",
+                            "allow_custom": 0,
+                            "search_placeholder": "",
+                            "min": ""
+                        },
+                        {
+                            "key": "field_648b5a67a69d6",
+                            "label": "Zdjęcia w dekoracyjnej ramce",
+                            "name": "section_settings_imagesBorder",
+                            "aria-label": "",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "1": "Tak",
+                                "0": "Nie"
+                            },
+                            "default_value": 1,
+                            "return_format": "value",
+                            "multiple": 0,
+                            "max": "",
+                            "prepend": "",
+                            "append": "",
+                            "allow_null": 0,
+                            "ui": 0,
+                            "acfe_field_group_condition": 0,
+                            "ajax": 0,
+                            "placeholder": "",
+                            "allow_custom": 0,
+                            "search_placeholder": "",
+                            "min": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": "",
+                    "acfe_layout_locations": [
+                        [
+                            {
+                                "param": "post_type",
+                                "operator": "!=",
+                                "value": "post"
+                            }
+                        ],
+                        [
+                            {
+                                "param": "post_type",
+                                "operator": "==",
+                                "value": "page"
+                            },
+                            {
+                                "param": "page",
+                                "operator": "!=",
+                                "value": "10"
+                            },
+                            {
+                                "param": "page_template",
+                                "operator": "!=",
+                                "value": "page-templates\/page-contact.php"
+                            }
+                        ],
+                        [
+                            {
+                                "param": "post_type",
+                                "operator": "==",
+                                "value": "casestudy"
+                            }
+                        ],
+                        [
+                            {
+                                "param": "post_type",
+                                "operator": "==",
+                                "value": "service"
+                            }
+                        ],
+                        [
+                            {
+                                "param": "options_page",
+                                "operator": "==",
+                                "value": "service-archive-content"
+                            }
+                        ]
+                    ],
+                    "acfe_flexible_render_template": false,
+                    "acfe_flexible_render_style": false,
+                    "acfe_flexible_render_script": false,
+                    "acfe_flexible_thumbnail": false,
+                    "acfe_flexible_settings": false,
+                    "acfe_flexible_settings_size": "medium",
+                    "acfe_flexible_modal_edit_size": false,
+                    "acfe_flexible_category": false,
+                    "acfe_layout_col": "auto",
+                    "acfe_layout_allowed_col": false
+                },
+                "layout_6490112c4f591": {
+                    "key": "layout_6490112c4f591",
+                    "name": "section_testimonials",
+                    "label": "Sekcja z Opiniami",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_6490130b4f599",
+                            "label": "Nagłówek i tytuł sekcji",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "accordion",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "open": 0,
+                            "multi_expand": 0,
+                            "endpoint": 0,
+                            "acfe_field_group_condition": 0
+                        },
+                        {
+                            "key": "field_649012a04f597",
+                            "label": "Tytuł sekcji (opcjonalnie)",
+                            "name": "section_title",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "Krótki tytuł sekcji, np. \"Opinie klientów\".",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "Opinie klientów",
+                            "prepend": "",
+                            "append": "",
+                            "acfe_field_group_condition": 0
+                        },
+                        {
+                            "key": "field_649012d24f598",
+                            "label": "Nagłówek sekcji (opcjonalnie)",
+                            "name": "section_header",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "Co mówią o nas klienci",
+                            "prepend": "",
+                            "append": "",
+                            "acfe_field_group_condition": 0
+                        },
+                        {
+                            "key": "field_649012574f596",
+                            "label": "Ustawienia",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "accordion",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "open": 0,
+                            "multi_expand": 0,
+                            "endpoint": 0,
+                            "acfe_field_group_condition": 0
+                        },
+                        {
+                            "key": "field_649011434f594",
+                            "label": "Layout",
+                            "name": "section_settings_layout",
+                            "aria-label": "",
+                            "type": "select",
+                            "instructions": "Wybierz, czy wyświetlić listę najnowszych opinii, czy jedną konkretną opinię. Opinie można dodawać w zakładce Opinie Klientów -> Dodaj nową.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "list": "Lista opinii w formie karuzeli",
+                                "single": "Jedna opinia"
+                            },
+                            "default_value": "list",
+                            "return_format": "value",
+                            "multiple": 0,
+                            "max": "",
+                            "prepend": "",
+                            "append": "",
+                            "allow_null": 0,
+                            "ui": 0,
+                            "acfe_field_group_condition": 0,
+                            "ajax": 0,
+                            "placeholder": "",
+                            "allow_custom": 0,
+                            "search_placeholder": "",
+                            "min": ""
+                        },
+                        {
+                            "key": "field_649011df4f595",
+                            "label": "Wyświetlana opinia",
+                            "name": "section_related_cpt_testimonial_id",
+                            "aria-label": "",
+                            "type": "post_object",
+                            "instructions": "Wybierz jedną powiązaną opinię, która zostanie wyświetlona. Opinie można dodawać w zakładce Opinie Klientów -> Dodaj nową.",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_649011434f594",
+                                        "operator": "==",
+                                        "value": "single"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "post_type": [
+                                "testimonial"
+                            ],
+                            "post_status": "",
+                            "taxonomy": "",
+                            "return_format": "id",
+                            "multiple": 0,
+                            "max": "",
+                            "save_custom": 0,
+                            "save_post_status": "publish",
+                            "acfe_add_post": 0,
+                            "acfe_edit_post": 0,
+                            "acfe_bidirectional": {
+                                "acfe_bidirectional_enabled": "0"
+                            },
+                            "allow_null": 0,
+                            "acfe_field_group_condition": 0,
+                            "ui": 1,
+                            "save_post_type": "",
+                            "min": ""
+                        },
+                        {
+                            "key": "field_6490696f692d0",
+                            "label": "Kontrast tła sekcji",
+                            "name": "section_settings_bgColor",
+                            "aria-label": "",
+                            "type": "color_picker",
+                            "instructions": "Delikatnie kontrastowe, jasnoszare tło wprowadzi lepsze rozgraniczenie sekcji, gdy obok siebie występują dwie białe sekcje jedna pod drugą.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "enable_opacity": 0,
+                            "return_format": "color_label",
+                            "display": "palette",
+                            "color_picker": 0,
+                            "allow_null": 1,
+                            "theme_colors": 0,
+                            "colors": {
+                                "#FFFFF": "Biały",
+                                "#F7F7F7": "Jasnoszary"
+                            },
+                            "acfe_field_group_condition": 0,
+                            "button_label": "Select Color",
+                            "absolute": false,
+                            "input": true
+                        }
+                    ],
+                    "min": "",
+                    "max": "",
+                    "acfe_layout_locations": [
+                        [
+                            {
+                                "param": "post_type",
+                                "operator": "!=",
+                                "value": "post"
+                            }
+                        ],
+                        [
+                            {
+                                "param": "post_type",
+                                "operator": "==",
+                                "value": "page"
+                            },
+                            {
+                                "param": "page",
+                                "operator": "!=",
+                                "value": "10"
+                            },
+                            {
+                                "param": "page_template",
+                                "operator": "!=",
+                                "value": "page-templates\/page-contact.php"
+                            }
+                        ],
+                        [
+                            {
+                                "param": "post_type",
+                                "operator": "==",
+                                "value": "casestudy"
+                            }
+                        ],
+                        [
+                            {
+                                "param": "post_type",
+                                "operator": "==",
+                                "value": "service"
+                            }
+                        ],
+                        [
+                            {
+                                "param": "options_page",
+                                "operator": "==",
+                                "value": "service-archive-content"
+                            }
+                        ]
+                    ],
+                    "acfe_flexible_render_template": false,
+                    "acfe_flexible_render_style": false,
+                    "acfe_flexible_render_script": false,
+                    "acfe_flexible_thumbnail": false,
+                    "acfe_flexible_settings": false,
+                    "acfe_flexible_settings_size": "medium",
+                    "acfe_flexible_modal_edit_size": false,
+                    "acfe_flexible_category": false,
+                    "acfe_layout_col": "auto",
+                    "acfe_layout_allowed_col": false
+                },
+                "layout_64916027af70d": {
+                    "key": "layout_64916027af70d",
+                    "name": "section_posts",
+                    "label": "Sekcja z Wpisami (Blog \/ Case Studies)",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_64916193af713",
+                            "label": "Tytuł sekcji",
+                            "name": "section_title",
+                            "aria-label": "",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "field_6489b0cb606f2"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0,
+                            "required_message": "",
+                            "acfe_field_group_condition": 0,
+                            "acfe_seamless_style": 0,
+                            "acfe_clone_modal": 0,
+                            "acfe_clone_modal_close": 0,
+                            "acfe_clone_modal_button": "",
+                            "acfe_clone_modal_size": "large"
+                        },
+                        {
+                            "key": "field_649161c8af714",
+                            "label": "Nagłówek sekcji",
+                            "name": "section_header",
+                            "aria-label": "",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "field_6489b0fd606f3"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0,
+                            "required_message": "",
+                            "acfe_field_group_condition": 0,
+                            "acfe_seamless_style": 0,
+                            "acfe_clone_modal": 0,
+                            "acfe_clone_modal_close": 0,
+                            "acfe_clone_modal_button": "",
+                            "acfe_clone_modal_size": "large"
+                        },
+                        {
+                            "key": "field_649161fbaf715",
+                            "label": "Rodzaj wpisów",
+                            "name": "section_settings_postType",
+                            "aria-label": "",
+                            "type": "select",
+                            "instructions": "Wybierz, jaki rodzaj treści wyświetlić w sekcji. Zostaną wyświetlone najnowsze wpisy wybranego rodzaju.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "post": "Wpisy z bloga",
+                                "casestudy": "Case studies"
+                            },
+                            "default_value": "post",
+                            "return_format": "value",
+                            "multiple": 0,
+                            "max": "",
+                            "prepend": "",
+                            "append": "",
+                            "allow_null": 0,
+                            "ui": 0,
+                            "acfe_field_group_condition": 0,
+                            "ajax": 0,
+                            "placeholder": "",
+                            "allow_custom": 0,
+                            "search_placeholder": "",
+                            "min": ""
+                        },
+                        {
+                            "key": "field_64996569b6b76",
+                            "label": "Ustawienia dodatkowe",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "accordion",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "open": 0,
+                            "multi_expand": 0,
+                            "endpoint": 0,
+                            "acfe_field_group_condition": 0
+                        },
+                        {
+                            "key": "field_6499654cb6b75",
+                            "label": "Kontrast tła sekcji",
+                            "name": "section_settings_bgColor",
+                            "aria-label": "",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "field_6490696f692d0"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0,
+                            "acfe_field_group_condition": 0,
+                            "acfe_seamless_style": 0,
+                            "acfe_clone_modal": 0,
+                            "acfe_clone_modal_close": 0,
+                            "acfe_clone_modal_button": "",
+                            "acfe_clone_modal_size": "large"
+                        }
+                    ],
+                    "min": "",
+                    "max": "",
+                    "acfe_layout_locations": [
+                        [
+                            {
+                                "param": "post_type",
+                                "operator": "!=",
+                                "value": "post"
+                            }
+                        ],
+                        [
+                            {
+                                "param": "post_type",
+                                "operator": "==",
+                                "value": "page"
+                            },
+                            {
+                                "param": "page",
+                                "operator": "!=",
+                                "value": "10"
+                            },
+                            {
+                                "param": "page_template",
+                                "operator": "!=",
+                                "value": "page-templates\/page-contact.php"
+                            }
+                        ],
+                        [
+                            {
+                                "param": "post_type",
+                                "operator": "==",
+                                "value": "casestudy"
+                            }
+                        ],
+                        [
+                            {
+                                "param": "post_type",
+                                "operator": "==",
+                                "value": "service"
+                            }
+                        ],
+                        [
+                            {
+                                "param": "options_page",
+                                "operator": "==",
+                                "value": "service-archive-content"
+                            }
+                        ]
+                    ],
+                    "acfe_flexible_render_template": false,
+                    "acfe_flexible_render_style": false,
+                    "acfe_flexible_render_script": false,
+                    "acfe_flexible_thumbnail": false,
+                    "acfe_flexible_settings": false,
+                    "acfe_flexible_settings_size": "medium",
+                    "acfe_flexible_modal_edit_size": false,
+                    "acfe_flexible_category": false,
+                    "acfe_layout_col": "auto",
+                    "acfe_layout_allowed_col": false
+                },
+                "layout_64995493e04c5": {
+                    "key": "layout_64995493e04c5",
+                    "name": "section_contactform",
+                    "label": "Sekcja z Formularzem Kontaktowym",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_649956d0e04ce",
+                            "label": "Tytuł i nagłówek sekcji",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "accordion",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "open": 0,
+                            "multi_expand": 0,
+                            "endpoint": 0,
+                            "acfe_field_group_condition": 0
+                        },
+                        {
+                            "key": "field_64995516e04c9",
+                            "label": "Tytuł sekcji",
+                            "name": "section_title",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "Krótki tytuł sekcji widoczny nad nagłówkiem, np. \"Skontaktuj się z nami\".",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "required_message": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "acfe_field_group_condition": 0
+                        },
+                        {
+                            "key": "field_64995571e04ca",
+                            "label": "Nagłówek sekcji",
+                            "name": "section_header",
+                            "aria-label": "",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "field_6489b0fd606f3"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0,
+                            "required_message": "",
+                            "acfe_field_group_condition": 0,
+                            "acfe_seamless_style": 0,
+                            "acfe_clone_modal": 0,
+                            "acfe_clone_modal_close": 0,
+                            "acfe_clone_modal_button": "",
+                            "acfe_clone_modal_size": "large"
+                        },
+                        {
+                            "key": "field_64995649e04cc",
+                            "label": "Opis sekcji (opcjonalnie)",
+                            "name": "section_desc",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "Dodatkowy tekst widoczny pod nagłówkiem sekcji.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "acfe_field_group_condition": 0
+                        },
+                        {
+                            "key": "field_649956e4e04cf",
+                            "label": "Formularz kontaktowy",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "accordion",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "open": 0,
+                            "multi_expand": 0,
+                            "endpoint": 0,
+                            "acfe_field_group_condition": 0
+                        },
+                        {
+                            "key": "field_649955dae04cb",
+                            "label": "Tytuł formularza kontaktowego",
+                            "name": "contactform_title",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "Tytuł zostanie wyświetlony bezpośrednio nad formularzem kontaktowym, np. \"Porozmawiajmy o Twoim projekcie\" lub \"Zadaj pytanie o pozycjonowaniu sklepu\".",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "required_message": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "acfe_field_group_condition": 0
+                        },
+                        {
+                            "key": "field_64995695e04cd",
+                            "label": "Formularz kontaktowy",
+                            "name": "section_contactform_id",
+                            "aria-label": "",
+                            "type": "post_object",
+                            "instructions": "Wybierz formularz kontaktowy, który ma się wyświetlić w sekcji. Formularze kontaktowe można edytować w zakładce Kontakt -> Formularze kontaktowe.",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "post_type": [
+                                "wpcf7_contact_form"
+                            ],
+                            "post_status": "",
+                            "taxonomy": "",
+                            "return_format": "id",
+                            "multiple": 0,
+                            "max": "",
+                            "save_custom": 0,
+                            "save_post_status": "publish",
+                            "acfe_add_post": 0,
+                            "acfe_edit_post": 0,
+                            "acfe_bidirectional": {
+                                "acfe_bidirectional_enabled": "0"
+                            },
+                            "required_message": "",
+                            "allow_null": 0,
+                            "acfe_field_group_condition": 0,
+                            "ui": 1,
+                            "save_post_type": "",
+                            "min": ""
+                        },
+                        {
+                            "key": "field_64997297cdff7",
+                            "label": "Osoba kontaktowa (opcjonalnie)",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "accordion",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "open": 0,
+                            "multi_expand": 0,
+                            "endpoint": 0,
+                            "acfe_field_group_condition": 0
+                        },
+                        {
+                            "key": "field_649967e4d2adc",
+                            "label": "Osoba kontaktowa (opcjonalnie)",
+                            "name": "section_employee_id",
+                            "aria-label": "",
+                            "type": "post_object",
+                            "instructions": "Możesz wybrać osobę z listy pracowników, a jej wizytówka wyświetli się obok formularza kontaktowego. Pracowników możesz edytować w zakładce Zespół -> Lista pracowników.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "post_type": [
+                                "employee"
+                            ],
+                            "post_status": "",
+                            "taxonomy": "",
+                            "return_format": "id",
+                            "multiple": 0,
+                            "max": "",
+                            "save_custom": 0,
+                            "save_post_status": "publish",
+                            "acfe_add_post": 0,
+                            "acfe_edit_post": 0,
+                            "acfe_bidirectional": {
+                                "acfe_bidirectional_enabled": "0"
+                            },
+                            "allow_null": 0,
+                            "acfe_field_group_condition": 0,
+                            "ui": 1,
+                            "save_post_type": "",
+                            "min": ""
+                        },
+                        {
+                            "key": "field_649963e0ffe76",
+                            "label": "Ustawienia dodatkowe",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "accordion",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "open": 0,
+                            "multi_expand": 0,
+                            "endpoint": 0,
+                            "acfe_field_group_condition": 0
+                        },
+                        {
+                            "key": "field_649963e8ffe77",
+                            "label": "Kontrast tła sekcji",
+                            "name": "section_settings_bgColor",
+                            "aria-label": "",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "field_6490696f692d0"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0,
+                            "acfe_field_group_condition": 0,
+                            "acfe_seamless_style": 0,
+                            "acfe_clone_modal": 0,
+                            "acfe_clone_modal_close": 0,
+                            "acfe_clone_modal_button": "",
+                            "acfe_clone_modal_size": "large"
+                        }
+                    ],
+                    "min": "",
+                    "max": "",
+                    "acfe_layout_locations": [
+                        [
+                            {
+                                "param": "post_type",
+                                "operator": "!=",
+                                "value": "post"
+                            }
+                        ],
+                        [
+                            {
+                                "param": "post_type",
+                                "operator": "==",
+                                "value": "page"
+                            },
+                            {
+                                "param": "page",
+                                "operator": "!=",
+                                "value": "10"
+                            },
+                            {
+                                "param": "page_template",
+                                "operator": "!=",
+                                "value": "page-templates\/page-contact.php"
+                            }
+                        ],
+                        [
+                            {
+                                "param": "post_type",
+                                "operator": "==",
+                                "value": "casestudy"
+                            }
+                        ],
+                        [
+                            {
+                                "param": "post_type",
+                                "operator": "==",
+                                "value": "service"
+                            }
+                        ],
+                        [
+                            {
+                                "param": "options_page",
+                                "operator": "==",
+                                "value": "service-archive-content"
+                            }
+                        ]
+                    ],
+                    "acfe_flexible_render_template": false,
+                    "acfe_flexible_render_style": false,
+                    "acfe_flexible_render_script": false,
+                    "acfe_flexible_thumbnail": false,
+                    "acfe_flexible_settings": false,
+                    "acfe_flexible_settings_size": "medium",
+                    "acfe_flexible_modal_edit_size": false,
+                    "acfe_flexible_category": false,
+                    "acfe_layout_col": "auto",
+                    "acfe_layout_allowed_col": false
+                }
+            },
+            "min": "",
+            "max": "",
+            "button_label": "Dodaj sekcję",
+            "acfe_field_group_condition": 0,
+            "acfe_flexible_layouts_previews": false,
+            "acfe_flexible_grid_container": false
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "page"
+            },
+            {
+                "param": "page",
+                "operator": "!=",
+                "value": "10"
+            },
+            {
+                "param": "page_template",
+                "operator": "!=",
+                "value": "page-templates\/page-contact.php"
+            },
+            {
+                "param": "page_template",
+                "operator": "!=",
+                "value": "page-templates\/page-inquiry.php"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "casestudy"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "service"
+            }
+        ],
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "service-archive-content"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "field",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "acfe_display_title": "",
+    "acfe_autosync": [
+        "json"
+    ],
+    "acfe_form": 0,
+    "acfe_meta": "",
+    "acfe_note": "",
+    "modified": 1691135209
+}

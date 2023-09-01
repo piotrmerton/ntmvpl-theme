@@ -1,0 +1,167 @@
+@import "../../utilities/variables";
+.section-contactform {
+    .section__grid {
+        .grid__item {
+            > .item__content {
+                padding: 2rem;
+
+                border-radius: 1rem;
+                max-width: 55rem;
+                margin: 0 auto;
+                background: $lightgray;
+                position: relative;
+            }
+
+            &.item--poc {
+                > .item__content {
+                    height: 100%;
+                    display: grid;
+                    align-items: center;
+                }
+            }
+        }
+    }
+    .contact-form {
+        @media (min-width: $breakpoint_mobile + 1px) {
+            fieldset {
+                // display: grid;
+                // grid-template-columns: 1fr 1fr 1fr;
+
+                // grid-gap: 0 1rem;
+
+                // .form__field {
+                //     &:last-child {
+                //         grid-row: 2;
+                //         grid-column: 1 / -1;
+                //     }
+                // }
+
+                //fieldset layout with flex should be more dynamic, i.e. it will work either for 3 and 4 fields
+                display: flex;
+                gap: 1rem;
+                flex-wrap: wrap;
+                margin-bottom: 1.5rem;
+
+                .form__field {
+                    flex-basis: 25%;
+                    flex-grow: 1;
+                    margin: 0;
+                    &:last-child {
+                        flex-basis: 100%;
+                    }
+                }
+            }
+
+            .form__policy {
+                position: absolute;
+                bottom: 3rem;
+                right: 2rem;
+                text-align: right;
+            }
+        }
+    }
+
+    //overrides partials/listing/employee.scss
+    .item--employee {
+        max-width: 20rem;
+        margin: 0 auto;
+
+        .item__meta {
+            .employee__phonenumber {
+                margin: 2.5rem 0;
+
+                @media (max-width: $breakpoint_mobile) {
+                    margin: 2rem 0;
+                }
+            }
+        }
+        .employee__image {
+            width: 11rem;
+            height: 11rem;
+            border: 0.75rem solid #fff;
+        }
+
+        .employee__phonenumber {
+            margin: 2rem 0;
+            font-size: 1em;
+
+            a {
+                color: $black;
+                font-weight: bold;
+
+                border: 2px solid $black;
+                padding: 0.75rem 2.5rem;
+                border-radius: 2rem;
+                transition: all 0.2s;
+
+                &:hover {
+                    background: $black;
+                    color: #fff;
+                    text-decoration: none;
+
+                    .svg__ico {
+                        fill: #fff;
+                    }
+                }
+            }
+
+            .ui-ico {
+                height: 1.25em;
+            }
+
+            .svg__ico {
+                fill: $black;
+            }
+        }
+
+        @media (max-width: $breakpoint_mobile) {
+            .employee__image {
+                border-width: 0.5rem;
+            }
+            .employee__phonenumber {
+                .ui-ico {
+                    height: 1rem;
+                }
+                a {
+                    font-size: 1em;
+                }
+            }
+        }
+    }
+
+    &.section--has-employee {
+        .section__grid {
+            display: grid;
+            grid-gap: 1rem 2rem;
+            .grid__item {
+                > .item__content {
+                    margin: 0;
+                }
+            }
+        }
+
+        @media (min-width: $breakpoint_mobile + 1px) {
+            .section__header {
+                text-align: left;
+                h2 {
+                    margin-left: 0;
+                    margin-right: 0;
+                }
+            }
+            .section__grid {
+                grid-template-columns: 8fr 4fr;
+            }
+        }
+    }
+
+    &.section--lightgray {
+        .grid__item {
+            > .item__content {
+                background: #fff;
+            }
+        }
+        .employee__image {
+            border-color: $lightgray;
+        }
+    }
+}

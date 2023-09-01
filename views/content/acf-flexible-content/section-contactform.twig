@@ -1,0 +1,48 @@
+<section class="content__section section-contactform {% if section.section_settings_bgColor %} section--{{section.section_settings_bgColor.slug}}{% endif %}{% if section.section_has_employee %} section--has-employee{% endif %}">
+
+	<div class="viewport">
+
+		<div class="section__grid">
+
+			<div class="grid__item item--contactform">
+
+				<div class="section__header text--center">
+					{% if section.section_title %}
+						<h5 class="section__title">{{section.section_title}}</h5>
+					{% endif %}
+
+					{% if section.section_header %}
+						<h2>{{ section.section_header }}</h2>
+					{% endif %}
+
+					{% if section.section_desc %}
+						<p>{{ section.section_desc }}</p>
+					{% endif %}
+				</div>
+
+				<div class="item__content">
+					{% include 'components/form/contact-form.twig' with {
+                        'title' : section.contactform_title ? section.contactform_title : false,
+                        'id_contact_form' : section.section_contactform_id
+                    } %}
+
+				</div>
+			</div>
+
+			{% if section.section_has_employee %}
+				<div class="grid__item item--poc">
+					<div class="item__content">
+						<ul class="employee__list list--single-employee">
+							{% include 'partials/listing/item-employee.twig' with {
+                            'employee' : section.section_employee
+                        } %}
+						</ul>
+					</div>
+				</div>
+			{% endif %}
+
+		</div>
+
+	</div>
+
+</section>

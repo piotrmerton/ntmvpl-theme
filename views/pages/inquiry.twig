@@ -1,0 +1,60 @@
+{% extends "layout/base.twig" %}
+
+{% block body %}
+
+	<div class="content__body content--inquiry">
+
+		<div class="content__grid">
+
+			<div class="grid__item item--cover">
+
+				<figure class="content__cover">
+
+					{% include 'partials/_picture.twig' with {
+                        'theme_image' : true,
+                        'image' : {
+                            'url' : theme.path ~ '/assets/img/inquiry/cover.jpg',
+                            'width' : 1920,
+                            'height' : 730,                        
+                        }
+				    } %}
+
+				</figure>
+
+				{% include "partials/_symbol.twig" with {
+                    'cssClass' : 'content__symbol',
+                    'symbol' : {
+                        'value' : 'logo-mark'
+                    },
+                    'symbol_color' : {
+                        'slug' : 'white'
+                    },
+                    'symbol_bgColor' : {
+                        'slug' : 'skyblue'
+                    },
+                } %}
+
+			</div>
+
+			<div class="grid__item item--content">
+				<main class="content__main" role="main">
+
+					<div class="viewport">
+						<div class="content__title">
+							<h1 class="text--center">{{ __('Bezpłatna wycena', 'theme') }}</h1>
+							<p>{{ __('Cieszymy się, że jesteś! Skontaktuj się z  nami i porozmawiajmy o przyszłym sukcesie Twojego e-biznesu.', 'theme') }}</p>
+						</div>
+
+						{% include 'components/form/contact-form.twig' with { 'id_contact_form' : 482 } %}
+
+					</div>
+
+				</main>
+			</div>
+
+		</div>
+
+
+	</div>
+
+{% endblock %}

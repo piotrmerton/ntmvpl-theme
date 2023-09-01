@@ -1,0 +1,20 @@
+<section class="content__section section-posts section--{{section.section_settings_postType}}{% if section.section_settings_bgColor %} section--{{section.section_settings_bgColor.slug}}{% endif %}">
+	<div class="viewport">
+
+		<div class="section__header text--center">
+			<h5>{{ section.section_title }}</h5>
+			<h2>{{ section.section_header }}</h2>
+		</div>
+
+		<div class="section__body">
+
+			{% include 'components/posts.twig' with { 
+				'posts' : section.posts,
+				'post_type' : section.section_settings_postType,
+				'add_swiper_markup' : true
+			} %}
+
+		</div>
+
+	</div>
+</section>

@@ -1,0 +1,39 @@
+.block-social {
+    display: flex;
+    gap: 2.5rem;
+
+    .ui-ico {
+        height: 1.25rem;
+        margin: 0;
+        .svg__ico {
+            fill: #fff;
+        }
+    }
+
+    a {
+        display: flex;
+        align-items: center;
+
+        @media (hover: hover) {
+            &:hover {
+                .ui-ico {
+                    .svg__ico {
+                        fill: $skyblue;
+                    }
+                }
+            }
+        }
+    }
+
+    &.block--footer {
+        @media (max-width: $breakpoint_desktop) and (min-width: $breakpoint_mobile + 1px) {
+            gap: 2rem;
+        }
+
+        @media (max-width: $breakpoint_mobile) {
+            justify-content: center;
+            gap: 2rem;
+            margin: 4rem 0;
+        }
+    }
+}

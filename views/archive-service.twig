@@ -1,0 +1,19 @@
+{% extends "layout/base.twig" %}
+
+{% block body %}
+
+	<div class="content__body content--services">
+
+		<div class="content__title text--center">
+			<h5>{{ __('Poznaj naszą ofertę', 'theme') }}</h5>
+			<h1>{{ __('Co możemy dla Ciebie zrobić?', 'theme') }}</h1>
+		</div>
+
+		<main class="content__main" role="main">
+			{% include 'layout/content.twig' with { 'content' : content } %}
+		</main>
+
+
+	</div>
+
+{% endblock %}

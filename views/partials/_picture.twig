@@ -1,0 +1,49 @@
+<picture>
+
+	{# Twig webp filter doesn't work  on images not in "wp-content/uploads" (image is generated all right, however path is assumed to be in upload_dir otherwise the src will be outputted wrongly, see vendor/timber/lib/ImageHelper.php) so we are providing paths manually; Using "../../" solves path issue but prevents webp from being generated #}
+
+	{% if theme_image %}
+
+		{% if image_desktop and image_mobile %}
+			<source media="(min-width: 961px)" srcset="{{image_desktop.url|replace({'png' : 'webp', 'jpg' : 'webp'}) }}" type="image/webp">
+			<source media="(min-width: 961px)" srcset="{{image_desktop.url}}" type="image/jpeg">
+
+			<source media="(max-width: 960px)" srcset="{{image_mobile.url|replace({'png' : 'webp', 'jpg' : 'webp'}) }}" type="image/webp">
+			<source media="(max-width: 960px)" srcset="{{image_mobile.url}}" type="image/jpeg">
+
+			{% include 'partials/_image.twig' with { 'image' : image_desktop } %}
+
+		{% else %}
+
+			<source srcset="{{image.url|replace({'png' : 'webp', 'jpg' : 'webp'}) }}" type="image/webp">
+			<source srcset="{{image.url}}" type="image/jpeg">
+
+			{% include 'partials/_image.twig' with { 'image' : image } %}
+
+		{% endif %}
+
+	{% else %}
+
+		{% if image_desktop and image_mobile %}
+			<source media="(min-width: 961px)" srcset="{{image_desktop.url|towebp}}" type="image/webp">
+			<source media="(min-width: 961px)" srcset="{{image_desktop.url}}" type="image/jpeg">
+
+			<source media="(max-width: 960px)" srcset="{{image_mobile.url|towebp}}" type="image/webp">
+			<source media="(max-width: 960px)" srcset="{{image_mobile.url}}" type="image/jpeg">
+
+			{% include 'partials/_image.twig' with { 'image' : image_desktop } %}
+
+		{% else %}
+
+			<source srcset="{{image.url}}" type="image/webp">
+			<source srcset="{{image.url}}" type="image/jpeg">
+
+			{% include 'partials/_image.twig' with { 'image' : image } %}
+
+
+		{% endif %}
+
+	{% endif %}
+
+
+</picture>

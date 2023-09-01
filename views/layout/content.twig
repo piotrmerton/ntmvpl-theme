@@ -1,0 +1,31 @@
+{#
+
+	Flexible content via ACF
+
+	Docs:
+	https://www.advancedcustomfields.com/resources/flexible-content/
+	https://timber.github.io/docs/guides/acf-cookbook/#flexible-content-field
+
+	Remember not to call meta on the inner field - call the meta method once!
+	https://timber.github.io/docs/guides/acf-cookbook/#troubleshooting-repeaters
+
+#}
+
+{% for section in content %}
+
+	{# 
+			
+			You can include twig template directly or use custom function theme_render_flexible_content that handles separating PHP logic from Twig templates for Flexible Fields. The PHP files have higher priority, but are optional, i.e. for Flexible Field called "gallery", it will look for following files in theme dir:
+		
+			1) (optional) template-parts/flexible-content/gallery.php, where you can add custom logic, queries and keep them separate from template
+			2) (required) views/partials/flexible-content/gallery.twig - standard template
+		
+			#}
+
+	{# 
+			
+			{% include 'partials/flexible-content/' ~ section.acf_fc_layout|replace({'_': '-'}) ~ '.twig' %} 
+			
+			#}
+
+{{ theme_render_flexible_content( section, loop ) }}{% endfor %}

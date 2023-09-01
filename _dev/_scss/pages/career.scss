@@ -1,0 +1,25 @@
+@import "../utilities/variables";
+
+.content--career {
+    .tabs__list {
+        margin-bottom: $white_space_vertical_desktop;
+
+        @media (max-width: $breakpoint_mobile) {
+            margin-bottom: $white_space_vertical_mobile;
+        }
+
+        .tab__title {
+            display: block;
+            padding: 1.5rem 2rem;
+            background: $lightgray;
+            border-radius: 2rem;
+
+            font-size: 1.375rem;
+
+            @media (max-width: $breakpoint_mobile) {
+                font-size: 1.125em;
+                padding: 1rem;
+            }
+        }
+    }
+}

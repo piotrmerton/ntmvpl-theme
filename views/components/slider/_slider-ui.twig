@@ -1,0 +1,23 @@
+<div class="slider__ui">
+
+	<nav class="slider__nav">
+		<button type="button" class="nav__prev swiper-button-prev" aria-label="{{__('Kliknij na strzałkę w lewo, aby pokazać poprzedni slajd.', 'theme') }}">
+			<figure class="ui-ico ico--prev">
+				<img loading="lazy" src="{{ theme.path }}/assets/svg/ui-next.svg" alt="{{__('Kliknij na strzałkę w lewo, aby pokazać poprzedni slajd.', 'theme') }}" width="32" height="16"/>
+			</figure>
+		</button>
+
+		<div
+			class="nav__pagination">
+			{# Pagination markup will be populated via Swiperjs #}
+			<nav class="slider__pagination"></nav>
+		</div>
+
+		<button type="button" class="nav__next swiper-button-next" aria-label="{{__('Kliknij na strzałkę w prawo, aby pokazać kolejny slajd.', 'theme') }}">
+			<figure class="ui-ico ico--next">
+				<img loading="lazy" src="{{ theme.path }}/assets/svg/ui-next.svg" alt="{{__('Kliknij na strzałkę w prawo, aby pokazać kolejny slajd.', 'theme') }}" width="32" height="16"/>
+			</figure>
+		</button>
+	</nav>
+
+</div>

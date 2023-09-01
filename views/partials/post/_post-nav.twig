@@ -1,0 +1,29 @@
+<nav class="post__nav">
+
+	{% if post_nav.prev_post %}
+		<a class="nav__item item--prev" href="{{ post_nav.prev_post.link }}">
+			<h5>
+				<figure class="ui-ico">
+					{{ source('assets/svg/ui-prev.svg', ignore_missing = true) }}
+				</figure>
+				<span class="label">{{ __('Poprzedni wpis', 'theme') }}</span>
+			</h5>
+			<span class="item__date">{{ post_nav.prev_post.date }}</span>
+			<h3 class="item__name">{{ post_nav.prev_post.title }}</h3>
+		</a>
+	{% endif %}
+
+	{% if post_nav.next_post %}
+		<a class="nav__item item--next" href="{{ post_nav.next_post.link }}">
+			<h5>
+				<span class="label">{{ __('Następny wpis', 'theme') }}</span>
+				<figure class="ui-ico">
+					{{ source('assets/svg/ui-prev.svg', ignore_missing = true) }}
+				</figure>
+			</h5>
+			<span class="item__date">{{ post_nav.next_post.date }}</span>
+			<h3 class="item__name">{{ post_nav.next_post.title }}</h3>
+		</a>
+	{% endif %}
+
+</nav>

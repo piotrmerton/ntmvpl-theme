@@ -1,0 +1,90 @@
+{
+    "key": "group_6491b5a1a4176",
+    "title": "Case study - powiązania",
+    "fields": [
+        {
+            "key": "field_6491b5ba9ff50",
+            "label": "Usługa",
+            "name": "casestudy_service",
+            "aria-label": "",
+            "type": "taxonomy",
+            "instructions": "Zaznacz wykonane usługi.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "taxonomy": "casestudy_service",
+            "add_term": 1,
+            "save_terms": 1,
+            "load_terms": 1,
+            "return_format": "id",
+            "field_type": "checkbox",
+            "min": "",
+            "max": "",
+            "acfe_bidirectional": {
+                "acfe_bidirectional_enabled": "0"
+            },
+            "acfe_field_group_condition": 0,
+            "multiple": 0,
+            "allow_null": 0
+        },
+        {
+            "key": "field_6491b7102baa6",
+            "label": "Branża",
+            "name": "casestudy_industry",
+            "aria-label": "",
+            "type": "taxonomy",
+            "instructions": "Wybierz branżę.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "taxonomy": "casestudy_industry",
+            "add_term": 1,
+            "save_terms": 1,
+            "load_terms": 1,
+            "return_format": "id",
+            "field_type": "checkbox",
+            "min": "",
+            "max": "",
+            "acfe_bidirectional": {
+                "acfe_bidirectional_enabled": "0"
+            },
+            "acfe_field_group_condition": 0,
+            "multiple": 0,
+            "allow_null": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "casestudy"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "side",
+    "style": "default",
+    "label_placement": "left",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "acfe_display_title": "",
+    "acfe_autosync": [
+        "json"
+    ],
+    "acfe_form": 0,
+    "acfe_meta": "",
+    "acfe_note": "",
+    "modified": 1687272359
+}

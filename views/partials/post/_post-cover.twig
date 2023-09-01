@@ -1,0 +1,17 @@
+<figure class="post-cover {% if post.thumbnail is empty %}cover--is-empty{% endif %}">
+
+	{% if post.thumbnail %}
+
+		<picture>
+
+			<source media="(min-width: 961px)" srcset="{{ post.thumbnail.src('big')|towebp }}" type="image/webp">
+			<source media="(min-width: 961px)" srcset="{{ post.thumbnail.src('big') }}" type="image/jpeg">
+
+			<source media="(max-width: 960px)" srcset="{{ post.thumbnail.src('medium')|towebp }}" type="image/webp">
+			<source media="(max-width: 960px)" srcset="{{ post.thumbnail.src('medium') }}" type="image/jpeg">
+
+			<img loading="lazy" src="{{ post.thumbnail.src('big') }}" width="960" height="640" alt="{{ post.thumbnail.alt ? post.thumbnail.alt : post.title }}"/>
+		</picture>
+
+	{% endif %}
+</figure>

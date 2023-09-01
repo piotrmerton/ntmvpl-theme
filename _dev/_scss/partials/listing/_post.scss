@@ -1,0 +1,136 @@
+.item--post {
+    text-align: center;
+
+    a {
+        text-decoration: none;
+    }
+
+    .item__layout {
+        display: grid;
+        grid-template-rows: repeat(5, auto);
+
+        > * {
+            grid-column: 1 / -1;
+        }
+    }
+
+    .item__cover {
+        position: relative;
+
+        grid-row: 1 / span 3;
+
+        border-radius: 2rem;
+
+        figure {
+            aspect-ratio: 1.4 / 1;
+
+            position: relative;
+            border-radius: 2rem;
+            overflow: hidden;
+
+            background: $silver;
+        }
+
+        img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            object-fit: cover;
+
+            transition: transform 0.3s;
+        }
+
+        //overlay
+        &::after {
+            display: block;
+            content: "";
+
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+
+            background: linear-gradient(0deg, rgba(255, 255, 255, 1) 15%, rgba(255, 255, 255, 0) 50%);
+            z-index: 2;
+        }
+    }
+
+    .item__meta {
+        grid-row: 3 / span 2;
+
+        position: relative;
+        z-index: 2;
+
+        padding: 0 1rem;
+    }
+
+    .item__date {
+        display: block;
+        margin: 0.5rem 0;
+        color: $gray;
+        font-size: 0.875em;
+    }
+
+    .item__title {
+        max-width: 25rem;
+        margin: 0 auto;
+
+        //sometimes, on different browsers, image cover clippings might leave some unwanted pixels at the edges: this won't fix it, but prevents from interfering with text layer
+        background: #fff;
+
+        @media (min-width: $breakpoint_mobile + 1px) {
+            min-height: 4rem;
+        }
+
+        @media (max-width: $breakpoint_hd) and (min-width: $breakpoint_phone-big + 1px) {
+            font-size: 1.125em;
+        }
+
+        @media (hover: hover) {
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    @media (max-width: $breakpoint_phone-big) {
+        text-align: left;
+        .item__title {
+            margin-left: 0;
+        }
+        .item__cover {
+            figure {
+                aspect-ratio: 1 / 1;
+            }
+            img {
+                border-radius: 1rem;
+            }
+        }
+    }
+
+    @media (hover: hover) {
+        &:hover {
+            .item__cover {
+                img {
+                    transform: scale(1.05);
+                }
+            }
+        }
+    }
+}
+
+.section--lightgray {
+    .item--post {
+        .item__title {
+            background: $lightgray;
+        }
+        .item__cover {
+            &::after {
+                background: linear-gradient(0deg, $lightgray 15%, rgba(255, 255, 255, 0) 50%);
+            }
+        }
+    }
+}

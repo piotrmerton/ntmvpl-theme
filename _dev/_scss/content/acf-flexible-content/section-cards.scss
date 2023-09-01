@@ -1,0 +1,58 @@
+@import "../../utilities/variables";
+
+.section-cards {
+    .section__layout {
+        &.layout--vertical {
+            display: grid;
+
+            .section__desc {
+                max-width: unset;
+            }
+
+            @media (min-width: $breakpoint_mobile + 1px) {
+                grid-template-columns: 4fr 7fr;
+                grid-gap: 4rem;
+
+                .section__header {
+                    position: sticky;
+                    top: 7rem;
+                }
+            }
+            @media (max-width: $breakpoint_mobile) {
+            }
+        }
+    }
+
+    .section__cta {
+        .button {
+            //on invision app, on section cards on "mobile-Oferta-Single" CTA button is full width, while on the others it is not; it might be unintentional inconsistency, however, let's leave it for now
+            @media (max-width: $breakpoint_mobile) {
+                width: 100%;
+            }
+        }
+    }
+
+    &.cards--vertical {
+        overflow: unset; //overflow hidden disables position sticky
+
+        .section__desc {
+            p {
+                @media (min-width: $breakpoint_mobile + 1px) {
+                    font-size: 1em;
+                }
+            }
+        }
+    }
+
+    &.section--lightgray {
+        .cards__list {
+            &.list--big {
+                @media (min-width: $breakpoint_mobile + 1px) {
+                    .card__symbol {
+                        background: $lightgray;
+                    }
+                }
+            }
+        }
+    }
+}

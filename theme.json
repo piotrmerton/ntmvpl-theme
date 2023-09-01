@@ -1,0 +1,63 @@
+{
+    "version": 2,
+    "settings": {
+        "color": {
+            "palette": [
+                {
+                    "name": "Biały",
+                    "slug": "white",
+                    "color": "#FFFFFF",
+                    "whiteText" : false
+                },
+                {
+                    "name": "Jasnoszary",
+                    "slug": "lightgray",
+                    "color": "#F7F7F7",
+                    "whiteText" : false
+                },
+                {
+                    "name": "Szarobłękitny",
+                    "slug": "pastelblue",
+                    "color": "#BAE4F1",
+                    "whiteText" : false
+                },
+                {
+                    "name": "Błękitny",
+                    "slug": "lightblue",
+                    "color": "#73D7E8",
+                    "whiteText" : true
+                }, 
+                {
+                    "name": "Jasnoniebieski",
+                    "slug": "skyblue",
+                    "color": "#35AFEE",
+                    "whiteText" : true
+                },
+                {
+                    "name": "Niebieski",
+                    "slug": "blue",
+                    "color": "#0269B0",
+                    "whiteText" : true
+                },
+                {
+                    "name": "Ciemnoniebieski",
+                    "slug": "darkblue",
+                    "color": "#0455A4",
+                    "whiteText" : true
+                },                
+                {
+                    "name": "Granatowy",
+                    "slug": "navy",
+                    "color": "#344F8D",
+                    "whiteText" : true
+                },
+                {
+                    "name": "Żółty",
+                    "slug": "yellow",
+                    "color": "#FFD729",
+                    "whiteText" : false
+                }
+            ]
+        }
+    }
+}

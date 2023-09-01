@@ -1,0 +1,114 @@
+<section id="{{section.acf_fc_layout}}_{{section.index}}" class="content__section section-banner{% if section.section_settings_bgColor %} section--{{section.section_settings_bgColor.slug}}{% endif %}{% if section.section_cover_desktop is not empty %} section--has-image{% else %} section--without-image{% endif %}{% if section.section_settings_layoutPriority == 'text' %} section--layout-prefer-text{% endif %}">
+
+	<div class="section__grid grid--viewport{% if section.section_cover_desktop is empty %} grid--content-only{% endif %}{% if section.section_settings_layoutPriority == 'text' %} grid--prefer-text{% endif %}{% if section.section_settings_layoutPriority == 'text' and section.section_content.section_content_columns == 1 and section.section_testimonial.section_quote is empty %} grid--prefer-text-alt{% endif %}">
+
+		<div class="grid__item item--content{% if section.section_settings_imgOrder == 'left' and section.section_cover_desktop is not empty %} item--right{% endif %}{% if section.section_content.section_content_columns == 2%} item--end{% endif %}">
+
+			<div class="item__content">
+
+				{% block section_content %}
+
+					{% if section.section_title %}
+						<h5 class="section__title">{{ section.section_title }}</h5>
+					{% endif %}
+
+					<div class="section__body{% if section.section_settings_bgColor.whiteText %} text--white{% endif %}">
+
+						{% if section.tags %}
+							{% include 'partials/casestudy/tags-list.twig' with {
+								'cssClass' : 'section__tags',
+								'tags' : section.tags,
+							} %}
+						{% endif %}
+
+						{% if section.section_header %}
+							<div class="section__header{% if section.section_settings_headerPriority in ['h1', 'h2'] %} header--big{% endif %}">
+								{% if section.section_settings_headerPriority == "h1" %}
+									<h1 class="header--no-margin">{{ section.section_header }}</h1>
+								{% elseif section.section_settings_headerPriority == "h2" %}
+									<h2 class="header--no-margin">{{ section.section_header }}</h2>
+								{% else %}
+									<h3 class="header--no-margin">{{ section.section_header }}</h3>
+								{% endif %}
+							</div>
+						{% endif %}
+
+
+						<div class="item__layout">
+
+							{% if section.section_content.section_content_columns == 1 or section.section_content.section_content_columns is empty %}
+
+								<div class="section__content text--rich">
+									{{ section.section_content.section_content_text_block|shortcodes }}
+								</div>
+
+							{% elseif section.section_content.section_content_columns == 2 %}
+
+								<div class="section__content grid--two-columns text--rich">
+									<div class="grid__item item--column ">
+										{{ section.section_content.section_content_text_block|shortcodes }}
+									</div>
+									<div class="grid__item item--column">
+										{{ section.section_content.section_content_text_block_2|shortcodes }}
+									</div>
+								</div>
+
+							{% endif %}
+
+
+							{% if section.section_testimonial.section_quote %}
+								{% include "partials/section/_section-testimonial.twig" %}
+							{% endif %}
+
+						</div>
+						<!-- /item__layout -->
+
+
+					</div>
+					<!-- /item__body -->
+
+					{% if section.section_cta %}
+						{% include "partials/section/_section-cta.twig" %}
+					{% endif %}
+
+				{% endblock %}
+
+
+			</div>
+			<!-- item__content -->
+
+		</div>
+		<!-- /item--content -->
+
+
+		{% if section.section_cover_desktop %}
+			<div class="grid__item item--image{% if section.section_settings_imgOrder == 'left' %} item--left{% endif %}{% if section.symbol %} item--has-symbol{% endif %}">
+
+				<figure class="item__cover">
+					{% block section_cover_picture %}
+						{% include "partials/banner/_banner-picture.twig" with {
+								'image_desktop' : section.section_cover_desktop,
+								'image_mobile' : section.section_cover_mobile
+							} %}
+					{% endblock %}
+				</figure>
+
+				{% if section.symbol %}
+					{% include "partials/_symbol.twig" with {
+						'cssClass' : 'section__symbol',
+						'symbol' : section.symbol,
+						'symbol_color' : section.section_symbol_color,
+						'symbol_bgColor' : section.section_symbol_bgColor
+						}
+					%}
+				{% endif %}
+
+
+			</div>
+			<!-- /item--image -->
+		{% endif %}
+
+	</div>
+	<!-- /section__grid -->
+
+</section>

@@ -1,0 +1,11 @@
+<picture>
+	<source media="(min-width: 961px)" srcset="{{ image_desktop.url|towebp }}" type="image/webp">
+	<source media="(min-width: 961px)" srcset="{{ image_desktop.url }}" type="image/jpeg">
+
+	{% if image_mobile %}
+		<source media="(max-width: 960px)" srcset="{{ image_mobile.url|towebp }}" type="image/webp">
+		<source media="(max-width: 960px)" srcset="{{ image_mobile.url }}" type="image/jpeg">
+	{% endif %}
+
+	<img {% if section.index != 1 %} loading="lazy" {% endif %} src="{{ image_desktop.url }}" {% if image_desktop.alt %} alt="{{ image_desktop.alt }}" {% endif %} width="{{ image_desktop.width }}" height="{{ image_desktop.height }}"/>
+</picture>

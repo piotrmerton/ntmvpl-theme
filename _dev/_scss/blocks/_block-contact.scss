@@ -1,0 +1,64 @@
+.block-contact {
+    > li {
+        display: flex;
+        gap: 1rem;
+
+        max-width: 20rem;
+        margin: 0 auto;
+
+        .label {
+            font-size: 0.875em;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+        a {
+            display: block;
+            font-size: 1.125em;
+            color: $black;
+            font-weight: 600;
+        }
+
+        address {
+            p {
+                margin: 0;
+            }
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 2rem;
+        }
+
+        .ui-ico {
+            flex-shrink: 0;
+            background: $lightgray;
+            width: 3rem;
+            height: 3rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+
+            img {
+                width: 1.25rem;
+                height: 1.25rem;
+            }
+        }
+
+        @media (max-width: $breakpoint_desktop) and (min-width: $breakpoint_mobile + 1px) {
+            gap: 0.5rem;
+            a,
+            address {
+                font-size: 1em;
+            }
+            .ui-ico {
+                width: 2rem;
+                height: 2rem;
+
+                img {
+                    width: 1rem;
+                    height: 1rem;
+                }
+            }
+        }
+    }
+}

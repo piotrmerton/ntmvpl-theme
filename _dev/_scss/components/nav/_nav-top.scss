@@ -1,0 +1,179 @@
+/** Top Navigation embedded in views/layout/header; markup generated via wp_nav **/
+
+.nav--top {
+    ul {
+        display: none;
+    }
+
+    > ul {
+        display: block;
+    }
+
+    > .nav__list {
+        a {
+            display: block;
+            font-size: 1em;
+            font-weight: 600;
+            color: $black;
+        }
+
+        > li {
+            &:last-child {
+                > a {
+                    display: inline-flex;
+                    text-align: center;
+                    align-items: center;
+                    border: 2px solid $black;
+                    border-radius: 3rem;
+                    padding: 0 1.5rem;
+                    min-height: 3.125rem;
+                    justify-content: center;
+                    color: $black;
+                    transition: all 0.2s;
+
+                    @media (hover: hover) {
+                        &:hover {
+                            background: $black;
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .item--has-submenu {
+        > a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &:after {
+                margin-left: 0.5rem;
+                @include submenu-indicator(0.25rem, #ddd);
+            }
+        }
+
+        &.menu--open {
+            > a {
+                &:after {
+                    transform: rotate(180deg);
+                }
+            }
+            .nav__submenu {
+                //display: block;
+            }
+        }
+    }
+
+    @media (min-width: $breakpoint_mobile + 1px) {
+        a {
+            @media (hover: hover) {
+                &:hover {
+                    color: $blue;
+                    text-decoration: none;
+                }
+            }
+        }
+
+        > ul {
+            display: grid;
+
+            //all items center but last one
+            //https://stackoverflow.com/a/38948646
+            grid-template-columns: 1fr repeat(calc(var(--number-of-items) - 1), auto) 1fr;
+            gap: 0 3rem;
+            align-items: center;
+            justify-items: center;
+
+            @media (max-width: $breakpoint_hd) {
+                gap: 0 1.5rem;
+            }
+
+            > li {
+                position: relative;
+                > a {
+                    padding: 0.5rem 0;
+                }
+
+                // > .submenu__list {
+                //     > li {
+                //         > a {
+                //         }
+                //         &:not(:last-child) {
+                //             border-bottom: 1px solid black;
+                //         }
+                //     }
+                // }
+
+                &:first-child {
+                    grid-column-start: 2;
+                }
+                &:last-child {
+                    justify-self: end;
+                }
+
+                &.current-menu-item,
+                &.current_page_parent,
+                &.current-page-ancestor {
+                    &:not(:last-child) {
+                        > a {
+                            color: $blue;
+                        }
+
+                        &::after {
+                            content: "";
+                            display: block;
+                            width: 100%;
+                            height: 0.275rem;
+                            background: $pastelblue;
+                            position: absolute;
+                            bottom: -0.5rem;
+                            border-radius: 0.5rem;
+                        }
+                    }
+                }
+            }
+        }
+
+        .nav__submenu {
+            position: absolute;
+            background: red;
+            max-width: 15rem;
+            z-index: 99;
+        }
+        .item--has-submenu {
+            &.menu--open {
+                > a {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+    @media (max-width: $breakpoint_mobile) {
+        &:not(.menu--open) {
+            //display: none;
+        }
+
+        background: #fff;
+        padding: 1rem;
+
+        > .nav__list {
+            display: grid;
+            grid-template-rows: repeat(calc(var(--number-of-items) - 1), max-content) auto;
+            height: 100%;
+            a {
+                padding: 1rem;
+            }
+
+            > li {
+                &:last-child {
+                    align-self: end;
+                }
+            }
+        }
+        .nav__submenu {
+        }
+    }
+}

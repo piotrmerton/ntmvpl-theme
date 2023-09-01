@@ -1,0 +1,14 @@
+{
+  "tabWidth": 4,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": false,
+    "printWidth" : 200,
+    "[javascript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode",
+      "editor.formatOnSave": true
+    },
+    "[twig]": {
+
+      "editor.formatOnSave": true
+    }    
+}

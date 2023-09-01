@@ -1,0 +1,65 @@
+//Notice: for now everything imported here will be inlined in <head>
+//@todo: "tree shaking", i.e. move page-specific partials to external files and load them either via twig templates with <link> or via wp_enqueue_style
+
+@import "base/reset";
+
+@import "utilities/variables";
+@import "utilities/reusables";
+@import "utilities/mixins";
+
+@import "base/fonts";
+@import "base/generic";
+@import "base/form";
+@import "base/viewport";
+@import "base/typography";
+@import "base/text";
+@import "base/ui";
+
+@import "layout/grid";
+@import "layout/layout";
+@import "layout/header";
+@import "layout/content";
+@import "layout/section";
+@import "layout/footer";
+
+@import "blocks/block-contact";
+@import "blocks/block-social";
+
+@import "components/banner/banner";
+@import "components/banner/404";
+@import "components/button";
+@import "components/cards";
+@import "components/form/contact-form";
+@import "components/form/newsletter-signin-form";
+@import "components/gallery";
+@import "components/pagination";
+@import "components/modal";
+@import "components/nav/nav-top";
+@import "components/tabs";
+@import "components/overlay";
+@import "components/slider";
+@import "components/testimonials";
+
+@import "partials/listing/employee";
+@import "partials/listing/post";
+@import "partials/listing/casestudy";
+@import "partials/listing/tag";
+
+@import "partials/post/posts-list";
+@import "partials/blog/categories";
+
+@import "content/acf-flexible-content/hero-banner";
+@import "content/acf-flexible-content/section-banner";
+@import "content/acf-flexible-content/section-cards";
+@import "content/acf-flexible-content/section-figure";
+@import "content/acf-flexible-content/section-posts";
+@import "content/acf-flexible-content/section-testimonials";
+@import "content/acf-flexible-content/section-contactform";
+@import "content/acf-flexible-content/section-text";
+
+@import "content/section-seo";
+
+//include pages in bundle or load as separate files via wp_enqueue_style?
+//@import "pages/post";
+//@import "pages/career";
+//@import "pages/contact";

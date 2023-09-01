@@ -1,0 +1,52 @@
+<section class="content__section contact__section contact-section-contact-form section--lightgray">
+
+	<div class="viewport">
+
+		<div class="section__grid">
+
+
+			<div class="grid__item item--employees">
+
+				<div class="content__title">
+					<h5>{{ __('Skontaktuj się z nami', 'theme') }}</h5>
+					<h1>{{ __('Dobrze, że tutaj jesteś', 'theme') }}</h1>
+				</div>
+
+				<div class="section__body">
+
+					<div class="section__header">
+						<h5>{{ __('Zostań naszym partnerem', 'theme') }}</h5>
+						<h3>{{ __('Rozpocznij z nami współpracę już teraz', 'theme') }}</h3>
+					</div>
+
+					{% include 'partials/contact/employees-list.twig' with {
+                        'employees' : employee_groups.new_partners,
+                        'cssClass': 'list--new-partners' 
+                    } %}
+
+				</div>
+				<!-- /section__body -->
+
+			</div>
+			<!-- /item--employees -->
+
+			<div class="grid__item item--contact-form">
+
+				<div class="item__body text--center">
+
+
+					{% include 'components/form/contact-form.twig' with {
+						'title' : __('Porozmawiajmy o przyszłym sukcesie Twojego e-biznesu', 'theme'),
+					} %}
+
+				</div>
+
+			</div>
+			<!-- /item--contact-form -->
+
+		</div>
+
+	</div>
+	<!-- viewport -->
+
+</section>

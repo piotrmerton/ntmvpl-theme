@@ -1,0 +1,52 @@
+// default variables
+
+//theme global variables related to layout
+$sticky_offset: 1rem; //offset for sticky elements (ui-filters on category and meta "buy block" on product)
+
+//paths to assets - keep in mind that CSS will be inlined, so absolute paths are required. For some reason I couldn't get to work relative path with meta base href tag.
+$assetsPath: "//";
+$fontsPath: "//";
+
+//theme colors (see theme.json)
+$black: #202124;
+$silver: #f0f0f0;
+$gray: #5f6368;
+$lightgray: #f7f7f7;
+$pastelblue: #bae4f1;
+$lightblue: #73d7e8;
+$skyblue: #35afee;
+$blue: #0269b0;
+$darkblue: #0455a4;
+$navy: #344f8d;
+$yellow: #ffd729;
+
+$text_silver: #535050;
+$text_silver_light: #c8c8c8;
+
+$viewport_width: 1440px;
+$viewport_padding: 1rem;
+
+$white_space_vertical_desktop: 6.25rem;
+$white_space_vertical_mobile: 3rem;
+
+$text_vertical_margin_big_desktop: "";
+$text_vertical_margin_big_mobile: "";
+
+$text_vertical_margin_regular_desktop: "";
+$text_vertical_margin_regular_mobile: "";
+
+$text_vertical_margin_small_desktop: "";
+$text_vertical_margin_small_mobile: "";
+
+$breakpoint_phone: 480px;
+$breakpoint_phone_big: 640px;
+$breakpoint_tablet-portrait: 768px;
+$breakpoint_mobile: 960px;
+$breakpoint_tablet: 1024px;
+$breakpoint_desktop: 1180px;
+$breakpoint_hd: 1280px;
+$breakpoint_laptop: 1366px;
+$breakpoint_laptop_big: 1440px;
+$breakpoint_viewport: 1650px;
+$breakpoint_fullhd: 1920px;
+$breakpoint_wqhd: 2560px;

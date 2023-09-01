@@ -1,0 +1,51 @@
+.tags__list {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+
+    @media (max-width: $breakpoint_mobile) {
+        justify-content: center;
+    }
+
+    @media (max-width: $breakpoint_phone-big) {
+        gap: 0.25rem;
+    }
+}
+
+.item--tag {
+    color: $skyblue;
+
+    display: block;
+
+    .label {
+        display: block;
+        padding: 0.25rem 0.75rem;
+        border: 1px solid $skyblue;
+        border-radius: 1rem;
+        font-size: 0.875em;
+
+        @media (max-width: $breakpoint_tablet) and (min-width: $breakpoint_mobile + 1px), (max-width: $breakpoint_phone-big) {
+            padding: 0.25rem 0.5rem;
+            font-size: 0.813em;
+        }
+    }
+
+    a {
+        color: inherit;
+        text-decoration: none;
+
+        @media (hover: hover) {
+            transition: all 0.2s;
+            &:hover {
+                background: $skyblue;
+                color: #fff;
+            }
+        }
+    }
+
+    &.item--more {
+        .label {
+            padding: 0.25rem 0.5rem;
+        }
+    }
+}

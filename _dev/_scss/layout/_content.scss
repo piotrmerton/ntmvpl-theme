@@ -1,0 +1,60 @@
+.content__body {
+    position: relative;
+    z-index: 1;
+
+    padding-top: 6rem; //compensate for fixed header
+
+    @media (max-width: $breakpoint_mobile) {
+        padding-top: 4.5rem;
+    }
+}
+
+.content__main {
+}
+
+.content__title {
+    margin: 5rem 0;
+
+    @media (max-width: $breakpoint_mobile) {
+        margin: 2.5rem 0;
+    }
+
+    h1,
+    p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    p {
+        font-size: 1.125em;
+        max-width: 40rem;
+    }
+}
+
+.content__section {
+    overflow: hidden;
+
+    padding: $white_space_vertical_desktop 0;
+    border-radius: 2rem;
+
+    margin-bottom: 1rem;
+
+    @media (max-width: $breakpoint_mobile) {
+        padding: $white_space_vertical_mobile 0;
+        border-radius: 1.5rem;
+    }
+    @media (min-width: $breakpoint_mobile + 1px) {
+        width: calc(100% - 1rem);
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    //see layout/section.scss
+
+    &.section--no-padding {
+        padding: 0;
+    }
+    &.section--no-padding-top {
+        padding-top: 0;
+    }
+}

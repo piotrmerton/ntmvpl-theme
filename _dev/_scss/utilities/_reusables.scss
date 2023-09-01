@@ -1,0 +1,111 @@
+//youtube embed wrapper for 16:9 aspect ratio
+.embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    margin-bottom: 2rem;
+    iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    @media (max-width: $breakpoint_mobile) {
+        margin-bottom: 1rem;
+    }
+}
+
+/** 
+
+    Some symbols (SVG icons, i.e. section symbol in sectio-banner) can have colors configured via ACF Color Picker UI. We can either print inline styles directly in template or do it via CSS.
+
+    For color list see theme.json
+
+**/
+
+.symbol {
+    &.symbol--white {
+        svg {
+            fill: #fff;
+        }
+    }
+    &.symbol--lightgray {
+        svg {
+            fill: $lightgray;
+        }
+    }
+    &.symbol--pastelblue {
+        svg {
+            fill: $pastelblue;
+        }
+    }
+    &.symbol--lightblue {
+        svg {
+            fill: $lightblue;
+        }
+    }
+    &.symbol--skyblue {
+        svg {
+            fill: $skyblue;
+        }
+    }
+    &.symbol--blue {
+        svg {
+            fill: $blue;
+        }
+    }
+    &.symbol--navy {
+        svg {
+            fill: $navy;
+        }
+    }
+    &.symbol--yellow {
+        svg {
+            fill: $yellow;
+        }
+    }
+    &.symbol--black {
+        svg {
+            fill: $black;
+        }
+    }
+
+    &.symbol--bg-white {
+        background: #fff;
+    }
+    &.symbol--bg-lightgray {
+        background: $lightgray;
+    }
+    &.symbol--bg-pastelblue {
+        background: $pastelblue;
+    }
+    &.symbol--bg-lightblue {
+        background: $lightblue;
+    }
+    &.symbol--bg-skyblue {
+        background: $skyblue;
+    }
+    &.symbol--bg-blue {
+        background: $blue;
+    }
+    &.symbol--bg-navy {
+        background: $navy;
+    }
+    &.symbol--bg-yellow {
+        background: $yellow;
+    }
+}
+
+//WordPress Classic Editor classes
+.alignright {
+    float: right;
+}
+.alignleft {
+    float: left;
+}
+.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

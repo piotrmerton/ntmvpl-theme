@@ -1,0 +1,54 @@
+{# Swiperjs HTML markup reference: https://swiperjs.com/get-started#add-swiper-html-layout #}
+
+
+<div class="testimonials{% if layout == 'single' %} testimonials--single{% endif %}{% if add_swiper_markup %} testimonials-slider swiper{% endif %}">
+
+	{% if add_swiper_markup %}
+		{% include "components/slider/_slider-ui.twig" %}
+	{% endif %}
+
+	<ul class="testimonials__list{% if add_swiper_markup %} swiper-wrapper{% endif %}">
+		{% for post in testimonials %}
+
+			<li class="list__item item--card card--has-symbol item--testimonial{% if add_swiper_markup %} swiper-slide{% endif %}">
+
+				<div class="card__layout">
+
+					{% include "partials/_symbol.twig" with {
+					'cssClass' : 'card__symbol',
+					'symbol' : {
+						value : 'quote'
+						}
+					}
+					%}
+					<div class="item__body">
+						<div>
+							<blockquote>
+								<p>{{ post.testimonial_quote }}</p>
+							</blockquote>
+
+							<div class="testimonial__author">{{ post.testimonial_author }}</div>
+
+							<ul class="testimonial__meta">
+								{% if post.testimonial_role %}
+									<li class="testimonial__role">{{ post.testimonial_role }}</li>
+								{% endif %}
+
+								{% if post.testimonial_company and post.testimonial_url %}
+									<li class="testimonial__company">
+										<a target="_blank" href="{{ post.testimonial_url }}">{{ post.testimonial_company }}</a>
+									</li>
+								{% elseif post.testimonial_company %}
+									<li class="testimonial__company">{{ post.testimonial_company}}</li>
+								{% endif %}
+							</ul>
+						</div>
+					</div>
+
+				</div>
+				<!-- /card__layout -->
+			</li>
+
+		{% endfor %}
+	</ul>
+</div>

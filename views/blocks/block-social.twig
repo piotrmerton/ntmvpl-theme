@@ -1,0 +1,23 @@
+{% set labels = {
+	'facebook' : __('Polub naszą stronę na Facebooku', 'theme'),
+	'twitter' : __('Zobacz nasz profil na Twitterze', 'theme'),
+	'linkedin' : __('Odwiedź nasze konto w serwisie LinkedIn', 'theme'),
+	'instagram' : __('Odwiedź nasz profil na Instagramie', 'theme'),
+	'youtube' : __('Subskrybuj nasz kanał na YouTube', 'theme'),
+}%}
+
+<ul class="block-social{% if cssClass %} {{ cssClass }}{% endif %}">
+
+	{% for id, url in socialmedia %}
+
+		<li class="list__item item--{{id}}">
+			<a href="{{url}}" title="{{labels[id]}}" aria-label="{{labels[id]}}">
+				<figure class="ui-ico ico--{{id}}">
+					{{ source('assets/svg/'~id~'.svg', ignore_missing = true) }}
+				</figure>
+			</a>
+		</li>
+
+	{% endfor %}
+
+</ul>

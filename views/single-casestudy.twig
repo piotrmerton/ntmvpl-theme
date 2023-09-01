@@ -1,0 +1,17 @@
+{% extends "layout/base.twig" %}
+
+{% block body %}
+
+	<div class="content__body content--post post--casestudy content--casestudy">
+
+		<main class="content__main" role="main">
+
+			{% include 'partials/post/_post-banner.twig' %}
+
+			{% include 'layout/content.twig' with { 'content' : post.meta('content_flexible') } %}
+
+		</main>
+
+	</div>
+
+{% endblock %}

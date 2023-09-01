@@ -1,0 +1,26 @@
+{% extends "layout/base.twig" %}
+
+{% block body %}
+
+
+	<div class="content__body content--archive archive--blog">
+		<div class="viewport">
+
+			<div class="content__title text--center">
+				<h5>{{ __('Blog', 'theme') }}</h5>
+				<h1>{{ term.name }}</h1>
+			</div>
+
+			{% include 'partials/blog/categories.twig' %}
+
+			{% include 'components/posts.twig' %}
+
+		</div>
+	</div>
+
+	{% include 'components/pagination.twig' %}
+
+	{% include 'content/section-seo.twig' with {'content' : content_seo } %}
+
+
+{% endblock %}

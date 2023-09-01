@@ -1,0 +1,23 @@
+<li class="list__item item--post item--casestudy{% if add_swiper_markup %} swiper-slide{% endif %}">
+
+
+	<div class="item__layout">
+		<a class="item__cover" href="{{post.link}}">
+			{% include 'partials/post/_post-cover.twig' %}
+		</a>
+
+		<div class="item__meta">
+
+			{% include 'partials/casestudy/tags-list.twig' with {
+				'listing' : true,
+				'industries' : post.terms('casestudy_industry'),
+				'services' : post.terms('casestudy_service')
+			} %}
+
+			<h4 class="item__title">
+				<a href="{{post.link}}">{{ post.name }}</a>
+			</h4>
+		</div>
+	</div>
+
+</li>

@@ -1,0 +1,47 @@
+{% extends "layout/base.twig" %}
+
+{% block body %}
+
+	<div class="content__body content--404">
+		<section class="content__section banner banner--404">
+			<div class="banner__body text--center">
+				<div class="viewport">
+					<div class="banner__header">
+						<h2>404</h2>
+						<h1>{{ __('Strona nie została odnaleziona', 'theme') }}</h1>
+						<p>{{ __('Podana strona nie została znaleziona, nigdy nie istniała lub została usunięta.', 'theme')}}</p>
+					</div>
+
+					<div class="banner__cta">
+						<a class="button" href="{{ site.url }}">
+							<figure class="button__ico ui-ico">
+								{{ source('assets/svg/ui-prev.svg', ignore_missing = true) }}
+							</figure>
+							<span class="button__label">{{ __('Wróć na stronę główną', 'theme') }}</span>
+						</a>
+					</div>
+
+				</div>
+			</div>
+
+			<figure class="banner__cover">
+
+				{% include 'partials/_picture.twig' with {
+
+					'theme_image' : true,
+					'image_desktop' : {
+						'url' : theme.path ~ '/assets/img/banner/banner-404-desktop.jpg',
+						'width' : 1920,
+						'height' : 730,
+					},
+					'image_mobile' : {
+						'url' : theme.path ~ '/assets/img/banner/banner-404-mobile.jpg'
+					}
+
+				} %}
+
+			</figure>
+		</section>
+	</div>
+
+{% endblock %}

@@ -1,0 +1,108 @@
+@import "../../utilities/variables";
+
+//see components/banner/banner.scss
+
+.banner-hero {
+    //case: About @ Invision
+    .banner__body {
+        &:not(.text--center) {
+            @media (min-width: $breakpoint_mobile + 1px) {
+                .banner__header,
+                .banner__content {
+                    margin-left: 33%;
+                }
+            }
+        }
+    }
+
+    &.banner--order-alt {
+        @media (min-width: $breakpoint_mobile + 1px) {
+            .banner__cover {
+                .banner__header {
+                    display: none;
+                }
+            }
+        }
+        @media (max-width: $breakpoint_mobile) {
+            .banner__cover {
+                order: 1;
+
+                .banner__header {
+                    padding: 3rem 1rem 0;
+                }
+            }
+            .banner__body {
+                order: 2;
+
+                .banner__header {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    &.banner--no-cover {
+        @media (min-width: $breakpoint_mobile + 1px) {
+            .banner__content {
+                max-width: 45rem;
+                h2,
+                h3,
+                h4 {
+                    max-width: 100%;
+                }
+            }
+        }
+        @media (max-width: $breakpoint_mobile) {
+            .banner__header,
+            .banner__content {
+                text-align: left;
+                margin-left: 0;
+                margin-right: 0;
+                max-width: 100%;
+                padding: 0;
+            }
+        }
+    }
+}
+
+//reference: About @ Invision
+.banner--with-branding {
+    @media (max-width: $breakpoint_mobile) {
+        overflow: visible;
+        .banner__body {
+            padding: 3rem 0;
+        }
+        .banner__header,
+        .banner__content {
+            &::before,
+            &::after {
+                display: block;
+                content: "";
+                width: 2.25rem;
+                height: 6rem;
+                position: absolute;
+                bottom: -3.5rem;
+                right: 0;
+                background: $pastelblue;
+                transform: rotate(-45deg);
+                border-radius: 2rem;
+                z-index: 2;
+            }
+
+            &::after {
+                right: 4rem;
+            }
+        }
+
+        .banner__content {
+            &::before,
+            &::after {
+                left: 0;
+                top: -3.5rem;
+            }
+            &::after {
+                left: 4rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,26 @@
+<nav {% if slug == 'header' %} id="nav-top" {% endif %} class="{{ class }}">
+	{% if nav_title %}
+		<h4>{{ nav_title }}</h4>
+	{% endif %}
+
+	{# Number of items Custom CSS property is needed to achieve layout when all items are centered (desktop) or aligned to top (mobile) but last one (Call to Action); This is the most clean and efficient method. Other solutions, apart from separating CTA from <ul>, here: https://stackoverflow.com/a/38948646 #}
+
+	<ul class="nav__list" {% if slug == 'header' %} style="--number-of-items: {{nav.items|length}}" {% endif %}>
+		{% for item in nav.items %}
+			<li class="nav__item{% if item.children %} item--has-submenu{% endif %} {{ item.classes|join(' ') }}">
+				<a href="{{ item.link }}">{{ item.title }}</a>
+
+				{% if item.children and hide_submenu is not defined %}
+					<ul class="nav__submenu submenu__list">
+						{% for child in item.children %}
+							<li class="submenu__item{{ child.classes|join(' ') }}">
+								<a href="{{ child.link }}">{{ child.title }}</a>
+							</li>
+						{% endfor %}
+					</ul>
+				{% endif %}
+
+			</li>
+		{% endfor %}
+	</ul>
+</nav>

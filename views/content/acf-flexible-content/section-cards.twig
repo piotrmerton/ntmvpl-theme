@@ -1,0 +1,50 @@
+<section class="content__section{% if section.section_settings_bgColor %} section--{{section.section_settings_bgColor.slug}}{% endif %} section-cards cards--{{section.section_settings_layout}}">
+	<div class="viewport">
+
+		<div class="section__layout layout--{{section.section_settings_layout}}{% if section.has_slider %} layout--has-slider{% endif %}">
+
+			<div clas="grid__item item--header">
+				<div class="section__header{% if section.section_settings_layout == 'horizontal' %} text--center{% endif %}">
+
+					{% if section.section_title %}
+						<h5 class="section__title">{{section.section_title}}</h5>
+					{% endif %}
+
+					{% if section.section_header %}
+						<h2>{{ section.section_header }}</h2>
+					{% endif %}
+
+					{% if section.section_desc %}
+						<div class="section__desc">{{ section.section_desc }}</div>
+					{% endif %}
+
+					{% if section.section_cta %}
+						{% include "partials/section/_section-cta.twig" %}
+					{% endif %}
+
+				</div>
+			</div>
+
+			<div class="grid__item item--cards">
+				<div class="section__body">
+
+					{% include 'components/cards.twig' with {
+                    'cards' : section.cards,
+                    'layout' : section.section_settings_layout,
+					'columns' : section.section_settings_columns,
+                    'add_swiper_markup': section.has_slider} 
+                %}
+
+				</div>
+				<!-- /section__body -->
+			</div>
+
+		</div>
+		<!-- /section__layout -->
+
+
+	</div>
+	<!-- /viewport -->
+
+
+</section>

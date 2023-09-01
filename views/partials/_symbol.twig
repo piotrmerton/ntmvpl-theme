@@ -1,0 +1,5 @@
+<figure class="{% if cssClass %}{{cssClass}}{% endif %} symbol{% if symbol_color %} symbol--{{symbol_color.slug}}{% endif %}{% if symbol_bgColor %} symbol--bg-{{symbol_bgColor.slug}}{% endif %}">
+
+	{{ source('assets/svg/'~symbol.value~'.svg', ignore_missing = true) }}
+
+</figure>

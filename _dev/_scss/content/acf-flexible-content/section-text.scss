@@ -1,0 +1,63 @@
+@import "../../utilities/variables";
+
+.section-text {
+    width: 100%;
+    overflow: unset;
+
+    //margin instead of padding so the white space collapses
+    margin: 2rem 0;
+
+    @media (max-width: $breakpoint_mobile) {
+        margin: 2rem 0;
+    }
+
+    &.section--extra-margin {
+        margin: $white_space_vertical_desktop 0;
+
+        @media (max-width: $breakpoint_mobile) {
+            margin: $white_space_vertical_mobile 0;
+        }
+    }
+
+    &:first-of-type {
+        margin-top: $white_space_vertical_desktop;
+
+        @media (max-width: $breakpoint_mobile) {
+            margin-top: $white_space_vertical_mobile;
+        }
+    }
+    &:last-of-type {
+        margin-bottom: $white_space_vertical_desktop;
+
+        @media (max-width: $breakpoint_mobile) {
+            margin-bottom: $white_space_vertical_mobile;
+        }
+    }
+
+    //overrides base/text.scss
+    .text--rich {
+        h1,
+        h2,
+        h3,
+        h4 {
+            max-width: 100%;
+            margin: 2rem 0;
+
+            &:first-child {
+                margin-top: 0;
+            }
+        }
+        h3,
+        h4 {
+            margin: 1.5rem 0;
+        }
+
+        //across Invision screens, there are hardly any use cases for h3 which looks almost identical to h4, so let's change it for text sections so the styles are more distinct
+        h3 {
+            font-size: 1.75em;
+            @media (max-width: $breakpoint_mobile) {
+                font-size: 1.5em;
+            }
+        }
+    }
+}

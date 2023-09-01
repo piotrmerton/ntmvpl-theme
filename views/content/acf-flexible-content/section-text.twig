@@ -1,0 +1,26 @@
+<section class="content__section section-text section--no-padding{% if section.section_content.columns == 2 %} section--multiple-columns{% endif %}{% if section.section_settings_verticalMargin %} section--extra-margin{% endif %}">
+	<div class="viewport viewport--article">
+
+		{% if section.section_content.columns == 1 or section.section_content.columns is empty %}
+
+			<div class="section__content text--rich">
+				{{ section.section_content.text_block|shortcodes }}
+			</div>
+			<!-- /section__body -->
+
+		{% elseif section.section_content.columns == 2 %}
+
+			<div class="section__grid grid--two-columns text--rich">
+				<div class="grid__item item--column">
+					{{ section.section_content.text_block|shortcodes }}
+				</div>
+				<div class="grid__item item--column">
+					{{ section.section_content.text_block_2|shortcodes }}
+				</div>
+			</div>
+
+		{% endif %}
+
+	</div>
+	<!-- /viewport -->
+</section>

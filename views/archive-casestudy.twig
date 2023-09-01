@@ -1,0 +1,24 @@
+{% extends "layout/base.twig" %}
+
+{% block body %}
+
+	<div class="content__body content--casestudies">
+		<div class="viewport">
+
+			<div class="content__title text--center">
+				<h5>{{ __('Case studies', 'theme') }}</h5>
+				<h1>{{ __('Efekty naszej pracy', 'theme') }}</h1>
+			</div>
+
+			{% include 'components/ui-taxonomies.twig' %}
+
+			{% include 'components/posts.twig' %}
+
+		</div>
+	</div>
+
+	{% include 'components/pagination.twig' %}
+
+	{% include 'content/section-seo.twig' with {'content' : content_seo } %}
+
+{% endblock %}

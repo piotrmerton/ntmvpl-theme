@@ -1,0 +1,21 @@
+{# CSS stylesheets dedicated to footer: Google Webfonts, Page related CSS and Vendor CSS. Global CSS is inlined in layout/base.twig. Alternatively, we can add context-based stylesheets via wp_enqueue_style or print_late_styles (https://wordpress.stackexchange.com/a/186066), but keep in mind they will be added to <HEAD> #}
+
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+{% if globals.is_single_post %}
+	<link href="{{ theme.path }}/assets/css/pages/post.css?v=1690804786" rel="stylesheet" type="text/css"/>
+{% endif %}
+
+{% if globals.is_contact_page %}
+	<link href="{{ theme.path }}/assets/css/pages/contact.css?v=1690804786" rel="stylesheet" type="text/css"/>
+{% endif %}
+
+{% if globals.is_inquiry_page %}
+	<link href="{{ theme.path }}/assets/css/pages/inquiry.css?v=1690804786" rel="stylesheet" type="text/css"/>
+{% endif %}
+
+{% if globals.is_cpt_career_archive %}
+	<link href="{{ theme.path }}/assets/css/pages/career.css?v=1690804786" rel="stylesheet" type="text/css"/>
+{% endif %}
+
+<link href="{{ theme.path }}/assets/css/vendor.css" rel="stylesheet" type="text/css"/>

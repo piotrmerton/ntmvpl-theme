@@ -1,0 +1,29 @@
+{# Swiperjs HTML markup reference: https://swiperjs.com/get-started#add-swiper-html-layout #}
+
+{% if posts is not empty %}
+
+	<div class="posts{% if add_swiper_markup %} posts-slider swiper{% endif %}">
+
+		{% if add_swiper_markup %}
+			{% include "components/slider/_slider-ui.twig" %}
+		{% endif %}
+
+		<ul class="posts__list list--{{post_type}}{% if add_swiper_markup %} swiper-wrapper{% endif %}">
+
+			{% for post in posts %}
+
+				{% include 'partials/listing/item-' ~ post_type ~ '.twig' with { 'add_swiper_markup' : add_swiper_markup ? true : false } %}
+
+			{% endfor %}
+
+		</ul>
+
+	</div>
+
+{% else %}
+
+	<div class="ui-message message--info">
+		<p>{{ __('Brak wpisów w danej kategorii', 'theme') }}</p>
+	</div>
+
+{% endif %}

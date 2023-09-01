@@ -1,0 +1,77 @@
+.employee__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;
+
+    @media (max-width: $breakpoint_mobile) and (min-width: $breakpoint_tablet-portrait + 1px) {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    @media (max-width: $breakpoint_tablet-portrait) {
+        grid-template-columns: 1fr;
+    }
+
+    &.list--new-partners {
+        .employee__name {
+            font-size: 1.125em;
+        }
+        .employee__image {
+            width: 8rem;
+            height: 8rem;
+            border: 0.375rem solid $yellow;
+
+            @media (max-width: $breakpoint_hd) {
+                width: 6.5rem;
+                height: 6.5rem;
+            }
+        }
+
+        .employee__phonenumber {
+            font-weight: bold;
+            font-size: 0.938em;
+            a {
+                color: $black;
+            }
+            .ui-ico {
+                .svg__ico {
+                    fill: $black;
+                }
+            }
+        }
+
+        @media (min-width: $breakpoint_tablet-portrait + 1px) {
+            grid-template-columns: 1fr 1fr;
+
+            .item__meta {
+                li {
+                    justify-content: start;
+                }
+            }
+
+            .item--employee {
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+                text-align: left;
+            }
+            .employee__image {
+                margin: 0;
+                flex-shrink: 0;
+            }
+        }
+        @media (max-width: $breakpoint_tablet-portrait) {
+            .employee__image {
+                width: 5rem;
+                height: 5rem;
+                border-width: 0.25rem;
+            }
+        }
+    }
+
+    &.list--for-partners {
+    }
+
+    &.list--single-employee {
+        display: block;
+    }
+}

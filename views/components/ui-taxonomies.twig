@@ -1,0 +1,30 @@
+{# 
+TO DO:
+
+disable empty fields onsubmit to prevent null params in url or use hidden fields and build query onsubmit
+submit form onchange? (this will prevent crossfiltering)
+
+#}
+
+{# {{dump(taxonomies)}} #}
+
+{% if taxonomies is not empty %}
+	<div id="ui-taxonomies" class="ui-taxonomies">
+		<form class="ui__form" action="{{ globals.links.casestudies }}" method="get">
+			<fieldset>
+				{% for taxonomy in taxonomies %}
+					<div class="ui__select">
+						<label class="ui-select-label" for="{{ taxonomy.query_var }}">{{ taxonomy.labels.singular_name }}:</label>
+						<select class="ui-select" name="{{ taxonomy.query_var }}">
+							<option value="">{{ __('Wszystkie', 'theme') }}</option>
+							{% for term in taxonomy.terms %}
+								<option value="{{term.slug}}" {% if url_params[taxonomy.query_var] == term.slug %} selected {% endif %}>{{ term.name }}</option>
+							{% endfor %}
+						</select>
+					</div>
+				{% endfor %}
+				{# <button type="submit">Zapisz</button> #}
+			</fieldset>
+		</form>
+	</div>
+{% endif %}

@@ -1,0 +1,159 @@
+/**
+Header sizes on invision project:
+
+Desktop -> Mobile
+
+big     44px -> 28px
+medium  40px
+regular 36px -> 24px 
+small   22px -> 18px 
+
+Paragraphs sizes:
+
+header  22px -> 18px
+big     20px -> 18px
+medium  18px -> 16px
+regular 16px -> 15px
+
+Text margins:
+
+80px
+50px
+40px
+30px
+
+White space:
+
+100px
+
+**/
+
+@mixin header-big {
+    font-size: 2.75em;
+    font-weight: 800;
+    max-width: 45rem;
+
+    @media (max-width: $breakpoint_hd) {
+        font-size: 2.5em;
+        max-width: 36rem;
+    }
+    @media (max-width: $breakpoint_phone-big) {
+        font-size: 1.75em;
+    }
+
+    @include header-vertical-margin-regular;
+}
+@mixin header-medium {
+    font-size: 2.5em;
+
+    @media (max-width: $breakpoint_hd) {
+        font-size: 2em;
+    }
+    @media (max-width: $breakpoint_phone-big) {
+        font-size: 1.5em;
+    }
+
+    @include header-vertical-margin-regular;
+}
+@mixin header-regular {
+    font-size: 2.25em;
+    max-width: 45rem;
+
+    @media (max-width: $breakpoint_hd) {
+        font-size: 2em;
+        max-width: 35rem;
+    }
+    @media (max-width: $breakpoint_phone-big) {
+        font-size: 1.5em;
+    }
+
+    @include header-vertical-margin-regular;
+}
+@mixin header-small {
+    font-size: 1.375em;
+    font-weight: 500;
+    line-height: 1.5;
+    color: inherit;
+
+    @include header-vertical-margin-small;
+
+    @media (max-width: $breakpoint_phone-big) {
+        font-size: 1.125em;
+    }
+}
+
+@mixin header-vertical-margin-regular {
+    &:not(.header--no-margin) {
+        margin-bottom: 2.5rem;
+
+        @media (max-width: $breakpoint_mobile) {
+            margin-bottom: 2rem;
+        }
+    }
+}
+@mixin header-vertical-margin-big {
+    &:not(.header--no-margin) {
+        margin-bottom: 3.125rem;
+
+        @media (max-width: $breakpoint_mobile) {
+            margin-bottom: 2rem;
+        }
+    }
+}
+@mixin header-vertical-margin-extra {
+    &:not(.header--no-margin) {
+        margin-bottom: 5rem;
+
+        @media (max-width: $breakpoint_mobile) {
+            margin-bottom: 2.5rem;
+        }
+    }
+}
+@mixin header-vertical-margin-small {
+    &:not(.header--no-margin) {
+        margin-bottom: 1.875rem;
+
+        @media (max-width: $breakpoint_mobile) {
+            margin-bottom: 1.5rem;
+        }
+    }
+}
+
+@mixin paragraph-regular {
+    font-size: 1em;
+    @media (max-width: $breakpoint_mobile) {
+        font-size: 0.938em;
+    }
+}
+@mixin paragraph-medium {
+    font-size: 1.125em;
+    line-height: 1.6;
+
+    @media (max-width: $breakpoint_phone-big) {
+        //font-size: 1em; //ivision reference: "Jak pozycjonujemy" @ mobile-Oferta-single
+    }
+}
+@mixin paragraph-big {
+    font-size: 1.25em;
+
+    @media (max-width: $breakpoint_phone-big) {
+        font-size: 1.125em;
+    }
+}
+@mixin paragraph-header {
+    @include header-small;
+    font-weight: 400;
+}
+
+@mixin center-text {
+    text-align: center;
+
+    h1,
+    h2,
+    h3,
+    h4,
+    p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

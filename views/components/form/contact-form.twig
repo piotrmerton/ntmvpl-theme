@@ -1,0 +1,16 @@
+<div class="contact-form">
+
+	{% if title %}
+		<h3 class="form__title">{{ title }}</h3>
+	{% endif %}
+
+	{# https://timber.github.io/docs/guides/wp-integration/#layouts-with-shortcodes #}
+	{% apply shortcodes %}
+	[contact-form-7 id={{id_contact_form ? id_contact_form : globals.default_wpcf7_id}}]
+	{% endapply %}
+
+	<span class="form__policy">
+		{{__('Wysyłając wiadomość wyrażasz zgodę na <a href="%s">przetwarzanie danych osobowych</a>', 'theme')|format(globals.links.privacy_policy)
+        }}
+	</span>
+</div>

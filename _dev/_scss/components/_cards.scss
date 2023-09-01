@@ -1,0 +1,208 @@
+@use "sass:math";
+
+$card_symbol_size_big: 8rem;
+$card_symbol_size_desktop: 7rem;
+$card_symbol_size_mobile: 6rem;
+
+.cards {
+    @media (max-width: $breakpoint_mobile) {
+        &.swiper {
+            overflow: visible;
+        }
+    }
+
+    &.cards--big {
+        &.swiper {
+            overflow: visible;
+        }
+    }
+}
+
+.cards__list {
+    > li {
+        display: block;
+    }
+
+    &.list--horizontal {
+        display: flex;
+        align-items: stretch;
+        //gap: 3rem;
+
+        > li {
+            //flex-basis: 25%;
+        }
+
+        //swiperjs breaks with css grid?
+        &.swiper-wrapper {
+        }
+
+        &:not(.swiper-wrapper) {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 2rem;
+
+            @media (max-width: $breakpoint_desktop) {
+                grid-template-columns: 1fr 1fr;
+            }
+            @media (max-width: $breakpoint_phone-big) {
+                grid-template-columns: 1fr;
+                grid-gap: 1rem;
+            }
+        }
+    }
+    &.list--vertical {
+        display: grid;
+        grid-gap: 1rem;
+
+        @media (min-width: $breakpoint_mobile + 1px) {
+            .card__header {
+                font-size: 1.375rem;
+            }
+            .item--card {
+                .item__body {
+                    padding-left: 3rem;
+                    padding-right: 3rem;
+                }
+            }
+        }
+        @media (max-width: $breakpoint_mobile) {
+            grid-gap: 1rem;
+            .card__header {
+                font-size: 1.25rem;
+            }
+        }
+    }
+    &.list--big {
+        .card__symbol {
+            @media (min-width: $breakpoint_mobile + 1px) {
+                margin: 0 auto;
+                left: auto;
+                background: #fff;
+                transition: opacity 1s;
+
+                width: $card_symbol_size_big;
+                height: $card_symbol_size_big;
+
+                svg {
+                    height: 2.5rem;
+                    fill: $gray;
+                }
+            }
+        }
+        .item--card {
+            .item__body {
+                padding-left: 2rem;
+                padding-right: 2rem;
+            }
+            @media (min-width: $breakpoint_mobile + 1px) {
+                .item__body {
+                    text-align: center;
+                    display: grid;
+                    align-items: center;
+                }
+            }
+            @media (min-width: $breakpoint_viewport) {
+                .item__body {
+                    padding-left: 3rem;
+                    padding-right: 3rem;
+                }
+            }
+            @media (max-width: $breakpoint_mobile) {
+            }
+
+            &.swiper-slide {
+                @media (min-width: $breakpoint_mobile + 1px) {
+                    transition: opacity 1s;
+
+                    &:not(.swiper-slide-visible) {
+                        opacity: 0.3;
+                    }
+                }
+            }
+
+            &.swiper-slide-active {
+                //reference: About @ Invision, but this make no sense, because there is no scenario to highlight first and last slides (Update: using centeredSlides: true for sliders with 3 tiles solves as a workaround)
+                .card__symbol {
+                    background: $skyblue !important;
+                    svg {
+                        fill: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.item--card {
+    position: relative;
+
+    .card__header {
+        font-size: 1.25em;
+        margin-bottom: 1rem;
+    }
+
+    .item__body {
+        position: relative;
+        padding: 2rem;
+
+        background: #f9fafa; //not in palette
+        border-radius: 2rem;
+
+        @media (max-width: $breakpoint_mobile) {
+            padding: 2rem 1.5rem;
+            border-radius: 1.5rem;
+        }
+    }
+
+    &.card--has-symbol {
+        .card__layout {
+            display: grid;
+            grid-template-rows: max-content auto;
+            height: 100%;
+        }
+
+        .item__body {
+            margin-top: math.div(-$card_symbol_size_desktop, 2);
+            padding-top: math.div($card_symbol_size_desktop, 2) + 2rem;
+
+            @media (max-width: $breakpoint_mobile) {
+                margin-top: math.div(-$card_symbol_size_mobile, 2);
+                padding-top: math.div($card_symbol_size_mobile, 2) + 1.5rem;
+            }
+        }
+    }
+
+    &.swiper-slide {
+        height: unset; //https://stackoverflow.com/a/32466333
+    }
+}
+
+.card__symbol {
+    width: $card_symbol_size_desktop;
+    height: $card_symbol_size_desktop;
+    background: $skyblue;
+    border-radius: 50%;
+
+    border: 1rem solid #fff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    svg {
+        width: auto;
+        height: 2rem;
+        fill: #fff;
+    }
+
+    position: relative;
+    z-index: 2;
+    top: 0;
+    left: 1.5rem;
+
+    @media (max-width: $breakpoint_mobile) {
+        width: $card_symbol_size_mobile;
+        height: $card_symbol_size_mobile;
+        border-width: 0.75rem;
+    }
+}

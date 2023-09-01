@@ -1,0 +1,35 @@
+<ul
+	class="{% if cssClass %}{{cssClass}} {% endif %}tags__list">
+
+	{# on listing, let's limit one tag per taxonomy #}
+	{% if listing and industries and services %}
+
+		{% for industry in industries|slice(0,1) %}
+			<li class="list__item item--tag item--industry">
+				<a class="label" href="{{industry.query_link}}">{{ industry.name }}</a>
+			</li>
+		{% endfor %}
+
+		{% for service in services|slice(0,1) %}
+			<li class="list__item item--tag item--service">
+				<a class="label" href="{{service.query_link}}">{{ service.name }}</a>
+			</li>
+		{% endfor %}
+
+		{% if industries|length > 1 or services|length > 1 %}
+			<li class="list__item item--tag item--more">
+				<span class="label">+{{industries|length - 1 + services|length - 1}}</span>
+			</li>
+		{% endif %}
+
+	{% else %}
+
+		{% for tag in tags %}
+			<li class="list__item item--tag tag--interactive">
+				<a class="label" href="{{tag.query_link}}">{{ tag.name }}</a>
+			</li>
+		{% endfor %}
+
+	{% endif %}
+
+</ul>

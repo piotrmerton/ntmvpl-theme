@@ -1,0 +1,43 @@
+{# Swiperjs HTML markup reference: https://swiperjs.com/get-started#add-swiper-html-layout #}
+
+<div class="cards cards--{{ layout }}{% if layout == 'horizontal' and columns == 3 %} cards--big{% endif %}{% if add_swiper_markup %} ui-slider slider--{{cards|length}}-items swiper{% endif %}" {% if add_swiper_markup %} data-slides-visible={{columns}} {% endif %}>
+
+	{% if add_swiper_markup %}
+		{% include "components/slider/_slider-ui.twig" %}
+	{% endif %}
+
+	<ul class="cards__list list--{{ layout }}{% if layout == 'horizontal' and columns == 3 %} list--big{% endif %}{% if add_swiper_markup %} swiper-wrapper{% endif %}">
+
+		{% for card in cards %}
+
+			<li class="list__item item--card{% if card.symbol %} card--has-symbol{% endif %}{% if add_swiper_markup %} swiper-slide{% endif %}">
+
+				<div class="card__layout">
+
+					{% if card.symbol %}
+						{% include "partials/_symbol.twig" with {
+							'cssClass' : 'card__symbol',
+							'symbol' : card.symbol
+							}
+						%}
+					{% endif %}
+
+					<div class="item__body">
+						<div class="item__content text--rich">
+							{% if card.card_header %}
+								<h3 class="card__header">{{ card.card_header }}</h3>
+							{% endif %}
+
+							{{ card.card_content }}
+						</div>
+					</div>
+
+				</div>
+
+			</li>
+
+		{% endfor %}
+
+	</ul>
+</div>
+<!-- /cards -->

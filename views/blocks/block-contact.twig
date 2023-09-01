@@ -1,0 +1,47 @@
+<ul class="block-contact">
+	<li class="list__item item--phonenumber">
+
+		<figure class="ui-ico">
+			<img loading="lazy" src="{{theme.path ~ '/assets/svg/phone.svg'}}"/>
+		</figure>
+
+		<div>
+			<span class="label">{{ __('Zadzwoń do nas', 'theme') }}</span>
+			<a itemprop="telephone" href="#">{{ globals.contact_data.phonenumber }}</a>
+		</div>
+
+	</li>
+	<li class="list__item item--email">
+
+		<figure class="ui-ico">
+			<img loading="lazy" src="{{theme.path ~ '/assets/svg/email.svg'}}"/>
+		</figure>
+
+		<div>
+			<span class="label">{{ __('Napisz do nas', 'theme') }}</span>
+			<a itemprop="email" href="#">{{ globals.contact_data.email }}</a>
+		</div>
+
+	</li>
+	<li class="list__item item--address">
+
+		<figure class="ui-ico">
+			<img loading="lazy" src="{{theme.path ~ '/assets/svg/address.svg'}}"/>
+		</figure>
+
+		<div>
+			<span class="label">{{ __('Adres do korespondencji', 'theme') }}</span>
+			<a href="https://goo.gl/maps/Mktp6YUqvgMyShQM8">
+				<p itemprop="name">{{ globals.contact_data.company }}</p>
+				<address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+					<p itemprop="streetAddress">{{ globals.contact_data.street_address }}</p>
+					<p>
+						<span itemprop="postalCode">{{ globals.contact_data.zipcode }}</span>
+						<span itemprop="addressLocality">{{ globals.contact_data.city }}</span>
+					</p>
+				</address>
+			</a>
+		</div>
+
+	</li>
+</ul>

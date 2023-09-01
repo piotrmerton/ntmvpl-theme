@@ -1,0 +1,70 @@
+.button {
+    background: $yellow;
+    color: $black;
+
+    text-align: center;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 3.75rem;
+    border: 2px solid transparent;
+    border-radius: 2rem;
+    padding: 0 1.875rem;
+
+    font-weight: 600;
+
+    transition: all 0.2s;
+
+    @media (max-width: $breakpoint_phone-big) {
+        //width: 100%;
+        min-height: 3.125rem;
+        font-size: 0.938em;
+        padding: 0 1.5rem;
+    }
+
+    .button__ico {
+        height: 0.625rem;
+        .svg__ico {
+            fill: $black;
+        }
+    }
+
+    &.button--white {
+        background: #fff;
+        color: $black;
+
+        @media (hover: hover) {
+            &:hover {
+                background: $black;
+                color: #fff;
+            }
+        }
+    }
+
+    &.button--transparent {
+        border-color: $black;
+        background: transparent;
+
+        &.button--white {
+            border-color: #fff;
+            color: #fff;
+        }
+
+        @media (hover: hover) {
+            &:hover {
+                border-color: #fff;
+                color: $black;
+                background: #fff;
+                text-decoration: none;
+            }
+        }
+    }
+
+    @media (hover: hover) {
+        &:hover {
+            text-decoration: none;
+            background: #ebc002; //TO DO: use darken filter instead?
+        }
+    }
+}

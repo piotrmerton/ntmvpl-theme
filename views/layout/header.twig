@@ -1,0 +1,36 @@
+<header id="header-top" class="header-top">
+
+	<div class="viewport">
+
+		<div class="header__layout">
+
+			<div class="header__branding">
+				<div class="header__logo logo">
+					<a href="{{ site.url }}" title="{{ site.description }}">
+						<figure>
+							<img src="{{theme.path}}/assets/svg/logo.svg" width="154" height="50" alt="{{ site.description }}"/>
+						</figure>
+					</a>
+				</div>
+			</div>
+
+			<div id="header-nav" class="header__nav">
+
+
+				<div class="nav__ui">
+					<a id="ui-nav" class="ui-nav do-toggle-nav" href="#" role="button" aria-label="{{__('Kliknij tutaj, aby otworzyć Nawigację', 'theme')}}">
+						<div>
+							<span></span>
+							<span></span>
+						</div>
+					</a>
+				</div>
+
+				{% include 'components/nav.twig' with { 'slug' : 'header', 'class' : 'nav--top', 'hide_submenu' : true } %}
+			</div>
+
+		</div>
+
+	</div>
+
+</header>

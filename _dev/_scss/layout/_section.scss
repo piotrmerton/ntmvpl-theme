@@ -1,0 +1,229 @@
+/**
+ * Generic content section elements and styles used by more specific sections (i.e. ACF Flexible Content blocks)
+ *
+ * Specific sections stored in content/section or content/flexible-content directories;
+ *
+ * 
+ */
+
+.section__title {
+}
+.section__header {
+    //For section-header h1 and h2 look alike.
+    //Reason: we want to have consistent design, but semantically, it is better to only have one h1 on each page;
+    //no matter the choice, the style will be the same
+    //overrides h2 definition @ generic/typography.scss
+
+    h2 {
+        //@include header-regular;
+
+        @media (max-width: $breakpoint_mobile) {
+            font-size: 1.75em;
+        }
+    }
+
+    h3 {
+        @media (min-width: $breakpoint_mobile + 1px) {
+            font-size: 1.5rem;
+        }
+    }
+
+    @include header-vertical-margin-regular;
+
+    //centering section header seem to be exclusive to section banner (Need to confirm this)
+
+    p {
+        font-size: 1.125em;
+        margin-bottom: 0;
+
+        // @media (min-width: $breakpoint_mobile + 1px) {
+        //     font-size: 1.125em;
+        // }
+    }
+
+    @media (max-width: $breakpoint_mobile) {
+        text-align: left;
+        h2 {
+            max-width: 100%;
+        }
+    }
+}
+
+.section__desc {
+    @media (min-width: $breakpoint_mobile + 1px) {
+        max-width: 35rem;
+        margin: 0 auto;
+    }
+
+    img {
+        margin-bottom: 2rem;
+    }
+}
+
+.section__body {
+    position: relative;
+    z-index: 2; //above cover
+    height: inherit;
+}
+
+.section__cta {
+    margin-top: 3rem;
+    .button {
+        min-height: 3.125rem;
+
+        &:not(:last-child) {
+            margin-right: 1rem;
+        }
+    }
+
+    &.cta--multiple {
+        @media (max-width: $breakpoint_desktop) and (min-width: $breakpoint_mobile + 1px), (max-width: $breakpoint_phone-big) {
+            .button {
+                display: flex;
+                width: 100%;
+
+                &:not(:last-child) {
+                    margin: 0 0 0.5rem 0;
+                }
+            }
+        }
+    }
+
+    @media (max-width: $breakpoint_mobile) {
+        margin-top: 2rem;
+    }
+}
+
+/**
+ *  Section's color modifiers affect background and elements;
+ *  see theme.json for color list
+ *  TO DO: move to inline style attr? 
+ */
+
+.section--lightgray {
+    background: $lightgray;
+    .section__symbol {
+        border-color: $lightgray;
+    }
+
+    //overrides component/cards.scss
+    .item--card {
+        .card__symbol {
+            border-color: $lightgray;
+        }
+        .item__body {
+            background: #fff;
+        }
+    }
+}
+.section--pastelblue {
+    background: $pastelblue;
+    .section__body {
+        color: $navy;
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            color: inherit;
+        }
+    }
+    .section__symbol {
+        border-color: $pastelblue;
+    }
+    .section__testimonial {
+        .svg__ico {
+            fill: $skyblue;
+        }
+    }
+}
+.section--lightblue {
+    background: $lightblue;
+    h5 {
+        color: $blue;
+    }
+    .section__symbol {
+        border-color: $lightblue;
+    }
+    .section__testimonial {
+        .svg__ico {
+            fill: $navy;
+        }
+    }
+}
+.section--skyblue {
+    background: $skyblue;
+
+    h5 {
+        color: #fff;
+    }
+
+    .section__symbol {
+        border-color: $skyblue;
+    }
+}
+.section--blue {
+    background: $blue;
+    .section__symbol {
+        border-color: $blue;
+    }
+    .section__testimonial {
+        .svg__ico {
+            fill: $skyblue;
+        }
+    }
+}
+.section--darkblue {
+    background: $darkblue;
+    .section__symbol {
+        border-color: $darkblue;
+    }
+    .section__testimonial {
+        .svg__ico {
+            fill: $skyblue;
+        }
+    }
+}
+.section--navy {
+    background: $navy;
+    .section__symbol {
+        border-color: $navy;
+    }
+    .section__testimonial {
+        .svg__ico {
+            fill: $skyblue;
+        }
+    }
+}
+.section--yellow {
+    background: $yellow;
+    .section__symbol {
+        border-color: $yellow;
+    }
+    .section__testimonial {
+        .svg__ico {
+            fill: $black;
+        }
+        .testimonial__text,
+        .testimonial__author {
+            opacity: 1 !important;
+        }
+    }
+    .section__content {
+        color: $black;
+    }
+    .section__cta {
+        .button--primary {
+            background: $skyblue;
+            color: #fff;
+
+            @media (hover: hover) {
+                &:hover {
+                    background: #fff;
+                    color: $black;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,39 @@
+<aside class="post__share side__block block--share">
+	<div class="block__title">
+		<span>{{ __('Spodobał ci się ten wpis?', 'theme') }}</span>
+		<h4>{{ __('Udostępnij!', 'theme') }}</h4>
+	</div>
+
+	{# https://mefody.dev/chunks/social-sharing-html-only/ #}
+	<ul class="share__list">
+		<li>
+			<a href="https://www.facebook.com/sharer.php?u={{post.link|url_encode}}">
+				<figure class="ui-ico">
+					{{ source('assets/svg/facebook.svg', ignore_missing = true) }}
+				</figure>
+			</a>
+		</li>
+		<li>
+			<a href="https://www.linkedin.com/sharing/share-offsite/?url={{post.link|url_encode}}" target="_blank">
+				<figure class="ui-ico">
+					{{ source('assets/svg/linkedin.svg', ignore_missing = true) }}
+				</figure>
+			</a>
+		</li>
+		<li>
+			<a href="https://twitter.com/intent/tweet?text={{ post.title|url_encode}}&url={{post.link|url_encode}}&via=netmovepl">
+				<figure class="ui-ico">
+					{{ source('assets/svg/twitter.svg', ignore_missing = true) }}
+				</figure>
+			</a>
+		</li>
+		<li>
+			<a href="http://pinterest.com/pin/create/link/?url={{post.link|url_encode}}">
+				<figure class="ui-ico">
+					{{ source('assets/svg/pinterest.svg', ignore_missing = true) }}
+				</figure>
+			</a>
+		</li>
+	</ul>
+
+</aside>

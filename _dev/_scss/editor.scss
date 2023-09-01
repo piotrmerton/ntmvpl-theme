@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;600;700;800&display=swap");
+
+@import "utilities/variables";
+@import "utilities/mixins";
+@import "base/typography";
+@import "base/text";
+
+h1,
+h2,
+h3,
+h4 {
+    max-width: 100%;
+}
+
+.mceContentBody {
+    font-family: "Hanken Grotesk", sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+    color: $gray;
+
+    @include rich-text;
+
+    ul {
+        //list-style-type: none;
+    }
+    p,
+    li {
+        max-width: 100%;
+    }
+
+    b,
+    strong {
+        color: $black;
+    }
+}

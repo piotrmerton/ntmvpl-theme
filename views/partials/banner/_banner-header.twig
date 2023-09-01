@@ -1,0 +1,12 @@
+<div class="banner__header{% if section.banner_settings_textAlign == 'center' %} text--center{% endif %}">
+
+	{% if section.banner_title %}
+		<h5 class="banner__title">{{ section.banner_title }}</h5>
+	{% endif %}
+
+	{% if section.banner_settings_headerPriority == "h1" %}
+		<h1>{{ section.banner_header }}</h1>
+	{% else %}
+		<h2>{{ section.banner_header }}</h2>
+	{% endif %}
+</div>

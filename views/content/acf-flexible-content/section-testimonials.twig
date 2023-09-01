@@ -1,0 +1,28 @@
+<section class="content__section section-testimonials{% if section.section_settings_bgColor %} section--{{section.section_settings_bgColor.slug}}{% endif %} text--center{% if section.section_settings_layout == 'single' and section.section_title is empty and section.section_header is empty %} section--no-padding-top{% endif %}">
+
+	<div class="viewport">
+
+
+		<div class="section__header">
+			{% if section.section_title %}
+				<h5 class="section__title">{{section.section_title}}</h5>
+			{% endif %}
+
+			{% if section.section_header %}
+				<h2>{{ section.section_header }}</h2>
+			{% endif %}
+		</div>
+
+		<div class="section__body">
+
+			{% include 'components/testimonials.twig' with {
+				'layout' : section.section_settings_layout,
+				'testimonials' : section.testimonials,
+				'add_swiper_markup' : section.has_slider,
+        	} %}
+
+		</div>
+
+	</div>
+
+</section>

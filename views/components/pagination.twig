@@ -1,0 +1,66 @@
+{# 
+    Timber example pagination markup source: https://timber.github.io/docs/guides/pagination/#default-pagination 
+    
+    The number of pages displayed in pagination can be edited via param (see: https://wordpress.stackexchange.com/a/371067) but it won't work with custom queries, since get_pagination is tied to global wp_query. For custom queries to work, the posts per page must param must be equal to global post per page parameter set in Dashboard. For other purposes use pre_get_posts filter
+
+    https://timber.github.io/docs/guides/pagination/#pagination-with-pre_get_posts
+    https://wordpress.stackexchange.com/a/89
+    https://wordpress.stackexchange.com/a/194368    
+    
+    See technical notes on improving pagination: https://github.com/timber/timber/issues/58
+       
+#}
+
+{% if pagination.pages %}
+	<nav class="pagination">
+
+		<div class="viewport">
+
+			{% if pagination.prev %}
+				<a href="{{pagination.prev.link}}" class="nav__item item--prev">
+					<figure class="ui-ico ico--prev">
+						<img loading="lazy" src="{{ theme.path }}/assets/svg/ui-next.svg"/>
+					</figure>
+				</a>
+			{% else %}
+				<div class="nav__item item--prev item--disabled">
+					<figure class="ui-ico ico--prev">
+						<img loading="lazy" src="{{ theme.path }}/assets/svg/ui-next.svg"/>
+					</figure>
+				</div>
+			{% endif %}
+
+			{# pages ellipsis is handled via Timber #}
+			<ul class="pages__list">
+				{% for page in pagination.pages %}
+					<li class="list__item item--page{% if page.current %} item--current{% endif %}{% if page.dots %} item--dots{% endif %}">
+						{% if page.link %}
+							<a href="{{page.link}}" title="{{ __('Strona', 'theme') }} {{ page.title }}">
+								<span class="label">{{ page.title }}</span>
+							</a>
+						{% else %}
+							<span class="label">{{page.title}}</span>
+						{% endif %}
+					</li>
+				{% endfor %}
+			</ul>
+
+			{% if pagination.next %}
+				<a href="{{pagination.next.link}}" class="nav__item item--next">
+					<figure class="ui-ico ico--next">
+						<img loading="lazy" src="{{ theme.path }}/assets/svg/ui-next.svg"/>
+					</figure>
+				</a>
+			{% else %}
+				<div class="nav__item item--next item--disabled">
+					<figure class="ui-ico ico--next">
+						<img loading="lazy" src="{{ theme.path }}/assets/svg/ui-next.svg"/>
+					</figure>
+				</div>
+			{% endif %}
+
+		</div>
+		<!-- /viewport -->
+
+	</nav>
+{% endif %}

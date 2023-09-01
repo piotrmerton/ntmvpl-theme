@@ -1,0 +1,36 @@
+<div class="banner__features">
+	<ul class="features__list {% if section.banner_settings_symbolsSize == 'big' %} list--big-symbols{% endif %}">
+		{% for feature in section.banner_features %}
+			<li>
+
+				{% if feature.banner_feature_cta.url %}
+
+					<a href="{{ feature.banner_feature_cta.url }}">
+
+						{% if feature.banner_feature_symbol %}
+							{% include 'partials/banner/_banner_feature_symbol.twig' with { symbol : feature.banner_feature_symbol } %}
+						{% endif %}
+
+						{% if feature.banner_feature_cta.title %}
+							<p>{{ feature.banner_feature_cta.title }}</p>
+						{% endif %}
+
+					</a>
+
+				{% else %}
+
+					{% if feature.banner_feature_symbol %}
+						{% include 'partials/banner/_banner_feature_symbol.twig' with { symbol : feature.banner_feature_symbol } %}
+					{% endif %}
+
+					{% if feature.banner_feature_desc %}
+						<p>{{feature.banner_feature_desc}}</p>
+					{% endif %}
+
+
+				{% endif %}
+
+			</li>
+		{% endfor %}
+	</ul>
+</div>

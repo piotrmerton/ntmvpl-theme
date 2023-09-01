@@ -1,0 +1,9 @@
+{% extends "components/modal/modal.twig" %}
+
+{% block modal_content %}
+
+	<h3 class="modal__title">{{ __('Zapisz się do naszego newslettera', 'theme') }}</h3>
+
+	{% include 'components/form/newsletter-form.twig' %}
+
+{% endblock %}

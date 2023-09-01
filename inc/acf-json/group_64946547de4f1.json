@@ -1,0 +1,51 @@
+{
+    "key": "group_64946547de4f1",
+    "title": "Podstrona Kontakt",
+    "fields": [
+        {
+            "key": "field_649465481ed4c",
+            "label": "Informacja",
+            "name": "",
+            "aria-label": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Wygląd i układ strony Kontakt jest generowany dynamicznie. \r\n\r\n<h4>Jak edytować pracowników<\/h4>\r\nPracowników można edytować w zakładce Zespół -> Lista pracowników.\r\n\r\n<h4>Jak zmienić dane kontaktowe<\/h4>\r\nDane kontaktowe oraz dane firmy można edytować w zakładce Ustawienia Zaawansowane.\r\n\r\n<h4>Jak edytować formularz kontaktowy<\/h4>\r\nZa integrację formularza kontaktowego odpowiada wtyczka Contact Form 7.",
+            "new_lines": "wpautop",
+            "esc_html": 0,
+            "acfe_field_group_condition": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-templates\/page-contact.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "acfe_display_title": "",
+    "acfe_autosync": [
+        "json"
+    ],
+    "acfe_form": 0,
+    "acfe_meta": "",
+    "acfe_note": "",
+    "modified": 1687447173
+}
